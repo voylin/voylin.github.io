@@ -1,7 +1,13 @@
 import shutil
 import os
+from time import process_time
 
 pages = {}
+
+main_template = ''
+elements = {
+  '{{head}}': 'head.html'
+}
 
 
 def clear_build():
@@ -11,12 +17,27 @@ def clear_build():
     else:
       os.remove('docs/' + x)
 
+
 def prepare_defaults():
   shutil.copyfile('coding-stuff/style.css', 'docs/style.css')
   os.mkdir('docs/posts')
   os.mkdir('docs/images')
   for _image in os.listdir('coding-stuff/images'):
     shutil.copyfile('coding-stuff/images/' + _image, 'docs/images/' + _image)
+
+
+def create_main_template():
+  # Creating the main template file.
+  global main_template
+  file = open('coding-stuff/main_template.html', 'r')
+  main_template = file.read()
+  file.close()
+  for element in elements:
+    element_data = open('coding-stuff/elements/' + elements[element])
+    element_string = element_data.read()
+    main_template = main_template.replace(element, element_string)
+    element_data.close()
+
 
 def load_posts():
   # Load all posts and get their main categories and sub categories
@@ -30,24 +51,26 @@ def load_posts():
 
     pages['docs/' + post_path] = post_data
 
-def load_page(x):
-  _origin = 'coding-stuff/main_pages/' + x
-  _path = 'docs/' + x
-  template = open('coding-stuff/page_template.html', 'r')
-  page = template.read()
-  template.close()
 
-  page_file = open(_origin, 'r')
-  page_data = page_file.read().split('#######')
-  page_file.close()
-
-  page_info = page_data[0].splitlines()
-  page_content = page_data[1]
+def load_pages():
+  for x in os.listdir('coding-stuff/main_pages'):
+    _origin = 'coding-stuff/main_pages/' + x
+    _path = 'docs/' + x
+    page = main_template
   
-  page = page.replace('{{page_title}}', _page_title(page_info))
-  page = page.replace('{{content}}', page_content)
+    page_file = open(_origin, 'r')
+    page_data = page_file.read().split('#######')
+    page_file.close()
+  
+    page_info = page_data[0].splitlines()
+    page_content = page_data[1]
+    page = page.replace('{{page_title}}', _page_title(page_info))
+    page = page.replace('{{content}}', page_content)
+  
+    new_page = open(_path, 'w')
+    new_page.write(page)
+    new_page.close()
 
-  pages[_path] = page
 
 def load_blog_pages():
   print('Still need to load blog pages...')
@@ -61,19 +84,14 @@ def _page_title(page_info):
   return '{{page_title}}'
 
 
-def create_pages(x):
-  new_page = open(x, 'w')
-  new_page.write(pages[x])
-  new_page.close()
-
 
 
 def prepare_site():
   clear_build()
   prepare_defaults()
+  create_main_template()
   load_posts()
-  for x in os.listdir('coding-stuff/main_pages'): load_page(x)
+  load_pages()
   load_blog_pages()
-  for x in pages: create_pages(x)
 
 prepare_site() 

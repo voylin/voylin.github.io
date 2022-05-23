@@ -1,42 +1,11 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <title>Voylin's site</title>
-    <script>
-      window.onscroll = function() {scrollFunction()};
-      function scrollFunction() {
-        mybutton = document.getElementById("goTop");
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          mybutton.style.display = "block";
-        } else {
-          mybutton.style.display = "none";
-        }
-      }
-
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
-
-      function showBlogLinks() {
-        var x = document.getElementById("blog_list");
-        if (x.style.display === "none") {
-          x.style.display = "block";
-        } else {
-          x.style.display = "none";
-        }
-      }
-    </script>
-  </head>
+  {{head}}
   <body>
     <button onclick="topFunction()" class="goTop" id="goTop" title="Go to top">^^</button>
     <header>
       <a href="index.html" target="_self">
-        <img class="site-logo" alt="Site Logo" src="images/logo-white.webp">
+        <img class="site-logo" alt="Site Logo" src="images/logo-white-small.webp">
       </a>
       <ul>
         <li><a href="index.html">Homepage</a></li>
@@ -49,11 +18,8 @@
         <li><a href="about_us.html">About us</a></li>
         <li><a href="contact_us.html">Contact us</a></li>
       </ul>
-      <!--Search-->
-      <div class="search">
-        <script async src="https://cse.google.com/cse.js?cx=fc20dd7e50ee1ee20"></script>
-        <div class="gcse-search"></div>
-      </div>
+      <script async src="https://cse.google.com/cse.js?cx=6bd1a947a2976b63e"></script>
+      <div class="gcse-search"></div> 
       <table class="sns-icons">
         <tr>
           <th><a href="https://youtube.com/voylin" target="_blank">
