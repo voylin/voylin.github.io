@@ -70,10 +70,12 @@ header {
   padding: 0 15px;
 }
 
-.sns-icons .sns-icon {
-  max-width: 30px;
-  max-height: 30px;
-  margin: auto;
+.sns-icons a { /* White color */
+  filter: brightness(0) invert(1);
+}
+
+.sns-icons a:hover { /* Hex color #00ff04 */
+  filter: invert(55%) sepia(22%) saturate(4506%) hue-rotate(83deg) brightness(117%) contrast(121%);
 }
 
 main, .copyright {
