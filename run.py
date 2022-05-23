@@ -1,31 +1,30 @@
 import shutil
 import os
-from turtle import clear, title
 
 pages = {}
 
 
 def clear_build():
-  for x in os.listdir('build'):
-    if os.path.isdir('build/' + x):
-      shutil.rmtree('build/' + x)
+  for x in os.listdir('docs'):
+    if os.path.isdir('docs/' + x):
+      shutil.rmtree('docs/' + x)
     else:
-      os.remove('build/' + x)
+      os.remove('docs/' + x)
 
 def prepare_defaults():
-  shutil.copyfile('site/style.css', 'build/style.css')
-  os.mkdir('build/posts')
-  os.mkdir('build/images')
-  for _image in os.listdir('site/images'):
-    shutil.copyfile('site/images/' + _image, 'build/images/' + _image)
+  shutil.copyfile('coding-stuff/style.css', 'docs/style.css')
+  os.mkdir('docs/posts')
+  os.mkdir('docs/images')
+  for _image in os.listdir('coding-stuff/images'):
+    shutil.copyfile('coding-stuff/images/' + _image, 'docs/images/' + _image)
 
 def load_posts():
   # Load all posts and get their main categories and sub categories
   print("Still need to load posts...")
 
-  for x in os.listdir('site/posts'):
+  for x in os.listdir('coding-stuff/posts'):
     post_path = 'posts/' + x
-    post_file = open('site/' + post_path)
+    post_file = open('coding-stuff/' + post_path)
     post_data = post_file.read()
     post_file.close()
 
@@ -33,9 +32,9 @@ def load_posts():
     pages[post_path] = post_data
 
 def load_page(x):
-  _origin = 'site/main_pages/' + x
-  _path = 'build/' + x
-  template = open('site/page_template.html', 'r')
+  _origin = 'coding-stuff/main_pages/' + x
+  _path = 'docs/' + x
+  template = open('coding-stuff/page_template.html', 'r')
   page = template.read()
   template.close()
 
@@ -70,7 +69,7 @@ def prepare_site():
   clear_build()
   prepare_defaults()
   load_posts()
-  for x in os.listdir('site/main_pages'): load_page(x)
+  for x in os.listdir('coding-stuff/main_pages'): load_page(x)
   load_blog_pages()
 
 prepare_site() 
