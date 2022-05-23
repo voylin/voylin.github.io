@@ -1,9 +1,30 @@
 :root {
-  --sidebar-size: 300px;
+  --sidebar-size: 270px;
   --footer-size: 37px;
   --page-title-height: 50px;
+  --main-padding: 10px;
 
   font-family: "Open Sans",sans-serif;
+}
+
+.goTop {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgba(50, 50, 50, 50); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+.goTop:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
 }
 
 html {
@@ -15,8 +36,12 @@ body {
   margin: 0 !important;
 }
 
-h1, h2 {
-  text-align: center;
+a {
+  color: black;
+}
+
+a:hover {
+  color: rgb(0, 220, 20);
 }
 
 .site-logo {
@@ -84,8 +109,9 @@ main, .copyright {
 }
 
 main {
-  background-color: crimson;
-  min-height: calc(100vh - (var(--footer-size) + var(--page-title-height))) !important;
+  padding: var(--main-padding);
+  background-color: rgb(242, 255, 243);
+  min-height: calc(100vh - (var(--footer-size) + var(--page-title-height)) - (var(--main-padding) * 2)) !important;
 }
 
 .copyright {

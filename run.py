@@ -28,8 +28,7 @@ def load_posts():
     post_data = post_file.read()
     post_file.close()
 
-
-    pages[post_path] = post_data
+    pages['docs/' + post_path] = post_data
 
 def load_page(x):
   _origin = 'coding-stuff/main_pages/' + x
@@ -48,9 +47,7 @@ def load_page(x):
   page = page.replace('{{page_title}}', _page_title(page_info))
   page = page.replace('{{content}}', page_content)
 
-  new_page = open(_path, 'w')
-  new_page.write(page)
-  new_page.close()
+  pages[_path] = page
 
 def load_blog_pages():
   print('Still need to load blog pages...')
@@ -64,6 +61,12 @@ def _page_title(page_info):
   return '{{page_title}}'
 
 
+def create_pages(x):
+  new_page = open(x, 'w')
+  new_page.write(pages[x])
+  new_page.close()
+
+
 
 def prepare_site():
   clear_build()
@@ -71,5 +74,6 @@ def prepare_site():
   load_posts()
   for x in os.listdir('coding-stuff/main_pages'): load_page(x)
   load_blog_pages()
+  for x in pages: create_pages(x)
 
 prepare_site() 
