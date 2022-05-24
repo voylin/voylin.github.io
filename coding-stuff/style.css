@@ -4,6 +4,11 @@
   --page-title-height: 50px;
   --main-padding: 10px;
 
+  --primary: rgb(0, 163, 59);
+  --primary-dark: #04772e;
+  
+  --title-background: linear-gradient(70deg, rgb(0,200,70), rgb(72, 206, 99) 40%,rgb(72, 206, 99)60%, rgb(0,200,70));
+
   font-family: "Open Sans",sans-serif;
 }
 
@@ -44,12 +49,6 @@ a:hover {
   color: rgb(0, 220, 20);
 }
 
-.site-logo {
-  width: calc(var(--sidebar-size) - 20px) !important;
-  display: block;
-  margin: 0 auto;
-}
-
 header, .page-title {
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
@@ -61,12 +60,55 @@ header {
   width: var(--sidebar-size);
   position: fixed;
   left: 0;
-  background-color: rgb(0, 163, 59); 
+  background-color: var(--primary); 
   padding-top: 20px;
 }
 
+header::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.sidebar ul {
+  padding-inline-start: 0;
+}
+
+.sidebar li {
+  display: block;
+  margin-left: 0;
+  padding: 13px 9px 13px 17px;
+  border-bottom: rgba(85, 85, 85, 0.2) solid 2px;
+}
+
+.sidebar .blog_menu_item {
+  padding-left: 37px;
+  background-color: var(--primary-dark);
+}
+
+.sidebar .blog_menu_item a {
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.blog_menu_button {
+  float: right;
+  width: 50px;
+  height: 30px;
+  color: white;
+  background-color: transparent;
+  border: 0;
+  margin-top: -5px;
+  font-size: x-large;
+}
+
 .page-title {
-  background: linear-gradient(70deg, rgb(0,200,70), rgb(72, 206, 99) 40%,rgb(72, 206, 99)60%, rgb(0,200,70));
+  background: var(--title-background);
   height: var(--page-title-height);
   margin-left: var(--sidebar-size);
   position: sticky;

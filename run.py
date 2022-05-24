@@ -6,7 +6,12 @@ pages = {}
 
 main_template = ''
 elements = {
-  '{{head}}': 'head.html'
+  '{{head}}': 'head.html',
+  '{{sidebar}}': 'sidebar.html',
+  '{{page-title}}': 'page-title.html',
+  '{{footer}}': 'footer.html',
+  
+  '{{b_gotop}}': 'button_gotop.html',
 }
 
 
@@ -64,7 +69,7 @@ def load_pages():
   
     page_info = page_data[0].splitlines()
     page_content = page_data[1]
-    page = page.replace('{{page_title}}', _page_title(page_info))
+    page = page.replace('{{page_title_text}}', _page_title(page_info))
     page = page.replace('{{content}}', page_content)
   
     new_page = open(_path, 'w')
@@ -72,7 +77,7 @@ def load_pages():
     new_page.close()
 
 
-def load_blog_pages():
+def load_blog_category_pages():
   print('Still need to load blog pages...')
 
 
@@ -81,7 +86,7 @@ def _page_title(page_info):
   for line in page_info:
     if page_title_line in line:
       return line[page_title_line.__len__():]
-  return '{{page_title}}'
+  return '{{page_title_text}}'
 
 
 
@@ -92,6 +97,6 @@ def prepare_site():
   create_main_template()
   load_posts()
   load_pages()
-  load_blog_pages()
+  load_blog_category_pages()
 
 prepare_site() 

@@ -1,44 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <title>Voylin's site</title>
-  <script>
-    window.onscroll = function() {scrollFunction()};
-    function scrollFunction() {
-      mybutton = document.getElementById("goTop");
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-      } else {
-        mybutton.style.display = "none";
-      }
-    }
-
-    function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-
-    function showBlogLinks() {
-      var button = document.getElementById("blogMenuButton")
-      var items = document.getElementsByClassName("blog_menu_item")
-      for (const x of items) {
-        if (x.style.display === "none") {
-          x.style.display = "block";
-          button.innerText = "-"
-        } else {
-          x.style.display = "none";
-          button.innerText = "+"
-        }
-      }
-    }
-  </script>
-</head>
-  <body>
-    <button onclick="topFunction()" class="goTop" id="goTop" title="Go to top">^^</button>
-    <header>
+<header>
   <!-- Logo -->
   <a href="index.html" target="_self">
     <img class="site-logo" alt="Site Logo" src="images/logo-white-small.webp" style="display: block; margin: 0 auto;">
@@ -64,7 +24,7 @@
   </nav>
   <!-- Search -->
   <script async src="https://cse.google.com/cse.js?cx=6bd1a947a2976b63e"></script>
-  <div style="padding: 100px 0;" class="gcse-search"></div> 
+  <div class="gcse-search"></div> 
   <!-- SNS Icons -->
   <table class="sns-icons">
     <tr>
@@ -86,21 +46,3 @@
     </tr>
   </table>
 </header>
-    <div class="page-title">
-  <div class="breadcrumbs">{{Breadcrumbs}}</div>
-  <div class="title">Welcome!</div>
-</div>
-    <main>
-      
-<img src="images/banner.webp" alt="Banner image" style="height: auto; max-width: 100%; margin: 0 auto; display: block;">
-<a href="about_us.html"><h1 style="text-align: center;"><u>Who we are</u></h1></a>
-<h1>Our posts</h1>
-<p>Coming soon</p>
-    </main>
-    <footer>
-  <div class="copyright">
-    <p>Copyright of <a href="https://youtube.com/voylin">Voylin's Life</a></p>
-  </div>
-</footer>
-  </body>
-</html>

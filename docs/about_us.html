@@ -22,11 +22,16 @@
     }
 
     function showBlogLinks() {
-      var x = document.getElementById("blog_list");
-      if (x.style.display === "none") {
-        x.style.display = "block";
-      } else {
-        x.style.display = "none";
+      var button = document.getElementById("blogMenuButton")
+      var items = document.getElementsByClassName("blog_menu_item")
+      for (const x of items) {
+        if (x.style.display === "none") {
+          x.style.display = "block";
+          button.innerText = "-"
+        } else {
+          x.style.display = "none";
+          button.innerText = "+"
+        }
       }
     }
   </script>
@@ -34,54 +39,65 @@
   <body>
     <button onclick="topFunction()" class="goTop" id="goTop" title="Go to top">^^</button>
     <header>
-      <a href="index.html" target="_self">
-        <img class="site-logo" alt="Site Logo" src="images/logo-white-small.webp">
-      </a>
-      <ul>
-        <li><a href="index.html">Homepage</a></li>
-        <li>
-          <a href="blog.html">Blog</a><button onclick="showBlogLinks()">+</button>
-          <div id="blog_list" style="display: none;">
-            <p>hello</p>
-          </div>
-        </li>
-        <li><a href="about_us.html">About us</a></li>
-        <li><a href="contact_us.html">Contact us</a></li>
-      </ul>
-      <script async src="https://cse.google.com/cse.js?cx=6bd1a947a2976b63e"></script>
-      <div class="gcse-search"></div> 
-      <table class="sns-icons">
-        <tr>
-          <th><a href="https://youtube.com/voylin" target="_blank">
-            <img src="images/icon-youtube.svg" alt="Youtube icon" width="30" height="30"></img>
-          </a></th>
-          <th><a href="https://instagram.com/voylinslife" target="_blank">
-            <img src="images/icon-instagram.svg" alt="Instagram icon" width="30" height="30"></img>
-          </a></th>
-          <th><a href="https://facebook.com/voylinslife" target="_blank">
-            <img src="images/icon-facebook.svg" alt="Facebook icon" width="30" height="30"></img>
-          </a></th>
-          <th><a href="https://github.com/voylin" target="_blank">
-            <img src="images/icon-github.svg" alt="Github icon" width="30" height="30"></img>
-          </a></th>
-          <th><a href="https://patreon.com/voylin" target="_blank">
-            <img src="images/icon-patreon.svg" alt="Patreon icon" width="30" height="30"></img>
-          </a></th>
-        </tr>
-      </table>
-    </header>
+  <!-- Logo -->
+  <a href="index.html" target="_self">
+    <img class="site-logo" alt="Site Logo" src="images/logo-white-small.webp" style="display: block; margin: 0 auto;">
+  </a>
+  <!-- Menu -->
+  <nav class="sidebar">
+    <ul>
+      <li><a href="index.html">Homepage</a></li>
+      <li>
+        <a style="display: inline-block;" href="blog.html">Blog</a>
+        <button class="blog_menu_button" id="blogMenuButton" onclick="showBlogLinks()">+</button>
+      </li>
+      <!-- Blog categories -->
+      <li style="display: none;" class="blog_menu_item"><a href="voylins_life.html">Voylin's life</a></li>
+      <li style="display: none;" class="blog_menu_item"><a href="our_life.html">Our life</a></li>
+      <li style="display: none;" class="blog_menu_item"><a href="nihongo_de.html">日本語で</a></li>
+      <li style="display: none;" class="blog_menu_item"><a href="learn_japanese.html">Learn Japanese</a></li>
+      <li style="display: none;" class="blog_menu_item"><a href="travel_advice.html">Travel advice</a></li>
+      <!------------------->
+      <li><a href="about_us.html">About us</a></li>
+      <li><a href="contact_us.html">Contact us</a></li>
+    </ul>
+  </nav>
+  <!-- Search -->
+  <script async src="https://cse.google.com/cse.js?cx=6bd1a947a2976b63e"></script>
+  <div style="padding: 100px 0;" class="gcse-search"></div> 
+  <!-- SNS Icons -->
+  <table class="sns-icons">
+    <tr>
+      <th><a href="https://youtube.com/voylin" target="_blank">
+        <img src="images/icon-youtube.svg" alt="Youtube icon" width="30" height="30"></img>
+      </a></th>
+      <th><a href="https://instagram.com/voylinslife" target="_blank">
+        <img src="images/icon-instagram.svg" alt="Instagram icon" width="30" height="30"></img>
+      </a></th>
+      <th><a href="https://facebook.com/voylinslife" target="_blank">
+        <img src="images/icon-facebook.svg" alt="Facebook icon" width="30" height="30"></img>
+      </a></th>
+      <th><a href="https://github.com/voylin" target="_blank">
+        <img src="images/icon-github.svg" alt="Github icon" width="30" height="30"></img>
+      </a></th>
+      <th><a href="https://patreon.com/voylin" target="_blank">
+        <img src="images/icon-patreon.svg" alt="Patreon icon" width="30" height="30"></img>
+      </a></th>
+    </tr>
+  </table>
+</header>
     <div class="page-title">
-      <div class="breadcrumbs">{{Breadcrumbs}}</div>
-      <div class="title">About us</div>
-    </div>
+  <div class="breadcrumbs">{{Breadcrumbs}}</div>
+  <div class="title">About us</div>
+</div>
     <main>
       
 content
     </main>
     <footer>
-      <div class="copyright">
-        <p>Copyright of <a href="https://youtube.com/voylin">Voylin's Life</a></p>
-      </div>
-    </footer>
+  <div class="copyright">
+    <p>Copyright of <a href="https://youtube.com/voylin">Voylin's Life</a></p>
+  </div>
+</footer>
   </body>
 </html>

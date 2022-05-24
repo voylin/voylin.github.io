@@ -20,11 +20,16 @@
     }
 
     function showBlogLinks() {
-      var x = document.getElementById("blog_list");
-      if (x.style.display === "none") {
-        x.style.display = "block";
-      } else {
-        x.style.display = "none";
+      var button = document.getElementById("blogMenuButton")
+      var items = document.getElementsByClassName("blog_menu_item")
+      for (const x of items) {
+        if (x.style.display === "none") {
+          x.style.display = "block";
+          button.innerText = "-"
+        } else {
+          x.style.display = "none";
+          button.innerText = "+"
+        }
       }
     }
   </script>
