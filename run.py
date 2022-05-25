@@ -37,10 +37,10 @@ def create_main_template():
   file = open('coding-stuff/main_template.html', 'r')
   main_template = file.read()
   file.close()
-  for element in elements:
-    element_data = open('coding-stuff/elements/' + elements[element])
+  for key, value in elements.items():
+    element_data = open('coding-stuff/elements/' + value)
     element_string = element_data.read()
-    main_template = main_template.replace(element, element_string)
+    main_template = main_template.replace(key, element_string)
     element_data.close()
 
 
@@ -87,8 +87,6 @@ def _page_title(page_info):
     if page_title_line in line:
       return line[page_title_line.__len__():]
   return '{{page_title_text}}'
-
-
 
 
 def prepare_site():
