@@ -5,6 +5,8 @@
 
   --primary: rgb(0, 163, 59);
   --primary-dark: #04772e;
+
+  --link-hover:rgb(0, 220, 20);
   
   --title-background: linear-gradient(70deg, rgb(0,200,70), rgb(72, 206, 99) 40%,rgb(72, 206, 99)60%, rgb(0,200,70));
 
@@ -26,12 +28,12 @@ a {
 }
 
 a:hover {
-  color: rgb(0, 220, 20);
+  color: var(--link-hover);
 }
 
 header, .page-title {
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
+  z-index: 1;
+  top: 0;
   overflow-x: hidden; /* Disable horizontal scroll */
 }
 
@@ -45,13 +47,17 @@ header {
 }
 
 header::-webkit-scrollbar {
-  display: none; /* for Chrome, Safari, and Opera */
+  display: none;
 }
 
 .sidebar a {
   color: white;
   font-weight: 500;
   font-size: 20px;
+}
+
+.sidebar a:hover {
+  color: rgb(0, 255, 0)
 }
 
 .sidebar ul {
@@ -70,20 +76,16 @@ header::-webkit-scrollbar {
   background-color: var(--primary-dark);
 }
 
-.sidebar .blog_menu_item a {
+.sidebar .blog_menu_item {
   font-weight: 400;
   font-size: 17px;
 }
 
-.blog_menu_button {
-  float: right;
-  width: 50px;
-  height: 30px;
-  color: white;
-  background-color: transparent;
-  border: 0;
-  margin-top: -5px;
-  font-size: x-large;
+.sidebar .blog_menu_item p {
+  font-size: 9px;
+  color: rgb(183, 192, 185);
+  padding-top: 3px;
+  margin: 0;
 }
 
 .sns-icons {
@@ -92,13 +94,13 @@ header::-webkit-scrollbar {
   display: flex;
 }
 
-.sns-icons a { /* White color */
-  filter: brightness(0) invert(1);
+.sns-icons a {
+  fill: white;
   margin: auto;
 }
 
-.sns-icons a:hover { /* Hex color #00ff04 */
-  filter: invert(55%) sepia(22%) saturate(4506%) hue-rotate(83deg) brightness(117%) contrast(121%);
+.sns-icons a:hover {
+  fill: rgb(0, 255, 0);
 }
 
 .page-title {
@@ -117,19 +119,20 @@ header::-webkit-scrollbar {
 
 .breadcrumbs {
   font-size: 12px;
-  position: absolute;
   margin: 7px;
-  line-height: 100%;
+  position: absolute;
   align-self: flex-end;
 }
 
 .breadcrumbs a {
-  filter: brightness(10) invert(0.3);
+  fill: rgb(67, 74, 85);
+  color: rgb(67, 74, 85);
   padding: 4px;
 }
 
 .breadcrumbs a:hover {
-  filter: brightness(0) invert(1);
+  fill: white;
+  color: white;
 }
 
 main, footer, .page-title {

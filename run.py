@@ -11,6 +11,8 @@ elements = {
   '{{page-title}}': 'page-title.html',
   '{{footer}}': 'footer.html',
 
+  '{{main_menu}}': 'main_menu.html',
+  '{{blog_link_menu}}': 'blog_link_menu.html',
   '{{sns-icons}}': 'sns-icons.html',
 }
 
@@ -80,6 +82,9 @@ def load_pages():
     page = page.replace('{{content}}', page_content)
     breadcrumb = get_breadcrumb('main_pages', x)
     page = page.replace('{{breadcrumbs}}', breadcrumb)
+
+    if x == '404.html':
+      page = '---\npermalink: /404.html\n---\n' + page
 
     new_page = open(_path, 'w')
     new_page.write(page)
