@@ -29,6 +29,7 @@ def prepare_defaults():
   shutil.copyfile('coding-stuff/style.css', 'docs/style.css')
   os.mkdir('docs/posts')
   os.mkdir('docs/images')
+  os.mkdir('docs/category')
   for _image in os.listdir('coding-stuff/images'):
     shutil.copyfile('coding-stuff/images/' + _image, 'docs/images/' + _image)
 
@@ -92,7 +93,28 @@ def load_pages():
 
 
 def load_blog_category_pages():
-  print('Still need to load blog pages...')
+  for x in os.listdir('coding-stuff/blog_categories'):
+    _origin = 'coding-stuff/blog_categories/' + x
+    _path = 'docs/category/' + x
+    page = main_template
+  
+    page_file = open(_origin, 'r')
+    page_data = page_file.read().split('#######')
+    page_file.close()
+  
+    page_info = page_data[0].splitlines()
+    page_content = page_data[1]
+    page = page.replace('{{page_title_text}}', _page_title(page_info))
+    page = page.replace('{{content}}', page_content)
+    breadcrumb = get_breadcrumb('main_pages', x)
+    page = page.replace('{{breadcrumbs}}', breadcrumb)
+
+    page = page.replace('href="style.css"', 'href="../style.css"')
+    page = page.replace('src="images', 'src="../images')
+
+    new_page = open(_path, 'w')
+    new_page.write(page)
+    new_page.close()
 
 
 def _page_title(page_info):
