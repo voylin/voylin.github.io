@@ -1,24 +1,9 @@
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="style.css" rel="stylesheet" type="text/css" />
-  <title>Voylin's site</title>
+  <title>Voylin's site - {{page_title_text}}</title>
   <script>
-    window.onscroll = function() {scrollFunction()};
-    function scrollFunction() {
-      mybutton = document.getElementById("goTop");
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-      } else {
-        mybutton.style.display = "none";
-      }
-    }
-
-    function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-
     function showBlogLinks() {
       var button = document.getElementById("blogMenuButton")
       var items = document.getElementsByClassName("blog_menu_item")
