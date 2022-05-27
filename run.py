@@ -10,8 +10,8 @@ elements = {
   '{{sidebar}}': 'sidebar.html',
   '{{page-title}}': 'page-title.html',
   '{{footer}}': 'footer.html',
-  
-  '{{b_gotop}}': 'button_gotop.html',
+
+  '{{sns-icons}}': 'sns-icons.html',
 }
 
 
