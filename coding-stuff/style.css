@@ -86,32 +86,6 @@ header::-webkit-scrollbar {
   font-size: x-large;
 }
 
-.page-title {
-  background: var(--title-background);
-  height: var(--page-title-height);
-  margin-left: var(--sidebar-size);
-  position: sticky;
-  z-index: 0; /* Else it covers the google search */
-}
-
-.page-title .title {
-  font-weight: 550;
-  font-size: 36px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-.page-title .breadcrumbs {
-  position: absolute;
-  margin-left: 7px;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
 .sns-icons {
   padding: 0 15px;
   width: auto;
@@ -127,7 +101,38 @@ header::-webkit-scrollbar {
   filter: invert(55%) sepia(22%) saturate(4506%) hue-rotate(83deg) brightness(117%) contrast(121%);
 }
 
-main, footer {
+.page-title {
+  background: var(--title-background);
+  height: var(--page-title-height);
+  position: sticky;
+  display: flex;
+}
+
+.page-title .title {
+  font-weight: 550;
+  font-size: 36px;
+  margin: auto;
+  text-align: center;
+}
+
+.breadcrumbs {
+  font-size: 12px;
+  position: absolute;
+  margin: 7px;
+  line-height: 100%;
+  align-self: flex-end;
+}
+
+.breadcrumbs a {
+  filter: brightness(10) invert(0.3);
+  padding: 4px;
+}
+
+.breadcrumbs a:hover {
+  filter: brightness(0) invert(1);
+}
+
+main, footer, .page-title {
   margin-left: var(--sidebar-size);
 }
 
@@ -144,33 +149,24 @@ footer p, footer a {
 .bottom-bar {
   padding: 10px;
   background-color: rgb(30, 72, 72);
-  height: fit-content;
   display: flex;
-}
-
-.bottom-bar h3, .bottom-bar p {
   color: rgb(222, 222, 222);
-  margin: 0;
 }
 
 .bottom-bar .left, .bottom-bar .right {
   width: 50%;
+  align-self: flex-end;
 }
 
 .bottom-bar ul {
-  padding-inline-start: 20px;
+  padding-inline-start: 27px;
   margin-top: 10px;
   margin-bottom: 5px;
 }
 
-
 .copyright {
   background-color: rgb(0, 42, 42);
   padding: 7px;
-}
-
-.copyright p, .copyright a {
-  height: fit-content;
   text-align: center;
   font-size: 13px;
 }
