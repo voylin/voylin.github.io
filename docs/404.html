@@ -8,18 +8,16 @@ permalink: /404.html
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="style.css" rel="stylesheet" type="text/css" />
   <title>Voylin's site - Whoops, something went wrong there!</title>
-  <script>
+  <script> 
     function showBlogLinks() {
       var button = document.getElementById("blogMenuButton")
-      var items = document.getElementsByClassName("blog_menu_item")
-      for (const x of items) {
-        if (x.style.display === "none") {
-          x.style.display = "block";
-          button.innerText = "-"
-        } else {
-          x.style.display = "none";
-          button.innerText = "+"
-        }
+      var blog_link_items = document.getElementById("blog_menu_items")
+      if (blog_link_items.style.display === "none") {
+        blog_link_items.style.display = "block";
+        button.innerText = "-"
+      } else {
+        blog_link_items.style.display = "none";
+        button.innerText = "+"
       }
     }
   </script>
@@ -34,39 +32,41 @@ permalink: /404.html
     <a href="index.html"><li>Homepage</li></a>
     <li style="display: flex;">
       <a style="display: inline-flex; width: 100%;" href="blog.html">Blog</a>
-      <a onclick="showBlogLinks()" id="blogMenuButton" href="#" style="width: 60px; text-align: center;">+</a>
+      <a onclick="showBlogLinks()" id="blogMenuButton"  style="width: 60px; text-align: center;">+</a>
       <!--<button style="display: inline-flex;" class="blog_menu_button" id="blogMenuButton" onclick="showBlogLinks()">+</button>-->
     </li>
-    <a href="voylins_life.html">
-  <li style="display: none;" class="blog_menu_item">
+    <div id="blog_menu_items" style="display:none;">
+<a href="voylins_life.html">
+  <li class="blog_menu_item">
     Voylin's life
     <p>All posts about my youtube channel.</p>
   </li>
 </a>
 <a href="our_life.html">
-  <li style="display: none;" class="blog_menu_item">
+  <li class="blog_menu_item">
     Our life
     <p>All posts about our life as an international couple living in Japan.</p>
   </li>
 </a>
 <a href="nihongo_de.html">
-  <li style="display: none;" class="blog_menu_item">
+  <li class="blog_menu_item">
     日本語で
     <p>Posts which have been written in Japanese.</p>
   </li>
 </a>
 <a href="learn_japanese.html">
-  <li style="display: none;" class="blog_menu_item">
+  <li class="blog_menu_item">
     Learn Japanese
     <p>Posts about learning the Japanese language.</p>
   </li>
 </a>
 <a href="travel_advice.html">
-  <li style="display: none;" class="blog_menu_item">
+  <li class="blog_menu_item">
     Travel advice
     <p>Posts of my travel advice (mostly about Japan).</p>
   </li>
 </a>
+</div>
     <a href="who_we_are.html"><li>Who we are</li></a>
     <a href="contact_us.html"><li>Contact us</li></a>
   </ul>

@@ -3,18 +3,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="style.css" rel="stylesheet" type="text/css" />
   <title>Voylin's site - {{page_title_text}}</title>
-  <script>
+  <script> 
     function showBlogLinks() {
       var button = document.getElementById("blogMenuButton")
-      var items = document.getElementsByClassName("blog_menu_item")
-      for (const x of items) {
-        if (x.style.display === "none") {
-          x.style.display = "block";
-          button.innerText = "-"
-        } else {
-          x.style.display = "none";
-          button.innerText = "+"
-        }
+      var blog_link_items = document.getElementById("blog_menu_items")
+      if (blog_link_items.style.display === "none") {
+        blog_link_items.style.display = "block";
+        button.innerText = "-"
+      } else {
+        blog_link_items.style.display = "none";
+        button.innerText = "+"
       }
     }
   </script>
