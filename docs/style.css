@@ -1,6 +1,8 @@
 :root {
   --sidebar-size: 270px;
+  --mobile-header-size: 50px;
   --page-title-height: 50px;
+  --page-title-mobile-height: 37px;
   --main-padding: 20px 40px;
 
   --primary: rgb(0, 163, 59);
@@ -21,7 +23,7 @@ body {
 
 a:hover { color: var(--link-hover); }
 
-header {
+#sidebar-desktop {
   height: 100%;
   width: var(--sidebar-size);
   position: fixed;
@@ -29,44 +31,100 @@ header {
   top: 0;
   left: 0;
   overflow-x: hidden;
-  background-color: var(--primary); 
   padding-top: 20px;
+  background-color: var(--primary); 
 }
-header::-webkit-scrollbar { display: none; }
+#sidebar-desktop::-webkit-scrollbar { display: none; }
 
-.sidebar a {
+#sidebar-mobile {
+  display: none;
+  min-height: var(--mobile-header-size);
+  background-color: var(--primary); 
+}
+
+@media screen and (max-width: 720px) {
+  #sidebar-desktop { display: none; }
+  #sidebar-mobile { display: block; }
+  main, footer, .page-title { margin-left: 0 !important; }
+
+  #sidebar-mobile-top {
+    max-height: var(--mobile-header-size);
+  }
+  
+  #mobile-logo {
+    
+    max-width: 100%;
+  }
+
+  #mobile-menu ul {
+    margin: 0;
+  }
+
+  #mobile-menu-button {
+    display:inline-flex;
+    border-style:solid;
+    border-width: 2px;
+    border-color: var(--primary-dark);
+    border-radius: 7px;
+    background-color:#068043;
+    margin: 5px;
+    width: 70px;
+  }
+  #mobile-menu-button:hover {
+    border-color: var(--link-hover);
+    background-color:#11a75c;
+  }
+  #mobile-menu-button p {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100%;
+    font-weight: 600;
+    color: white;
+  }
+
+  .page-title {
+    height: var(--page-title-mobile-height) !important;
+  }
+
+  .page-title .title {
+    font-size: 26px !important;
+  }
+}
+
+.sidebar-nav a {
   color: white;
   text-decoration: none;
   font-weight: 500;
   font-size: 20px;
 }
 
-.sidebar a:hover {
+.sidebar-nav a:hover {
   color: rgb(0, 255, 0)
 }
 
-.sidebar ul {
+.sidebar-nav ul {
   padding-inline-start: 0;
 }
 
-.sidebar li {
+.sidebar-nav li {
   display: block;
   margin-left: 0;
   padding: 13px 9px 13px 17px;
   border-bottom: rgba(85, 85, 85, 0.2) solid 2px;
 }
 
-.sidebar .blog_menu_item {
+.sidebar-nav .blog_menu_item {
   padding-left: 37px;
   background-color: var(--primary-dark);
 }
 
-.sidebar .blog_menu_item {
+.sidebar-nav .blog_menu_item {
   font-weight: 400;
   font-size: 17px;
 }
 
-.sidebar .blog_menu_item p {
+.sidebar-nav .blog_menu_item p {
   font-size: 9px;
   color: rgb(183, 192, 185);
   padding-top: 3px;
