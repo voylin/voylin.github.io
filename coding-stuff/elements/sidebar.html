@@ -1,21 +1,14 @@
 <header id="sidebar">
-  <div id="sidebar-desktop">
-    <a href="index.html" target="_self">
-      <img width="250" height="63" alt="Site Logo" src="images/logo-white-small.webp" style="display: block; margin: 0 auto;">
+  <div id="sidebar-banner" style="display:flex;">
+    <a id="site-logo" href="index.html" target="_self">
+      <img alt="Site Logo" src="images/logo-white-small.webp" style="margin: 0 auto;">
     </a>
+    <a onclick="showMobileMenu()" id="mobile-menu-button"><p>Menu</p></a>
+  </div>
+  <div id="sidebar-content">
     {{main_menu}}
     <br>
     {{sns-icons}}
-  </div>
-  <div id="sidebar-mobile">
-    <div id="sidebar-mobile-top" style="display:flex;">
-      <a id="mobile-logo" href="index.html" target="_self" style="display: inline-flex; margin-right: auto;">
-        <img alt="Site Logo" src="images/logo-white-small.webp">
-      </a>
-      <a onclick="showMobileMenu()" id="mobile-menu-button"><p>Menu</p></a>
-    </div>
-    <div id="mobile-menu" style="display: none;">
-      {{main_menu}}
-    </div>
+    <br>
   </div>
 </header>

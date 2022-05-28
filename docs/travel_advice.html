@@ -21,22 +21,28 @@
     
     function showMobileMenu() {
       var button = document.getElementById("mobile-menu-button")
-      var mobile_menu = document.getElementById("mobile-menu")
-      if (mobile_menu.style.display === "none") {
-        mobile_menu.style.display = "block";
-      } else {
+      var mobile_menu = document.getElementById("sidebar-content")
+      var blog_link_items = document.getElementById("blog_menu_items")
+      if (mobile_menu.style.display === "block") {
         mobile_menu.style.display = "none";
+        blog_link_items.style.display = "none";
+        document.getElementById("blogMenuButton").innerText = "+"
+      } else {
+        mobile_menu.style.display = "block";
       }
     }
   </script>
 </head>
   <body>
     <header id="sidebar">
-  <div id="sidebar-desktop">
-    <a href="index.html" target="_self">
-      <img width="250" height="63" alt="Site Logo" src="images/logo-white-small.webp" style="display: block; margin: 0 auto;">
+  <div id="sidebar-banner" style="display:flex;">
+    <a id="site-logo" href="index.html" target="_self">
+      <img alt="Site Logo" src="images/logo-white-small.webp" style="margin: 0 auto;">
     </a>
-    <nav class="sidebar-nav">
+    <a onclick="showMobileMenu()" id="mobile-menu-button"><p>Menu</p></a>
+  </div>
+  <div id="sidebar-content">
+    <nav id="sidebar-nav">
   <ul>
     <a href="index.html"><li>Homepage</li></a>
     <li style="display: flex;">
@@ -98,65 +104,12 @@
     <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M512 194.8c0 101.3-82.4 183.8-183.8 183.8-101.7 0-184.4-82.4-184.4-183.8 0-101.6 82.7-184.3 184.4-184.3C429.6 10.5 512 93.2 512 194.8zM0 501.5h90v-491H0v491z"/></svg>
   </a>
 </div>
-  </div>
-  <div id="sidebar-mobile">
-    <div id="sidebar-mobile-top" style="display:flex;">
-      <a id="mobile-logo" href="index.html" target="_self" style="display: inline-flex; margin-right: auto;">
-        <img alt="Site Logo" src="images/logo-white-small.webp">
-      </a>
-      <a onclick="showMobileMenu()" id="mobile-menu-button"><p>Menu</p></a>
-    </div>
-    <div id="mobile-menu" style="display: none;">
-      <nav class="sidebar-nav">
-  <ul>
-    <a href="index.html"><li>Homepage</li></a>
-    <li style="display: flex;">
-      <a style="display: inline-flex; width: 100%;" href="blog.html">Blog</a>
-      <a onclick="showBlogLinks()" id="blogMenuButton"  style="width: 60px; text-align: center;">+</a>
-      <!--<button style="display: inline-flex;" class="blog_menu_button" id="blogMenuButton" onclick="showBlogLinks()">+</button>-->
-    </li>
-    <div id="blog_menu_items" style="display:none;">
-<a href="voylins_life.html">
-  <li class="blog_menu_item">
-    Voylin's life
-    <p>All posts about my youtube channel.</p>
-  </li>
-</a>
-<a href="our_life.html">
-  <li class="blog_menu_item">
-    Our life
-    <p>All posts about our life as an international couple living in Japan.</p>
-  </li>
-</a>
-<a href="nihongo_de.html">
-  <li class="blog_menu_item">
-    日本語で
-    <p>Posts which have been written in Japanese.</p>
-  </li>
-</a>
-<a href="learn_japanese.html">
-  <li class="blog_menu_item">
-    Learn Japanese
-    <p>Posts about learning the Japanese language.</p>
-  </li>
-</a>
-<a href="travel_advice.html">
-  <li class="blog_menu_item">
-    Travel advice
-    <p>Posts of my travel advice (mostly about Japan).</p>
-  </li>
-</a>
-</div>
-    <a href="who_we_are.html"><li>Who we are</li></a>
-    <a href="contact_us.html"><li>Contact us</li></a>
-  </ul>
-</nav>
-    </div>
+    <br>
   </div>
 </header>
-    <div class="page-title">
-  <div class="breadcrumbs"><a href="index.html"><svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M575.8 255.5C575.8 273.5 560.8 287.6 543.8 287.6H511.8L512.5 447.7C512.5 450.5 512.3 453.1 512 455.8V472C512 494.1 494.1 512 472 512H456C454.9 512 453.8 511.1 452.7 511.9C451.3 511.1 449.9 512 448.5 512H392C369.9 512 352 494.1 352 472V384C352 366.3 337.7 352 320 352H256C238.3 352 224 366.3 224 384V472C224 494.1 206.1 512 184 512H128.1C126.6 512 125.1 511.9 123.6 511.8C122.4 511.9 121.2 512 120 512H104C81.91 512 64 494.1 64 472V360C64 359.1 64.03 358.1 64.09 357.2V287.6H32.05C14.02 287.6 0 273.5 0 255.5C0 246.5 3.004 238.5 10.01 231.5L266.4 8.016C273.4 1.002 281.4 0 288.4 0C295.4 0 303.4 2.004 309.5 7.014L564.8 231.5C572.8 238.5 576.9 246.5 575.8 255.5L575.8 255.5z"/></svg></a>/<a href="travel_advice.html">Travel Advice</a></div>
+    <div id="page-title">
   <div class="title">Travel Advice - Blog</div>
+  <div class="breadcrumbs"><a href="index.html"><svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M575.8 255.5C575.8 273.5 560.8 287.6 543.8 287.6H511.8L512.5 447.7C512.5 450.5 512.3 453.1 512 455.8V472C512 494.1 494.1 512 472 512H456C454.9 512 453.8 511.1 452.7 511.9C451.3 511.1 449.9 512 448.5 512H392C369.9 512 352 494.1 352 472V384C352 366.3 337.7 352 320 352H256C238.3 352 224 366.3 224 384V472C224 494.1 206.1 512 184 512H128.1C126.6 512 125.1 511.9 123.6 511.8C122.4 511.9 121.2 512 120 512H104C81.91 512 64 494.1 64 472V360C64 359.1 64.03 358.1 64.09 357.2V287.6H32.05C14.02 287.6 0 273.5 0 255.5C0 246.5 3.004 238.5 10.01 231.5L266.4 8.016C273.4 1.002 281.4 0 288.4 0C295.4 0 303.4 2.004 309.5 7.014L564.8 231.5C572.8 238.5 576.9 246.5 575.8 255.5L575.8 255.5z"/></svg></a>/<a href="travel_advice.html">Travel Advice</a></div>
 </div>
     <main>
       
@@ -175,7 +128,7 @@ content
       </ul>
     </div>
     <div class="right">
-      <p style="padding-top: 5px; padding-bottom: 3px; text-align: center;"><strong>Welcome for visiting our site!</strong></p>
+      <p style="padding-top: 5px; padding-bottom: 3px; font-size: 18px; text-align: center;"><strong>Welcome for visiting our site!</strong></p>
       <p style="text-align: center;">This site is made by hand and without ad's, for this I thank the people who support us on Patreon for helping us out!</p>
       <br>
       <div class="sns-icons">
