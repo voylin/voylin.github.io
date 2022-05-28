@@ -28,12 +28,6 @@ a:hover { color: var(--link-hover); }
 
 #mobile-menu-button {
   display: none;
-}
-
-
-
-#mobile-menu-button {
-  display:inline-flex;
   border-style:solid;
   border-width: 2px;
   border-color: var(--primary-dark);
@@ -198,7 +192,7 @@ footer p, footer a {
   }
   
   #sidebar-content { display: block!important; }
-  #mobile-menu-button { display:none; }
+  
 }
 
 /* MOBILE SCREEN */
