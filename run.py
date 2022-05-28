@@ -125,6 +125,8 @@ def create_sitemap():
   new_sitemap = open('docs/sitemap.txt', 'w')
   new_sitemap.write(sitemap)
   new_sitemap.close()
+  # We also need to copy the Google Search Console file
+  shutil.copyfile('coding-stuff/googlea54fd002d933074e.html', 'docs/googlea54fd002d933074e.html')
 
 
 def prepare_site():
