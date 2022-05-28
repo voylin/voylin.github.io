@@ -1,3 +1,4 @@
+from glob import glob
 import shutil
 import os
 from time import process_time
@@ -5,6 +6,7 @@ from time import process_time
 main_template = ''
 splitter = '#######'
 pages = []
+sitemap = "https://voylin.github.io/\n"
 categories = {
   'voylins_life': ['voylins_life.html', 'Voylin\'s Life'],
   'our_life': ['our_life.html', 'Our Life'],
@@ -71,6 +73,7 @@ def get_breadcrumb(type, page, category = ''):
 
 def create_pages():
   global pages
+  global sitemap
   for x in pages:
     page = main_template
 
@@ -78,6 +81,7 @@ def create_pages():
     _folder = x.split('/')[0]
     _filename = x.split('/')[1]
     _path = 'docs/' + _filename
+    sitemap = sitemap + "https://voylin.github.io/{}\n".format(_filename)
     
     __file__ = open(_origin, 'r')
     _raw_page = __file__.read()
@@ -116,11 +120,19 @@ def create_pages():
     new_page.close()
 
 
+def create_sitemap():
+  global sitemap
+  new_sitemap = open('docs/sitemap.txt', 'w')
+  new_sitemap.write(sitemap)
+  new_sitemap.close()
+
+
 def prepare_site():
   clear_build()
   prepare_defaults()
   load_pages()
   create_main_template()
   create_pages()
+  create_sitemap()
 
 prepare_site() 
