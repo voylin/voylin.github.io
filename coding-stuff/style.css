@@ -180,16 +180,13 @@ footer p, footer a {
 /* PAGE STUFF                               */
 /********************************************/
 .category-container { /* from blog page */
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
   text-align: center;
 }
 
 
 .category-container a {
   display: inline-block;
-  flex: 1 1 240px;
-  flex-shrink: 1;
   margin: 10px;
 }
 
@@ -207,4 +204,20 @@ footer p, footer a {
 
 .round-corners {
   border-radius: 10px;
+}
+
+.blog-card-container {
+  display: block;
+}
+
+.blog-post-block {
+  display: inline-block;
+  margin: 10px;
+}
+
+.blog-post-block img {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  height: auto;
 }

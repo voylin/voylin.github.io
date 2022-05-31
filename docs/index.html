@@ -7,29 +7,26 @@
   <title>Voylin's site - Welcome!</title>
   <script> 
     function showBlogLinks() {
-      var button = document.getElementById("blogMenuButton")
-      var blog_link_items = document.getElementById("blog_menu_items")
+      var button = document.getElementById("blogMenuButton");
+      var blog_link_items = document.getElementById("blog_menu_items");
       if (blog_link_items.style.display === "none") {
         blog_link_items.style.display = "block";
-        button.innerText = "-"
+        button.innerText = "-";
       } else {
         blog_link_items.style.display = "none";
-        button.innerText = "+"
+        button.innerText = "+";
       }
     }
 
-    
     function showMobileMenu() {
-      var button = document.getElementById("mobile-menu-button")
-      var mobile_menu = document.getElementById("sidebar-content")
-      var blog_link_items = document.getElementById("blog_menu_items")
+      var button = document.getElementById("mobile-menu-button");
+      var mobile_menu = document.getElementById("sidebar-content");
+      var blog_link_items = document.getElementById("blog_menu_items");
       if (mobile_menu.style.display === "block") {
         mobile_menu.style.display = "none";
         blog_link_items.style.display = "none";
         document.getElementById("blogMenuButton").innerText = "+"
-      } else {
-        mobile_menu.style.display = "block";
-      }
+      } else { mobile_menu.style.display = "block"; }
     }
   </script>
 </head>
@@ -175,7 +172,6 @@
     <p><strong>©</strong> Copyright of <a href="https://youtube.com/voylin">Voylin's Life</a></p>
   </div>
 </footer>
-
 
   </body>
 </html>
