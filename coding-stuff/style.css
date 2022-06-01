@@ -118,7 +118,7 @@ main {
   min-height: 100%; }
 
 
-footer p, footer a {
+footer small, footer a {
   color: rgb(197, 197, 197);
   margin: 0; }
 
@@ -141,7 +141,7 @@ footer p, footer a {
   background-color: var(--copyright-color);
   padding: 7px;
   text-align: center;
-  font-size: 13px; }
+}
 #copyright a { text-decoration:underline dotted; }
 
 
