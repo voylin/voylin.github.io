@@ -124,7 +124,8 @@ main, footer, #page-title { margin-left: var(--sidebar-size); }
 main {
   padding: var(--main-padding);
   background-color: rgb(242, 255, 243);
-  min-height: 100%; }
+  min-height: 31.7em;
+}
 
 
 footer small, footer a {
