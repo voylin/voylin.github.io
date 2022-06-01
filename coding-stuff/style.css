@@ -13,7 +13,10 @@
 
 
 body { margin: 0; }
-a:hover { color: var(--link-hover); }
+a:hover { 
+  color: var(--link-hover);
+  transition: all 0.3s ease-in-out 0s;
+}
 
 
 #sidebar {
