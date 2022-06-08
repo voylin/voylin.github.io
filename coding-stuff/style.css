@@ -225,9 +225,15 @@ footer small, footer a {
   margin: 10px;
 }
 
-.blog-post-block img {
+
+.blog-post-block a img {
   display: block;
   margin: auto;
   max-width: 100%;
-  height: auto;
+  height: 200px;
+}
+@media screen and (max-width: 900px) {
+  .blog-post-block a img {
+    height: 160px;
+  }
 }

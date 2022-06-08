@@ -53,10 +53,14 @@ def clear_build():
 
 def prepare_defaults():
   shutil.copyfile('coding-stuff/style.css', 'docs/style.css')
-  for x in ['posts', 'images']:
+  for x in ['posts', 'images', 'images/posts']:
     os.mkdir('docs/{}'.format(x))
   for _image in os.listdir('coding-stuff/images'):
-    shutil.copyfile('coding-stuff/images/' + _image, 'docs/images/' + _image)
+    if _image == "posts":
+      for __image in os.listdir('coding-stuff/images/posts'):
+        shutil.copyfile('coding-stuff/images/posts/' + __image, 'docs/images/posts/' + __image)
+    else:
+      shutil.copyfile('coding-stuff/images/' + _image, 'docs/images/' + _image)
 
 
 def create_main_template():
@@ -105,7 +109,7 @@ def create_post_cards():
     temp_card = post_card_template
     temp_card = temp_card.replace('{{url}}', post_file)
     temp_card = temp_card.replace('{{title}}', post_info['page_title'])
-    temp_card = temp_card.replace('{{thumb}}', post_info['thumb'])
+    temp_card = temp_card.replace('{{thumb}}', 'images/posts/' + post_info['thumb'])
     temp_card = temp_card.replace('{{date}}', post_info['date'])
     temp_card = temp_card.replace('{{description}}', post_info['description'])
     temp_card = temp_card.replace('{{category_url}}', categories[post_info['categories'].split(', ')[0]][0])
@@ -165,7 +169,8 @@ def create_pages():
     for card_type in card_types:
       _type = card_type.removeprefix('{{blog-post-card-').removesuffix('}}')
       for nr in range(page.count(card_type)):
-        if len(posts[_type]) > nr: page = page.replace(card_type, posts[_type][nr], 1)
+        if len(posts[_type]) > nr: 
+          page = page.replace(card_type, posts[_type][nr], 1)
         else: page = page.replace(card_type, '') # If not enough posts, delete the {{...}} tags
 
     # Page exceptions
