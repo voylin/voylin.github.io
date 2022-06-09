@@ -223,19 +223,40 @@ footer small, footer a {
 .blog-post-block {
   display: inline-block;
   margin: 10px;
+  max-width: 370px;
 }
 
+.blog-post-block .blog-card-title {
+  text-decoration: none;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.blog-post-block .blog-card-title p {
+  margin-top: 5px !important;
+}
 
 .blog-post-block a img {
   display: block;
   margin: auto;
-  max-width: 100%;
-  height: 200px;
+  width: 100%;
+  height: auto;
   border-radius: 5px;
 }
-@media screen and (max-width: 900px) {
-  .blog-post-block a img {
-    height: 160px;
+
+.blog-post-block .blog-card-date {
+  color: gray;
+}
+
+.blog-post-block p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .blog-post-block {
+    max-width: 230px;
   }
 }
 

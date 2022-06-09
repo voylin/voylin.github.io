@@ -109,9 +109,9 @@ def create_post_cards():
     temp_card = post_card_template
     temp_card = temp_card.replace('{{url}}', post_file)
     temp_card = temp_card.replace('{{title}}', post_info['page_title'])
-    temp_card = temp_card.replace('{{thumb}}', 'images/posts/' + post_info['thumb'])
+    temp_card = temp_card.replace('{{thumb}}', 'images/posts/' + post_info['thumb'] + '.webp')
     temp_card = temp_card.replace('{{date}}', post_info['date'])
-    temp_card = temp_card.replace('{{description}}', post_info['description'])
+    temp_card = temp_card.replace('{{description}}', post_info['description'][:200]) # Adding a description limiter
     temp_card = temp_card.replace('{{category_url}}', categories[post_info['categories'].split(', ')[0]][0])
     temp_card = temp_card.replace('{{category_title}}', categories[post_info['categories'].split(', ')[0]][1])
     # Adding the cards to posts so we can easily add them later
