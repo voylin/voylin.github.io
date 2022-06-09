@@ -217,13 +217,14 @@ footer small, footer a {
 }
 
 .blog-card-container {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .blog-post-block {
   display: inline-block;
   margin: 10px;
-  max-width: 370px;
+  max-width: 320px;
 }
 
 .blog-post-block .blog-card-title {
