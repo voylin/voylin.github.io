@@ -173,6 +173,19 @@ def create_pages():
           page = page.replace(card_type, posts[_type][nr], 1)
         else: page = page.replace(card_type, '') # If not enough posts, delete the {{...}} tags
 
+    # Inserting youtube videos
+    while page.find('{{yt-video:') != -1:
+      video_id = ''
+      index = page.find('{{yt-video:') + len('{{yt-video:')
+      while page[index] != '}':
+        video_id += page[index]
+        index += 1
+      _file = open('coding-stuff/extra-elements/yt-video.html', 'r')
+      page = page.replace('{{yt-video:' + video_id + "}}", _file.read())
+      _file.close()
+      page = page.replace('{{yt-id}}', video_id)
+      
+
     # Page exceptions
     if _filename == '404.html': page = '---\npermalink: /404.html\n---\n' + page
 
