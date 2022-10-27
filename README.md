@@ -1,6 +1,6 @@
 # Voylin's Site
-My own made website. It's a static blog made with html, css and python scripts to build all the site pages.
 
-This is the first time I'm trying to make a site, so I still have a lot to learn. I'll be changing methods often.
-My first try was by reading separate files with html in them, but I want to start changing everyting to python scripts
-instead to make everything a little more efficient and less messy.
+Site made by Hugo using the Stack theme. (May customize the theme heavily later on but not enough time)
+This site was first going to be made by my own static site builder which I was developing, 
+however, a lack of time made me switch back to Hugo and use a pre-made theme so I can actually have a
+working, decent site quickly up and running.
