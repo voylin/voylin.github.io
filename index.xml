@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Voylin&#39;s Life</title>
+        <link>http://voylin.github.io/</link>
+        <description>Recent content on Voylin&#39;s Life</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Fri, 28 Oct 2022 08:05:52 +0900</lastBuildDate><atom:link href="http://voylin.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>First post on my new site</title>
+        <link>http://voylin.github.io/posts/first_post/</link>
+        <pubDate>Fri, 28 Oct 2022 08:05:52 +0900</pubDate>
+        
+        <guid>http://voylin.github.io/posts/first_post/</guid>
+        <description>&lt;p&gt;I have been working a lot on getting this new site sorted out because I&amp;rsquo;m trying to step away from using Wordpress as the performance was quite bad, and I&amp;rsquo;m not willing to spend any money on plugins for a site which already costs me hosting fees and a domain fee. (I don&amp;rsquo;t earn anything with this site ^^&amp;quot;)&lt;/p&gt;
+&lt;p&gt;In the next couple of months I&amp;rsquo;m planning on creating all previous posts that my old site had and after that I can finally get started on writing new posts with things about Japan, Japanese and our life.&lt;/p&gt;
+&lt;p&gt;So stay tuned! ;)&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
