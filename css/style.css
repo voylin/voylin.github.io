@@ -1,0 +1,11 @@
+body {
+  margin:50px;
+}
+
+h1 {
+  font-size: 500px;
+}
+
+#site_logo {
+  max-height: 50px;
+}
