@@ -2,19 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://voylin.github.io/</loc>
+    <loc>https://www.voylinslife.com/</loc>
     <lastmod>2022-10-31T08:16:38+09:00</lastmod>
   </url><url>
-    <loc>http://voylin.github.io/posts/first_post/</loc>
+    <loc>https://www.voylinslife.com/posts/first_post/</loc>
     <lastmod>2022-10-28T08:05:52+09:00</lastmod>
   </url><url>
-    <loc>http://voylin.github.io/posts/</loc>
+    <loc>https://www.voylinslife.com/posts/</loc>
     <lastmod>2022-10-28T08:05:52+09:00</lastmod>
   </url><url>
-    <loc>http://voylin.github.io/posts/blog/</loc>
+    <loc>https://www.voylinslife.com/blog/</loc>
   </url><url>
-    <loc>http://voylin.github.io/categories/</loc>
+    <loc>https://www.voylinslife.com/categories/</loc>
   </url><url>
-    <loc>http://voylin.github.io/tags/</loc>
+    <loc>https://www.voylinslife.com/tags/</loc>
   </url>
 </urlset>
