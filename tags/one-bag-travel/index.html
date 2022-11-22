@@ -2,7 +2,7 @@
 <html lang="en-us"><head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>one bag travel - Voylin&#39;s Life</title>
+  <title>Voylin&#39;s Life - one bag travel - </title>
   <meta name="description" content="Voylin&#39;s Life site - A site about Japanese, Japan, and our life living in Japan.">
   <link rel="icon" type="image/x-icon" href="/site_assets/favicon.svg">
   <link rel="stylesheet" href="/css/style.css">
@@ -40,58 +40,106 @@ if (!doNotTrack) {
     <img src="/site_assets/site-logo.png" alt="Voylin's Life">
   </a>
 
-  
-  <div id="mobile_menu_button">
-    <a href="javascript:void(0);"  onclick="mobile_menu_button()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-
   <script>
-    function mobile_menu_button() {
-      var nav = document.getElementById("top_navbar");
-      var social = document.getElementById("top_social");
-      if (nav.classList.contains("mobile_show_nav")) {
-        nav.classList.remove("mobile_show_nav");
-        social.classList.remove("mobile_show_social");
-      } else {
-        nav.classList.add("mobile_show_nav");
-        social.classList.add("mobile_show_social");
-      }
+    function blog_menu_button() {
+      var blog_menu = document.getElementById("sidebar-blog-menu");
+      if (blog_menu.classList.contains("sidebar-show-blog-menu")) {
+        blog_menu.classList.remove("sidebar-show-blog-menu");
+      } else { blog_menu.classList.add("sidebar-show-blog-menu"); }
+    }
+
+    function mobileMenu() {
+      var x = document.getElementById("sidebar-navbox");
+      if (x.classList.contains("show-mobile-menu")) {
+        x.classList.remove("show-mobile-menu");
+      } else {x.classList.add("show-mobile-menu");}
     }
   </script>
 
-  
-  <div id="top_social">
-    
-    <a href="https://youtube.com/voylin" title="Youtube" target="_blank">
-      <i class='fab fa-youtube'></i>
-    </a>
-    
-    <a href="https://www.instagram.com/voylinslife/" title="Instagram" target="_blank">
-      <i class='fab fa-instagram'></i>
-    </a>
-    
+  <div id="sidebar-navbox">
+    <nav>
+      <ul>
+        
+        <li>
+          
+            <a href="/" title="Welcome!">Welcome!</a>
+          
+        </li>
+        
+        <li>
+          
+            <a id="sidebar-blog-text" href="/blog" title="Blog">Blog</a>
+            <a id="sidebar-blog-button" onclick="blog_menu_button()">&nbsp;+</a>
+            <ul id="sidebar-blog-menu">
+              <li><a href="/categories/learn-japanese/" title="Learn Japanese">
+                <span class="blog-menu-link">Learn Japanese</span>
+                <span class="blog-menu-link-info">Articles about learning the Japanese language</span>
+              </a></li>
+              <li><a href="/categories/our-life/" title="Our life">
+                <span class="blog-menu-link">Our life</span>
+                <span class="blog-menu-link-info">Posts about our life as an international couple living in Japan</span>
+              </a></li>
+              <li><a href="/categories/travel-advice/" title="Travel advice">
+                <span class="blog-menu-link">Travel advice</span>
+                <span class="blog-menu-link-info">All kinds of advice</span>
+              </a></li>
+              <li><a href="/categories/voylins-life/" title="Voylin's life">
+                <span class="blog-menu-link">Voylin's life</span>
+                <span class="blog-menu-link-info">Everything about my youtube channel</span>
+              </a></li>
+              <li><a href="/categories/日本語で/" title="日本語で">
+                <span class="blog-menu-link">日本語で</span>
+                <span class="blog-menu-link-info">日本語だけです。できるかな？</span>
+              </a></li>
+            </ul>
+          
+        </li>
+        
+        <li>
+          
+            <a href="/about_us" title="Who we are">Who we are</a>
+          
+        </li>
+        
+        <li>
+          
+            <a href="/contact_us" title="Contact us">Contact us</a>
+          
+        </li>
+        
+      </ul>
+    </nav>
+
+    <script async src="https://cse.google.com/cse.js?cx=b0e541e520bb74b64">
+    </script>
+    <gcse:search enablehistory="false"></gcse:search>
+
+    <div id="top_social">
+      
+        <a href="https://youtube.com/voylin" title="Youtube" target="_blank"><i class='fab fa-youtube'></i></a>
+      
+        <a href="https://www.instagram.com/voylinslife/" title="Instagram" target="_blank"><i class='fab fa-instagram'></i></a>
+      
+        <a href="https://github.com/voylin" title="Github" target="_blank"><i class='fab fa-github'></i></a>
+      
+        <a href="https://www.facebook.com/voylinslife" title="Facebook" target="_blank"><i class='fab fa-facebook'></i></a>
+      
+        <a href="https://twitter.com/voylinslife" title="Twitter" target="_blank"><i class='fab fa-twitter'></i></a>
+      
+        <a href="https://www.twitch.tv/voylin" title="Twitch" target="_blank"><i class='fab fa-twitch'></i></a>
+      
+    </div>
   </div>
 
-  <nav id="top_navbar">
-    
-      <a href="/blog" title="Blog" class="text-center">
-        Blog
-      </a>
-    
-      <a href="/about_us" title="Who we are" class="text-center">
-        Who we are
-      </a>
-    
-      <a href="/contact_us" title="Contact us" class="text-center">
-        Contact us
-      </a>
-    
-    <a href="/search" title="Search"><i class='fas fa-search'></i></a>
-  </nav>
+  <a href="javascript:void(0);" id="mobile-icon" onclick="mobileMenu()">
+    <i class="fa fa-bars"></i>
+  </a>
 </header>
-<main id="content">
+<div id="page-title">
+            
+        </div>
+        
+        <main id="content">
 <div>
   <h1>one bag travel</h1>
   <a href="https://www.voylinslife.com/posts/2021/11/25_%E7%B4%85%E8%91%89%E3%81%AE%E3%81%8A%E3%81%95%E3%82%93%E3%81%BD/">2021-11-25 > &nbsp紅葉のおさんぽ</a><br>
@@ -127,6 +175,22 @@ if (!doNotTrack) {
       
         <a href="https://www.instagram.com/voylinslife/" title="Instagram">
           <span><i class='fab fa-instagram'></i></span>
+        </a>
+      
+        <a href="https://github.com/voylin" title="Github">
+          <span><i class='fab fa-github'></i></span>
+        </a>
+      
+        <a href="https://www.facebook.com/voylinslife" title="Facebook">
+          <span><i class='fab fa-facebook'></i></span>
+        </a>
+      
+        <a href="https://twitter.com/voylinslife" title="Twitter">
+          <span><i class='fab fa-twitter'></i></span>
+        </a>
+      
+        <a href="https://www.twitch.tv/voylin" title="Twitch">
+          <span><i class='fab fa-twitch'></i></span>
         </a>
       
     </div>
