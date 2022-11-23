@@ -164,9 +164,18 @@ nav a {
 
 
 /** PAGE TITLE **/
-.page-title {
+#page-title {
   margin-left: var(--sidebar-width);
   background-color: var(--page-title-background);
+}
+
+#page-title p {
+  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  font-size:xx-large;
+  font-weight: 600;
+  text-align: center;
 }
 
 /** CONTENT STUFF **/
@@ -174,6 +183,7 @@ nav a {
   flex: 1;
   margin-left: var(--sidebar-width);
   padding: 10px 50px;
+  min-height: 78.7vh;
 }
 
 #content a {
@@ -267,11 +277,6 @@ article h4 { font-size: 1.1em; }
 
 .text-center {
   text-align: center;
-}
-
-.blog-title {
-  font-size:xx-large;
-  margin-bottom: 0;
 }
 
 .metadata {

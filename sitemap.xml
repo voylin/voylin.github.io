@@ -2,13 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.voylinslife.com/</loc>
-    <lastmod>2022-10-31T08:16:38+09:00</lastmod>
-  </url><url>
     <loc>https://www.voylinslife.com/tags/autumn/</loc>
     <lastmod>2021-11-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.voylinslife.com/categories/</loc>
+    <lastmod>2021-11-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.voylinslife.com/</loc>
     <lastmod>2021-11-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.voylinslife.com/categories/our-life/</loc>
