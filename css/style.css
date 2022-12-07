@@ -372,6 +372,10 @@ article h4 { font-size: 1.1em; }
     width: var(--sidebar-small-width);
   }
 
+  #page-title {
+    margin-left: var(--sidebar-small-width);
+  }
+
   #site_logo {
     width: var(--sidebar-small-width);
   }
@@ -410,6 +414,10 @@ article h4 { font-size: 1.1em; }
     position: relative;
     overflow: hidden;
     z-index: 1;
+  }
+  #page-title {
+    width: 100%;
+    margin-left: 0;
   }
 
   #mobile-icon {
