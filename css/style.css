@@ -307,14 +307,16 @@ article h4 { font-size: 1.1em; }
   width: 0;
   min-width: 250px;
   border-style: solid;
-  border-color: green; border-radius: 8px;
+  border-color: rgb(196, 196, 196);
+  background-color: rgb(231, 236, 232);
+  border-radius: 8px;
 }
 
 .post-block img {
   width: 100%;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  border-bottom: 3px solid green;
+  border-bottom: 3px solid rgb(200, 200, 200);
 }
 
 .post-block-info {
@@ -372,7 +374,7 @@ article h4 { font-size: 1.1em; }
     width: var(--sidebar-small-width);
   }
 
-  #page-title {
+  #page-title, footer {
     margin-left: var(--sidebar-small-width);
   }
 
@@ -415,7 +417,7 @@ article h4 { font-size: 1.1em; }
     overflow: hidden;
     z-index: 1;
   }
-  #page-title {
+  #page-title, footer {
     width: 100%;
     margin-left: 0;
   }
