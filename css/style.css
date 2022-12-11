@@ -306,6 +306,7 @@ article h4 { font-size: 1.1em; }
   flex: 1 1 0px;
   width: 0;
   min-width: 250px;
+  max-width: 317px;
   border-style: solid;
   border-color: rgb(196, 196, 196);
   background-color: rgb(231, 236, 232);
@@ -314,6 +315,7 @@ article h4 { font-size: 1.1em; }
 
 .post-block img {
   width: 100%;
+  height: auto;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   border-bottom: 3px solid rgb(200, 200, 200);
