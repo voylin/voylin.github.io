@@ -7,7 +7,8 @@
 Loading… ">
   <link rel="icon" type="image/x-icon" href="/site_assets/favicon.svg">
   <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  
+  <link rel="preload" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" as="style" onload="this.onload=null;this.rel='stylesheet'" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="canonical" href="https://www.voylinslife.com/contact_us/">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8509752797763329" crossorigin="anonymous"></script>
   <meta property="og:title" content="Contact us" />
@@ -46,7 +47,7 @@ if (!doNotTrack) {
     <img src="/site_assets/site-logo.svg" alt="Voylin's Life" width="258" height="62">
   </a>
 
-  <script>
+  <script async>
     function blog_menu_button() {
       var blog_menu = document.getElementById("sidebar-blog-menu");
       if (blog_menu.classList.contains("sidebar-show-blog-menu")) {
@@ -137,7 +138,7 @@ if (!doNotTrack) {
     </div>
   </div>
 
-  <a href="javascript:void(0);" id="mobile-icon" onclick="mobileMenu()">
+  <a href="javascript:void(0);" id="mobile-icon" onclick="mobileMenu()" aria-label="Open mobile menu">
     <i class="fa fa-bars"></i>
   </a>
 </header>
