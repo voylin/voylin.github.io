@@ -23,6 +23,12 @@
   --footer-info-text-color: #bcbcbc;
 } body {margin: 0px; }
 
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('https://use.fontawesome.com/releases/v5.7.2/css/all.css') format('woff2');
+  font-display: swap;
+}
+
 a, button {
   color: var(--link-color);
   text-decoration: none;
