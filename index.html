@@ -75,7 +75,7 @@ if (!doNotTrack) {
         <li>
           
             <a id="sidebar-blog-text" href="/blog" title="Blog">Blog</a>
-            <a id="sidebar-blog-button" onclick="blog_menu_button()">&nbsp;+</a>
+            <a id="sidebar-blog-button" onclick="blog_menu_button()" tabindex="0">&nbsp;+</a>
             <ul id="sidebar-blog-menu">
               <li><a href="/categories/learn-japanese/" title="Learn Japanese">
                 <span class="blog-menu-link">Learn Japanese</span>
@@ -137,7 +137,7 @@ if (!doNotTrack) {
     </div>
   </div>
 
-  <a href="javascript:void(0);" id="mobile-icon" onclick="mobileMenu()" aria-label="Open mobile menu">
+  <a id="mobile-icon" onclick="mobileMenu()" aria-label="Open mobile menu" tabindex="0">
     <i class="fa fa-bars"></i>
   </a>
 </header>
