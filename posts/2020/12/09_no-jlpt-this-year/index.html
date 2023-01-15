@@ -45,7 +45,8 @@ if (!doNotTrack) {
   </a>
 
   <script async>
-    function blog_menu_button() {
+    function blog_menu_button(event) {
+      event.preventDefault();
       var blog_menu = document.getElementById("sidebar-blog-menu");
       if (blog_menu.classList.contains("sidebar-show-blog-menu")) {
         blog_menu.classList.remove("sidebar-show-blog-menu");
@@ -73,7 +74,7 @@ if (!doNotTrack) {
         <li>
           
             <a id="sidebar-blog-text" href="/blog" title="Blog">Blog</a>
-            <a id="sidebar-blog-button" onclick="blog_menu_button()" tabindex="0">&nbsp;+</a>
+            <button id="sidebar-blog-button" onclick="blog_menu_button(event)" type="button">&nbsp;+</button>
             <ul id="sidebar-blog-menu">
               <li><a href="/categories/learn-japanese/" title="Learn Japanese">
                 <span class="blog-menu-link">Learn Japanese</span>
@@ -135,9 +136,9 @@ if (!doNotTrack) {
     </div>
   </div>
 
-  <a id="mobile-icon" onclick="mobileMenu()" aria-label="Open mobile menu" tabindex="0">
+  <button id="mobile-icon" onclick="mobileMenu()" aria-label="Open mobile menu">
     <i class="fa fa-bars"></i>
-  </a>
+  </button>
 </header>
 <div id="page-title">
         
@@ -209,6 +210,84 @@ if (!doNotTrack) {
     
       <div class="post-block">
   
+    <a href="https://www.voylinslife.com/posts/2017/01/07_tree-parkour-bali/"><img src="/images/posts/2017/01/tree-parkour.webp" alt="Tree parkour Bali - Last day&#39;s in Bali post image" width="336" height="189" loading="lazy"></a>
+  
+  <br>
+  <div class="post-block-info" >
+    <a href="https://www.voylinslife.com/posts/2017/01/07_tree-parkour-bali/" class="post-block-info-title"><b>Tree parkour Bali - Last day&#39;s in Bali</b></a><br>
+    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2017-01-07</i>
+    
+      &nbsp;-&nbsp;
+      <i class="far fa-folder-open"></i>&nbsp;
+      <a href="/categories/voylins-life">Voylin&#39;s Life</a>
+      
+    
+    </p>
+    <p>My last couple of days in Bali and I kept trying to push my limits, by hiking in a jungle and trying to fight my fear of hights by doing a tree parkour. Those were some of my most exhausting days of my time in Bali.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2017/01/07_tree-parkour-bali/">[...] Read more</a></p>
+  </div>
+</div>
+    
+      <div class="post-block">
+  
+    <a href="https://www.voylinslife.com/posts/2017/06/29_kayaking-adventure/"><img src="/images/posts/2017/06/kayaking-adventure.webp" alt="Kayaking Adventure - Semoine post image" width="336" height="189" loading="lazy"></a>
+  
+  <br>
+  <div class="post-block-info" >
+    <a href="https://www.voylinslife.com/posts/2017/06/29_kayaking-adventure/" class="post-block-info-title"><b>Kayaking Adventure - Semoine</b></a><br>
+    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2017-06-29</i>
+    
+      &nbsp;-&nbsp;
+      <i class="far fa-folder-open"></i>&nbsp;
+      <a href="/categories/voylins-life">Voylin&#39;s Life</a>
+      
+    
+    </p>
+    <p>A long and hard adventure in a kayak, I felt so tired and I really thought I filmed more. I really like kayaking, but the river was in a very terrible shape with all the greenery.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2017/06/29_kayaking-adventure/">[...] Read more</a></p>
+  </div>
+</div>
+    
+      <div class="post-block">
+  
+    <a href="https://www.voylinslife.com/posts/2018/06/30_pimsleur-japanese/"><img src="/images/posts/2018/06/pimsleur-japanese.webp" alt="Pimsleur Japanese Review post image" width="336" height="189" loading="lazy"></a>
+  
+  <br>
+  <div class="post-block-info" >
+    <a href="https://www.voylinslife.com/posts/2018/06/30_pimsleur-japanese/" class="post-block-info-title"><b>Pimsleur Japanese Review</b></a><br>
+    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2018-06-30</i>
+    
+      &nbsp;-&nbsp;
+      <i class="far fa-folder-open"></i>&nbsp;
+      <a href="/categories/voylins-life">Voylin&#39;s Life</a>
+      , <a href="/categories/learn-japanese">Learn Japanese</a>
+      
+    
+    </p>
+    <p>A review about Pimsleur, which I personally find one of the best audio lessons for helping with learning Japanese. But the price tag is unreasonable and hard to justify when there are other audio lessons for free like NHK.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2018/06/30_pimsleur-japanese/">[...] Read more</a></p>
+  </div>
+</div>
+    
+      <div class="post-block">
+  
+    <a href="https://www.voylinslife.com/posts/2016/01/13_ic-cards/"><img src="/images/posts/2016/01/ic-cards.webp" alt="IC Cards post image" width="336" height="189" loading="lazy"></a>
+  
+  <br>
+  <div class="post-block-info" >
+    <a href="https://www.voylinslife.com/posts/2016/01/13_ic-cards/" class="post-block-info-title"><b>IC Cards</b></a><br>
+    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2016-01-13</i>
+    
+      &nbsp;-&nbsp;
+      <i class="far fa-folder-open"></i>&nbsp;
+      <a href="/categories/voylins-life">Voylin&#39;s Life</a>
+      , <a href="/categories/travel-advice">Travel Advice</a>
+      
+    
+    </p>
+    <p>An IC card is really a need when traveling in Japan as it makes public transportation a lot easier and more stress free.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2016/01/13_ic-cards/">[...] Read more</a></p>
+  </div>
+</div>
+    
+      <div class="post-block">
+  
     <a href="https://www.voylinslife.com/posts/2017/04/06_packing-list-clothes/"><img src="/images/posts/2017/04/packing-list-clothes.webp" alt="Packing list - Clothes -Travel Essentials post image" width="336" height="189" loading="lazy"></a>
   
   <br>
@@ -229,31 +308,32 @@ if (!doNotTrack) {
     
       <div class="post-block">
   
-    <a href="https://www.voylinslife.com/posts/2016/12/30_arriving-bali/"><img src="/images/posts/2016/12/arriving-bali.webp" alt="Arriving in Bali Indonesia - Second country of the Big Adventure Trip post image" width="336" height="189" loading="lazy"></a>
+    <a href="https://www.voylinslife.com/posts/2021/10/04_%E3%82%A2%E3%82%A4%E3%82%B9%E3%81%AE%E9%A3%9F%E3%81%B9%E6%96%B9/"><img src="/images/posts/2021/10/aisu-no-tabekata.webp" alt="アイスの食べ方 post image" width="336" height="189" loading="lazy"></a>
   
   <br>
   <div class="post-block-info" >
-    <a href="https://www.voylinslife.com/posts/2016/12/30_arriving-bali/" class="post-block-info-title"><b>Arriving in Bali Indonesia - Second country of the Big Adventure Trip</b></a><br>
-    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2016-12-30</i>
+    <a href="https://www.voylinslife.com/posts/2021/10/04_%E3%82%A2%E3%82%A4%E3%82%B9%E3%81%AE%E9%A3%9F%E3%81%B9%E6%96%B9/" class="post-block-info-title"><b>アイスの食べ方</b></a><br>
+    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2021-10-04</i>
     
       &nbsp;-&nbsp;
       <i class="far fa-folder-open"></i>&nbsp;
-      <a href="/categories/voylins-life">Voylin&#39;s Life</a>
+      <a href="/categories/our-life">Our Life</a>
+      , <a href="/categories/%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%81%A7">日本語で</a>
       
     
     </p>
-    <p>When I arrived in Bali I was happy, but also very exhausted. I arrived and basically slept in the airport because I booked my hostel for the wrong day. Still not certain how I managed to do that, but it happened.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2016/12/30_arriving-bali/">[...] Read more</a></p>
+    <p>アイスの食べ方は実家に住んでいた時とくらベて変わったことの一つ。&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2021/10/04_%E3%82%A2%E3%82%A4%E3%82%B9%E3%81%AE%E9%A3%9F%E3%81%B9%E6%96%B9/">[...] Read more</a></p>
   </div>
 </div>
     
       <div class="post-block">
   
-    <a href="https://www.voylinslife.com/posts/2016/01/10_japan_-_travel_advice/"><img src="/images/posts/2016/01/Japan-travel-advice.webp" alt="Japan - Travel advice 1 post image" width="336" height="189" loading="lazy"></a>
+    <a href="https://www.voylinslife.com/posts/2016/02/03_4-most-common-travel-scams/"><img src="/images/posts/2016/02/4-most-common-travel-scams.webp" alt="4 Most Common Travel Scams post image" width="336" height="189" loading="lazy"></a>
   
   <br>
   <div class="post-block-info" >
-    <a href="https://www.voylinslife.com/posts/2016/01/10_japan_-_travel_advice/" class="post-block-info-title"><b>Japan - Travel advice 1</b></a><br>
-    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2016-01-10</i>
+    <a href="https://www.voylinslife.com/posts/2016/02/03_4-most-common-travel-scams/" class="post-block-info-title"><b>4 Most Common Travel Scams</b></a><br>
+    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2016-02-03</i>
     
       &nbsp;-&nbsp;
       <i class="far fa-folder-open"></i>&nbsp;
@@ -262,18 +342,18 @@ if (!doNotTrack) {
       
     
     </p>
-    <p>Let&#39;s talk about some advice for people going to Japan for their first time. How to do transportation, how is the medical infrastructure, ...&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2016/01/10_japan_-_travel_advice/">[...] Read more</a></p>
+    <p>Whilst traveling, there’s nothing worse than falling into a scam and possibly losing a lot of money, ruining your vacations or in the worst case, getting stuck abroad because you have nothing left to afford your way back home nor contact home.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2016/02/03_4-most-common-travel-scams/">[...] Read more</a></p>
   </div>
 </div>
     
       <div class="post-block">
   
-    <a href="https://www.voylinslife.com/posts/2017/05/06_knife-airport-story/"><img src="/images/posts/2017/05/knife-airport-story.webp" alt="W/ Knife through Airport Security post image" width="336" height="189" loading="lazy"></a>
+    <a href="https://www.voylinslife.com/posts/2017/07/13_plane-convention/"><img src="/images/posts/2017/07/plane-convention.webp" alt="Plane Convention Fly-in Moorsele post image" width="336" height="189" loading="lazy"></a>
   
   <br>
   <div class="post-block-info" >
-    <a href="https://www.voylinslife.com/posts/2017/05/06_knife-airport-story/" class="post-block-info-title"><b>W/ Knife through Airport Security</b></a><br>
-    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2017-05-06</i>
+    <a href="https://www.voylinslife.com/posts/2017/07/13_plane-convention/" class="post-block-info-title"><b>Plane Convention Fly-in Moorsele</b></a><br>
+    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2017-07-13</i>
     
       &nbsp;-&nbsp;
       <i class="far fa-folder-open"></i>&nbsp;
@@ -281,85 +361,7 @@ if (!doNotTrack) {
       
     
     </p>
-    <p>Welcome to my first Story time! Today I am talking about the time that I accidentally took a knife through airport security.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2017/05/06_knife-airport-story/">[...] Read more</a></p>
-  </div>
-</div>
-    
-      <div class="post-block">
-  
-    <a href="https://www.voylinslife.com/posts/2016/07/07_7kg-backpack-worldtrip/"><img src="/images/posts/2016/07/worldtrip.webp" alt="7kg Backpack Worldtrip - Winter edition post image" width="336" height="189" loading="lazy"></a>
-  
-  <br>
-  <div class="post-block-info" >
-    <a href="https://www.voylinslife.com/posts/2016/07/07_7kg-backpack-worldtrip/" class="post-block-info-title"><b>7kg Backpack Worldtrip - Winter edition</b></a><br>
-    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2016-07-07</i>
-    
-      &nbsp;-&nbsp;
-      <i class="far fa-folder-open"></i>&nbsp;
-      <a href="/categories/voylins-life">Voylin&#39;s Life</a>
-      , <a href="/categories/travel-advice">Travel Advice</a>
-      
-    
-    </p>
-    <p>When planning a long-term trip or a world trip, it&#39;s easy to be tempted by the idea of packing multiple bags, each with its own specific purpose. However, after having traveled enough with a single backpack, I can confidently say that traveling with just one bag is the way to go, and what I prefer to do when going on a trip.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2016/07/07_7kg-backpack-worldtrip/">[...] Read more</a></p>
-  </div>
-</div>
-    
-      <div class="post-block">
-  
-    <a href="https://www.voylinslife.com/posts/2015/12/05_goals-in-life-2015/"><img src="/images/posts/2015/12/goals-in-life.webp" alt="Goals in Life (2015 - Start of my youtube channel) post image" width="336" height="189" loading="lazy"></a>
-  
-  <br>
-  <div class="post-block-info" >
-    <a href="https://www.voylinslife.com/posts/2015/12/05_goals-in-life-2015/" class="post-block-info-title"><b>Goals in Life (2015 - Start of my youtube channel)</b></a><br>
-    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2015-12-05</i>
-    
-      &nbsp;-&nbsp;
-      <i class="far fa-folder-open"></i>&nbsp;
-      <a href="/categories/voylins-life">Voylin&#39;s Life</a>
-      
-    
-    </p>
-    <p>So I am revisiting this old video in December 2022. I won&#39;t change the date of this article and instead update this every now and then. You can see what my goals were in 2015 when watching the video, and on this page you can see how my goals have changed.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2015/12/05_goals-in-life-2015/">[...] Read more</a></p>
-  </div>
-</div>
-    
-      <div class="post-block">
-  
-    <a href="https://www.voylinslife.com/posts/2017/04/11_packing-list-essentials/"><img src="/images/posts/2017/04/packing-list-essentials.webp" alt="Travel List Packing - Essentials Only post image" width="336" height="189" loading="lazy"></a>
-  
-  <br>
-  <div class="post-block-info" >
-    <a href="https://www.voylinslife.com/posts/2017/04/11_packing-list-essentials/" class="post-block-info-title"><b>Travel List Packing - Essentials Only</b></a><br>
-    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2017-04-11</i>
-    
-      &nbsp;-&nbsp;
-      <i class="far fa-folder-open"></i>&nbsp;
-      <a href="/categories/voylins-life">Voylin&#39;s Life</a>
-      , <a href="/categories/travel-advice">Travel Advice</a>
-      
-    
-    </p>
-    <p>Traveling for an extended period of time can be daunting, especially when it comes to packing all of your essentials into one backpack. In this article, we&#39;ll show you how to pack your backpack efficiently and still have room for souvenirs.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2017/04/11_packing-list-essentials/">[...] Read more</a></p>
-  </div>
-</div>
-    
-      <div class="post-block">
-  
-    <a href="https://www.voylinslife.com/posts/2016/12/17_osaka-nara-stroll/"><img src="/images/posts/2016/12/osaka-nara-stroll.webp" alt="A stroll through Osaka and Nara light festival post image" width="336" height="189" loading="lazy"></a>
-  
-  <br>
-  <div class="post-block-info" >
-    <a href="https://www.voylinslife.com/posts/2016/12/17_osaka-nara-stroll/" class="post-block-info-title"><b>A stroll through Osaka and Nara light festival</b></a><br>
-    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2016-12-17</i>
-    
-      &nbsp;-&nbsp;
-      <i class="far fa-folder-open"></i>&nbsp;
-      <a href="/categories/voylins-life">Voylin&#39;s Life</a>
-      
-    
-    </p>
-    <p>This is probably one of my most favorite things to do. I really dislike busy areas, but in Osaka you can find so many places with almost no people, but with still a nice atmosphere. Osaka is a vibrant and bustling city, filled with fascinating sights, delicious food, and friendly people. One of the best ways to experience the city is by simply taking a leisurely stroll through its streets and neighborhoods.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2016/12/17_osaka-nara-stroll/">[...] Read more</a></p>
+    <p>Small video of my trip to a plane and fly convention near my city. I&#39;ve always been quite interested in planes and everything that flies (like birds :p).&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2017/07/13_plane-convention/">[...] Read more</a></p>
   </div>
 </div>
     

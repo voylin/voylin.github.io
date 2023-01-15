@@ -45,7 +45,8 @@ if (!doNotTrack) {
   </a>
 
   <script async>
-    function blog_menu_button() {
+    function blog_menu_button(event) {
+      event.preventDefault();
       var blog_menu = document.getElementById("sidebar-blog-menu");
       if (blog_menu.classList.contains("sidebar-show-blog-menu")) {
         blog_menu.classList.remove("sidebar-show-blog-menu");
@@ -73,7 +74,7 @@ if (!doNotTrack) {
         <li>
           
             <a id="sidebar-blog-text" href="/blog" title="Blog">Blog</a>
-            <a id="sidebar-blog-button" onclick="blog_menu_button()" tabindex="0">&nbsp;+</a>
+            <button id="sidebar-blog-button" onclick="blog_menu_button(event)" type="button">&nbsp;+</button>
             <ul id="sidebar-blog-menu">
               <li><a href="/categories/learn-japanese/" title="Learn Japanese">
                 <span class="blog-menu-link">Learn Japanese</span>
@@ -135,9 +136,9 @@ if (!doNotTrack) {
     </div>
   </div>
 
-  <a id="mobile-icon" onclick="mobileMenu()" aria-label="Open mobile menu" tabindex="0">
+  <button id="mobile-icon" onclick="mobileMenu()" aria-label="Open mobile menu">
     <i class="fa fa-bars"></i>
-  </a>
+  </button>
 </header>
 <div id="page-title">
         
@@ -258,12 +259,12 @@ if (!doNotTrack) {
     
       <div class="post-block">
   
-    <a href="https://www.voylinslife.com/posts/2016/02/08_bad-weather-vlog/"><img src="/images/posts/2016/02/bad-weather.webp" alt="Bad Weather Vlog post image" width="336" height="189" loading="lazy"></a>
+    <a href="https://www.voylinslife.com/posts/2015/12/05_goals-in-life-2015/"><img src="/images/posts/2015/12/goals-in-life.webp" alt="Goals in Life (2015 - Start of my youtube channel) post image" width="336" height="189" loading="lazy"></a>
   
   <br>
   <div class="post-block-info" >
-    <a href="https://www.voylinslife.com/posts/2016/02/08_bad-weather-vlog/" class="post-block-info-title"><b>Bad Weather Vlog</b></a><br>
-    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2016-02-08</i>
+    <a href="https://www.voylinslife.com/posts/2015/12/05_goals-in-life-2015/" class="post-block-info-title"><b>Goals in Life (2015 - Start of my youtube channel)</b></a><br>
+    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2015-12-05</i>
     
       &nbsp;-&nbsp;
       <i class="far fa-folder-open"></i>&nbsp;
@@ -271,18 +272,58 @@ if (!doNotTrack) {
       
     
     </p>
-    <p>I&#39;ve got bored of staying inside because of the bad weather so I decided to work more on the drawing on my door. Of course there are multiple other things you can do when it&#39;s rainy weather, I just chose to be creative, here are some other things which you may consider doing.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2016/02/08_bad-weather-vlog/">[...] Read more</a></p>
+    <p>So I am revisiting this old video in December 2022. I won&#39;t change the date of this article and instead update this every now and then. You can see what my goals were in 2015 when watching the video, and on this page you can see how my goals have changed.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2015/12/05_goals-in-life-2015/">[...] Read more</a></p>
   </div>
 </div>
     
       <div class="post-block">
   
-    <a href="https://www.voylinslife.com/posts/2016/01/13_ic-cards/"><img src="/images/posts/2016/01/ic-cards.webp" alt="IC Cards post image" width="336" height="189" loading="lazy"></a>
+    <a href="https://www.voylinslife.com/posts/2020/04/16_ume_matsuri/"><img src="/images/posts/2020/04/ume-matsuri.webp" alt="Ume Matsuri with friends - Better than Sakura? post image" width="336" height="189" loading="lazy"></a>
   
   <br>
   <div class="post-block-info" >
-    <a href="https://www.voylinslife.com/posts/2016/01/13_ic-cards/" class="post-block-info-title"><b>IC Cards</b></a><br>
-    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2016-01-13</i>
+    <a href="https://www.voylinslife.com/posts/2020/04/16_ume_matsuri/" class="post-block-info-title"><b>Ume Matsuri with friends - Better than Sakura?</b></a><br>
+    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2020-04-16</i>
+    
+      &nbsp;-&nbsp;
+      <i class="far fa-folder-open"></i>&nbsp;
+      <a href="/categories/voylins-life">Voylin&#39;s Life</a>
+      , <a href="/categories/our-life">Our Life</a>
+      , <a href="/categories/travel-advice">Travel Advice</a>
+      
+    
+    </p>
+    <p>A video about a day trip with some friends to see the Ume Matsuri, which is very similar to the Sakura trees.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2020/04/16_ume_matsuri/">[...] Read more</a></p>
+  </div>
+</div>
+    
+      <div class="post-block">
+  
+    <a href="https://www.voylinslife.com/posts/2017/01/07_tree-parkour-bali/"><img src="/images/posts/2017/01/tree-parkour.webp" alt="Tree parkour Bali - Last day&#39;s in Bali post image" width="336" height="189" loading="lazy"></a>
+  
+  <br>
+  <div class="post-block-info" >
+    <a href="https://www.voylinslife.com/posts/2017/01/07_tree-parkour-bali/" class="post-block-info-title"><b>Tree parkour Bali - Last day&#39;s in Bali</b></a><br>
+    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2017-01-07</i>
+    
+      &nbsp;-&nbsp;
+      <i class="far fa-folder-open"></i>&nbsp;
+      <a href="/categories/voylins-life">Voylin&#39;s Life</a>
+      
+    
+    </p>
+    <p>My last couple of days in Bali and I kept trying to push my limits, by hiking in a jungle and trying to fight my fear of hights by doing a tree parkour. Those were some of my most exhausting days of my time in Bali.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2017/01/07_tree-parkour-bali/">[...] Read more</a></p>
+  </div>
+</div>
+    
+      <div class="post-block">
+  
+    <a href="https://www.voylinslife.com/posts/2016/06/09_check-your-blood/"><img src="/images/posts/2016/06/check-your-blood.webp" alt="Check Your Blood - Travel advice post image" width="336" height="189" loading="lazy"></a>
+  
+  <br>
+  <div class="post-block-info" >
+    <a href="https://www.voylinslife.com/posts/2016/06/09_check-your-blood/" class="post-block-info-title"><b>Check Your Blood - Travel advice</b></a><br>
+    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2016-06-09</i>
     
       &nbsp;-&nbsp;
       <i class="far fa-folder-open"></i>&nbsp;
@@ -291,18 +332,18 @@ if (!doNotTrack) {
       
     
     </p>
-    <p>An IC card is really a need when traveling in Japan as it makes public transportation a lot easier and more stress free.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2016/01/13_ic-cards/">[...] Read more</a></p>
+    <p>It&#39;s not only important to check your blood before traveling, it is something which should be checked regularly. Once a year is advised by doctors. Here in Japan (where I live now) we need a medical check once a year, which is probably like this in most countries. During this check they also take some of your blood to see if your sugar or cholesterol has been too high. But it can also show other problems which you may not be aware of yet.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2016/06/09_check-your-blood/">[...] Read more</a></p>
   </div>
 </div>
     
       <div class="post-block">
   
-    <a href="https://www.voylinslife.com/posts/2017/05/19_duolingo-japanese-ios-only/"><img src="/images/posts/2017/05/duolingo-japanese-ios.webp" alt="Duolingo Japanese for IOS Only?? post image" width="336" height="189" loading="lazy"></a>
+    <a href="https://www.voylinslife.com/posts/2022/08/19_sou-matome-review/"><img src="/images/posts/2022/08/sou-matome-review.webp" alt="Nihongo Sou Matome - Review post image" width="336" height="189" loading="lazy"></a>
   
   <br>
   <div class="post-block-info" >
-    <a href="https://www.voylinslife.com/posts/2017/05/19_duolingo-japanese-ios-only/" class="post-block-info-title"><b>Duolingo Japanese for IOS Only??</b></a><br>
-    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2017-05-19</i>
+    <a href="https://www.voylinslife.com/posts/2022/08/19_sou-matome-review/" class="post-block-info-title"><b>Nihongo Sou Matome - Review</b></a><br>
+    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2022-08-19</i>
     
       &nbsp;-&nbsp;
       <i class="far fa-folder-open"></i>&nbsp;
@@ -311,18 +352,18 @@ if (!doNotTrack) {
       
     
     </p>
-    <p>Duolingo Japanese is in alpha/beta and is only available on ios? (update: Duolingo Japanese is now publicly available!)&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2017/05/19_duolingo-japanese-ios-only/">[...] Read more</a></p>
+    <p>The Nihongo Sou Matome series is a set of books designed specifically for people preparing for the Japanese Language Proficiency Test (JLPT). As a fan of these books since I began studying Japanese, I can confidently say that they are an efficient way to study and review for the JLPT.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2022/08/19_sou-matome-review/">[...] Read more</a></p>
   </div>
 </div>
     
       <div class="post-block">
   
-    <a href="https://www.voylinslife.com/posts/2018/08/04_rainy-day-in-tennoji/"><img src="/images/posts/2018/08/rainy-day-in-tennoji.webp" alt="What to do in Tennoji on a Rainy Day post image" width="336" height="189" loading="lazy"></a>
+    <a href="https://www.voylinslife.com/posts/2017/04/09_packing-list-electronics/"><img src="/images/posts/2017/04/packing-list-electronics.webp" alt="Packing List - Electronics - Travel Essentials post image" width="336" height="189" loading="lazy"></a>
   
   <br>
   <div class="post-block-info" >
-    <a href="https://www.voylinslife.com/posts/2018/08/04_rainy-day-in-tennoji/" class="post-block-info-title"><b>What to do in Tennoji on a Rainy Day</b></a><br>
-    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2018-08-04</i>
+    <a href="https://www.voylinslife.com/posts/2017/04/09_packing-list-electronics/" class="post-block-info-title"><b>Packing List - Electronics - Travel Essentials</b></a><br>
+    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2017-04-09</i>
     
       &nbsp;-&nbsp;
       <i class="far fa-folder-open"></i>&nbsp;
@@ -331,66 +372,7 @@ if (!doNotTrack) {
       
     
     </p>
-    <p>Let&#39;s discus some of the possibilities of things to do in Tennoji Osaka on a rainy day. Don&#39;t let some rain ruin your trip to Japan!&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2018/08/04_rainy-day-in-tennoji/">[...] Read more</a></p>
-  </div>
-</div>
-    
-      <div class="post-block">
-  
-    <a href="https://www.voylinslife.com/posts/2020/02/05_moving-to-japan-part-1/"><img src="/images/posts/2020/02/moving-to-Japan.webp" alt="Moving to Japan - Part 1 post image" width="336" height="189" loading="lazy"></a>
-  
-  <br>
-  <div class="post-block-info" >
-    <a href="https://www.voylinslife.com/posts/2020/02/05_moving-to-japan-part-1/" class="post-block-info-title"><b>Moving to Japan - Part 1</b></a><br>
-    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2020-02-05</i>
-    
-      &nbsp;-&nbsp;
-      <i class="far fa-folder-open"></i>&nbsp;
-      <a href="/categories/voylins-life">Voylin&#39;s Life</a>
-      , <a href="/categories/our-life">Our life</a>
-      
-    
-    </p>
-    <p>After having studied Japanese for 4 years (which is not enough at all), I&#39;ll be moving to Japan. Here is the journey of how I moved to Japan!&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2020/02/05_moving-to-japan-part-1/">[...] Read more</a></p>
-  </div>
-</div>
-    
-      <div class="post-block">
-  
-    <a href="https://www.voylinslife.com/posts/2016/10/22_departure-big-adventure/"><img src="/images/posts/2016/10/departure-big-adventure.webp" alt="Departure on My Big Adventure post image" width="336" height="189" loading="lazy"></a>
-  
-  <br>
-  <div class="post-block-info" >
-    <a href="https://www.voylinslife.com/posts/2016/10/22_departure-big-adventure/" class="post-block-info-title"><b>Departure on My Big Adventure</b></a><br>
-    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2016-10-22</i>
-    
-      &nbsp;-&nbsp;
-      <i class="far fa-folder-open"></i>&nbsp;
-      <a href="/categories/voylins-life">Voylin&#39;s Life</a>
-      
-    
-    </p>
-    <p>The departure on my big adventure was quite a big one, as I quit my job to go on this adventure. What many people didn&#39;t know was that I had a mission, but there were reasons behind this decision.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2016/10/22_departure-big-adventure/">[...] Read more</a></p>
-  </div>
-</div>
-    
-      <div class="post-block">
-  
-    <a href="https://www.voylinslife.com/posts/2018/06/30_pimsleur-japanese/"><img src="/images/posts/2018/06/pimsleur-japanese.webp" alt="Pimsleur Japanese Review post image" width="336" height="189" loading="lazy"></a>
-  
-  <br>
-  <div class="post-block-info" >
-    <a href="https://www.voylinslife.com/posts/2018/06/30_pimsleur-japanese/" class="post-block-info-title"><b>Pimsleur Japanese Review</b></a><br>
-    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2018-06-30</i>
-    
-      &nbsp;-&nbsp;
-      <i class="far fa-folder-open"></i>&nbsp;
-      <a href="/categories/voylins-life">Voylin&#39;s Life</a>
-      , <a href="/categories/learn-japanese">Learn Japanese</a>
-      
-    
-    </p>
-    <p>A review about Pimsleur, which I personally find one of the best audio lessons for helping with learning Japanese. But the price tag is unreasonable and hard to justify when there are other audio lessons for free like NHK.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2018/06/30_pimsleur-japanese/">[...] Read more</a></p>
+    <p>When you&#39;re backpacking, it&#39;s important to pack light and only bring the essentials. This is also true for electronics, as carrying too many gadgets can add unnecessary weight and bulk to your backpack. However, there are some electronic items that are essential for backpacking, and can make your travels much easier and more enjoyable.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2017/04/09_packing-list-electronics/">[...] Read more</a></p>
   </div>
 </div>
     
@@ -410,6 +392,25 @@ if (!doNotTrack) {
     
     </p>
     <p>Today I wanted to try out photography, to see how good or how bad I am xp I had these pictures saved somewhere but I lost them sadly enough. ^^&#39; Oh well, look on my instagram if you want to see if my skills became any better hahah.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2016/01/23_starting-with-photography/">[...] Read more</a></p>
+  </div>
+</div>
+    
+      <div class="post-block">
+  
+    <a href="https://www.voylinslife.com/posts/2021/09/10_voylins-wife/"><img src="/images/posts/2021/09/Voylins-Wife.webp" alt="Voylin&#39;s wife post image" width="336" height="189" loading="lazy"></a>
+  
+  <br>
+  <div class="post-block-info" >
+    <a href="https://www.voylinslife.com/posts/2021/09/10_voylins-wife/" class="post-block-info-title"><b>Voylin&#39;s wife</b></a><br>
+    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2020-12-09</i>
+    
+      &nbsp;-&nbsp;
+      <i class="far fa-folder-open"></i>&nbsp;
+      <a href="/categories/our-life">Our Life</a>
+      
+    
+    </p>
+    <p>Thank you for visiting our website, I am Voylin&#39;s wife who will be posting every now and then in Japanese.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2021/09/10_voylins-wife/">[...] Read more</a></p>
   </div>
 </div>
     

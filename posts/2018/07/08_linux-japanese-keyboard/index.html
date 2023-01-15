@@ -45,7 +45,8 @@ if (!doNotTrack) {
   </a>
 
   <script async>
-    function blog_menu_button() {
+    function blog_menu_button(event) {
+      event.preventDefault();
       var blog_menu = document.getElementById("sidebar-blog-menu");
       if (blog_menu.classList.contains("sidebar-show-blog-menu")) {
         blog_menu.classList.remove("sidebar-show-blog-menu");
@@ -73,7 +74,7 @@ if (!doNotTrack) {
         <li>
           
             <a id="sidebar-blog-text" href="/blog" title="Blog">Blog</a>
-            <a id="sidebar-blog-button" onclick="blog_menu_button()" tabindex="0">&nbsp;+</a>
+            <button id="sidebar-blog-button" onclick="blog_menu_button(event)" type="button">&nbsp;+</button>
             <ul id="sidebar-blog-menu">
               <li><a href="/categories/learn-japanese/" title="Learn Japanese">
                 <span class="blog-menu-link">Learn Japanese</span>
@@ -135,9 +136,9 @@ if (!doNotTrack) {
     </div>
   </div>
 
-  <a id="mobile-icon" onclick="mobileMenu()" aria-label="Open mobile menu" tabindex="0">
+  <button id="mobile-icon" onclick="mobileMenu()" aria-label="Open mobile menu">
     <i class="fa fa-bars"></i>
-  </a>
+  </button>
 </header>
 <div id="page-title">
         
@@ -216,32 +217,31 @@ Use this command and follow the instructions from the video :3</p>
     
       <div class="post-block">
   
-    <a href="https://www.voylinslife.com/posts/2017/11/05_hiragana-katakana-one-day/"><img src="/images/posts/2017/11/hiragana-katakana-one-day.webp" alt="Hiragana &amp; Katakana In One Day post image" width="336" height="189" loading="lazy"></a>
+    <a href="https://www.voylinslife.com/posts/2016/01/23_starting-with-photography/"><img src="/images/posts/2016/01/photography.webp" alt="Starting With Photography post image" width="336" height="189" loading="lazy"></a>
   
   <br>
   <div class="post-block-info" >
-    <a href="https://www.voylinslife.com/posts/2017/11/05_hiragana-katakana-one-day/" class="post-block-info-title"><b>Hiragana &amp; Katakana In One Day</b></a><br>
-    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2017-11-05</i>
+    <a href="https://www.voylinslife.com/posts/2016/01/23_starting-with-photography/" class="post-block-info-title"><b>Starting With Photography</b></a><br>
+    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2016-01-23</i>
     
       &nbsp;-&nbsp;
       <i class="far fa-folder-open"></i>&nbsp;
       <a href="/categories/voylins-life">Voylin&#39;s Life</a>
-      , <a href="/categories/learn-japanese">Learn Japanese</a>
       
     
     </p>
-    <p>Let&#39;s learn Hiragana and Katakana today! This is the first big step you should take when starting with learning Japanese and once you know them, you don&#39;t have to review them that often.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2017/11/05_hiragana-katakana-one-day/">[...] Read more</a></p>
+    <p>Today I wanted to try out photography, to see how good or how bad I am xp I had these pictures saved somewhere but I lost them sadly enough. ^^&#39; Oh well, look on my instagram if you want to see if my skills became any better hahah.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2016/01/23_starting-with-photography/">[...] Read more</a></p>
   </div>
 </div>
     
       <div class="post-block">
   
-    <a href="https://www.voylinslife.com/posts/2017/04/06_packing-list-clothes/"><img src="/images/posts/2017/04/packing-list-clothes.webp" alt="Packing list - Clothes -Travel Essentials post image" width="336" height="189" loading="lazy"></a>
+    <a href="https://www.voylinslife.com/posts/2016/05/03_first-trip-to-japan/"><img src="/images/posts/2016/05/First-trip-to-Japan.webp" alt="First trip to Japan post image" width="336" height="189" loading="lazy"></a>
   
   <br>
   <div class="post-block-info" >
-    <a href="https://www.voylinslife.com/posts/2017/04/06_packing-list-clothes/" class="post-block-info-title"><b>Packing list - Clothes -Travel Essentials</b></a><br>
-    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2017-04-06</i>
+    <a href="https://www.voylinslife.com/posts/2016/05/03_first-trip-to-japan/" class="post-block-info-title"><b>First trip to Japan</b></a><br>
+    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2016-05-03</i>
     
       &nbsp;-&nbsp;
       <i class="far fa-folder-open"></i>&nbsp;
@@ -250,27 +250,46 @@ Use this command and follow the instructions from the video :3</p>
       
     
     </p>
-    <p>When it comes to packing for a backpacking trip, it can be tempting to bring along every piece of clothing you own. However, it&#39;s important to remember that space and weight are limited, so it&#39;s important to be selective about the clothes you bring.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2017/04/06_packing-list-clothes/">[...] Read more</a></p>
+    <p>I went on my first trip to Japan in 2016 and was completely sold to the nature, culture, history, ... 2 weeks after being back in Belgium I decided to quit my job and stay there for some time as a tourist.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2016/05/03_first-trip-to-japan/">[...] Read more</a></p>
   </div>
 </div>
     
       <div class="post-block">
   
-    <a href="https://www.voylinslife.com/posts/2016/07/07_7kg-backpack-worldtrip/"><img src="/images/posts/2016/07/worldtrip.webp" alt="7kg Backpack Worldtrip - Winter edition post image" width="336" height="189" loading="lazy"></a>
+    <a href="https://www.voylinslife.com/posts/2017/05/06_knife-airport-story/"><img src="/images/posts/2017/05/knife-airport-story.webp" alt="W/ Knife through Airport Security post image" width="336" height="189" loading="lazy"></a>
   
   <br>
   <div class="post-block-info" >
-    <a href="https://www.voylinslife.com/posts/2016/07/07_7kg-backpack-worldtrip/" class="post-block-info-title"><b>7kg Backpack Worldtrip - Winter edition</b></a><br>
-    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2016-07-07</i>
+    <a href="https://www.voylinslife.com/posts/2017/05/06_knife-airport-story/" class="post-block-info-title"><b>W/ Knife through Airport Security</b></a><br>
+    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2017-05-06</i>
     
       &nbsp;-&nbsp;
       <i class="far fa-folder-open"></i>&nbsp;
       <a href="/categories/voylins-life">Voylin&#39;s Life</a>
-      , <a href="/categories/travel-advice">Travel Advice</a>
       
     
     </p>
-    <p>When planning a long-term trip or a world trip, it&#39;s easy to be tempted by the idea of packing multiple bags, each with its own specific purpose. However, after having traveled enough with a single backpack, I can confidently say that traveling with just one bag is the way to go, and what I prefer to do when going on a trip.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2016/07/07_7kg-backpack-worldtrip/">[...] Read more</a></p>
+    <p>Welcome to my first Story time! Today I am talking about the time that I accidentally took a knife through airport security.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2017/05/06_knife-airport-story/">[...] Read more</a></p>
+  </div>
+</div>
+    
+      <div class="post-block">
+  
+    <a href="https://www.voylinslife.com/posts/2021/10/10_%E3%81%8B%E3%81%AB%E3%81%8B%E3%81%AB/"><img src="/images/posts/2021/10/kanikani.webp" alt="かにかに post image" width="336" height="189" loading="lazy"></a>
+  
+  <br>
+  <div class="post-block-info" >
+    <a href="https://www.voylinslife.com/posts/2021/10/10_%E3%81%8B%E3%81%AB%E3%81%8B%E3%81%AB/" class="post-block-info-title"><b>かにかに</b></a><br>
+    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2021-10-10</i>
+    
+      &nbsp;-&nbsp;
+      <i class="far fa-folder-open"></i>&nbsp;
+      <a href="/categories/our-life">Our Life</a>
+      , <a href="/categories/%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%81%A7">日本語で</a>
+      
+    
+    </p>
+    <p>このことに2日前に気付いた私の父は何かをしようと企んだが、私が「かに道楽は？」というとそこになった。かに大好き一族。&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2021/10/10_%E3%81%8B%E3%81%AB%E3%81%8B%E3%81%AB/">[...] Read more</a></p>
   </div>
 </div>
     
@@ -296,12 +315,12 @@ Use this command and follow the instructions from the video :3</p>
     
       <div class="post-block">
   
-    <a href="https://www.voylinslife.com/posts/2016/01/17_sleeping_on_a_plane/"><img src="/images/posts/2016/01/sleeping-on-a-plane.webp" alt="Sleeping on a plane post image" width="336" height="189" loading="lazy"></a>
+    <a href="https://www.voylinslife.com/posts/2017/04/06_packing-list-clothes/"><img src="/images/posts/2017/04/packing-list-clothes.webp" alt="Packing list - Clothes -Travel Essentials post image" width="336" height="189" loading="lazy"></a>
   
   <br>
   <div class="post-block-info" >
-    <a href="https://www.voylinslife.com/posts/2016/01/17_sleeping_on_a_plane/" class="post-block-info-title"><b>Sleeping on a plane</b></a><br>
-    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2016-01-17</i>
+    <a href="https://www.voylinslife.com/posts/2017/04/06_packing-list-clothes/" class="post-block-info-title"><b>Packing list - Clothes -Travel Essentials</b></a><br>
+    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2017-04-06</i>
     
       &nbsp;-&nbsp;
       <i class="far fa-folder-open"></i>&nbsp;
@@ -310,18 +329,18 @@ Use this command and follow the instructions from the video :3</p>
       
     
     </p>
-    <p>Planes are probably one of the most annoying things when traveling as you can never get enough sleep on them. Let&#39;s talk about methods to improve your sleeping experience.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2016/01/17_sleeping_on_a_plane/">[...] Read more</a></p>
+    <p>When it comes to packing for a backpacking trip, it can be tempting to bring along every piece of clothing you own. However, it&#39;s important to remember that space and weight are limited, so it&#39;s important to be selective about the clothes you bring.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2017/04/06_packing-list-clothes/">[...] Read more</a></p>
   </div>
 </div>
     
       <div class="post-block">
   
-    <a href="https://www.voylinslife.com/posts/2016/06/29_travel-clothes/"><img src="/images/posts/2016/06/travel-clothes.webp" alt="Travel Clothes - Fabrics and fast drying post image" width="336" height="189" loading="lazy"></a>
+    <a href="https://www.voylinslife.com/posts/2016/01/21_best-plane-seats/"><img src="/images/posts/2016/01/best-plane-seats.webp" alt="Best Plane Seats post image" width="336" height="189" loading="lazy"></a>
   
   <br>
   <div class="post-block-info" >
-    <a href="https://www.voylinslife.com/posts/2016/06/29_travel-clothes/" class="post-block-info-title"><b>Travel Clothes - Fabrics and fast drying</b></a><br>
-    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2016-06-29</i>
+    <a href="https://www.voylinslife.com/posts/2016/01/21_best-plane-seats/" class="post-block-info-title"><b>Best Plane Seats</b></a><br>
+    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2016-02-21</i>
     
       &nbsp;-&nbsp;
       <i class="far fa-folder-open"></i>&nbsp;
@@ -330,45 +349,27 @@ Use this command and follow the instructions from the video :3</p>
       
     
     </p>
-    <p>In general, it&#39;s important to choose travel clothes that are made from lightweight and breathable fabrics. This will not only make them more comfortable to wear, but also help them dry faster when you need to wash them on the go. In this video, I test out some different fabrics to see how quickly they dry, and share my findings with you.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2016/06/29_travel-clothes/">[...] Read more</a></p>
+    <p>Probably some of the most uncomfortable things about having a trip to a different country by plane. In this video we go over some of the tips on how to make this more comfortable.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2016/01/21_best-plane-seats/">[...] Read more</a></p>
   </div>
 </div>
     
       <div class="post-block">
   
-    <a href="https://www.voylinslife.com/posts/2017/07/13_plane-convention/"><img src="/images/posts/2017/07/plane-convention.webp" alt="Plane Convention Fly-in Moorsele post image" width="336" height="189" loading="lazy"></a>
+    <a href="https://www.voylinslife.com/posts/2018/06/30_pimsleur-japanese/"><img src="/images/posts/2018/06/pimsleur-japanese.webp" alt="Pimsleur Japanese Review post image" width="336" height="189" loading="lazy"></a>
   
   <br>
   <div class="post-block-info" >
-    <a href="https://www.voylinslife.com/posts/2017/07/13_plane-convention/" class="post-block-info-title"><b>Plane Convention Fly-in Moorsele</b></a><br>
-    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2017-07-13</i>
+    <a href="https://www.voylinslife.com/posts/2018/06/30_pimsleur-japanese/" class="post-block-info-title"><b>Pimsleur Japanese Review</b></a><br>
+    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2018-06-30</i>
     
       &nbsp;-&nbsp;
       <i class="far fa-folder-open"></i>&nbsp;
       <a href="/categories/voylins-life">Voylin&#39;s Life</a>
+      , <a href="/categories/learn-japanese">Learn Japanese</a>
       
     
     </p>
-    <p>Small video of my trip to a plane and fly convention near my city. I&#39;ve always been quite interested in planes and everything that flies (like birds :p).&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2017/07/13_plane-convention/">[...] Read more</a></p>
-  </div>
-</div>
-    
-      <div class="post-block">
-  
-    <a href="https://www.voylinslife.com/posts/2017/11/04_bellewaerde/"><img src="/images/posts/2017/11/bellewaerde.webp" alt="Bellewaerde trip with a friend post image" width="336" height="189" loading="lazy"></a>
-  
-  <br>
-  <div class="post-block-info" >
-    <a href="https://www.voylinslife.com/posts/2017/11/04_bellewaerde/" class="post-block-info-title"><b>Bellewaerde trip with a friend</b></a><br>
-    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2017-11-07</i>
-    
-      &nbsp;-&nbsp;
-      <i class="far fa-folder-open"></i>&nbsp;
-      <a href="/categories/voylins-life">Voylin&#39;s Life</a>
-      
-    
-    </p>
-    <p>A fun day out with one of my friends. Bellewaerde is the amusement park where I have been going to since I was a child.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2017/11/04_bellewaerde/">[...] Read more</a></p>
+    <p>A review about Pimsleur, which I personally find one of the best audio lessons for helping with learning Japanese. But the price tag is unreasonable and hard to justify when there are other audio lessons for free like NHK.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2018/06/30_pimsleur-japanese/">[...] Read more</a></p>
   </div>
 </div>
     

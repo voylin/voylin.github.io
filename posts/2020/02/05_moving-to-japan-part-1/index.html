@@ -45,7 +45,8 @@ if (!doNotTrack) {
   </a>
 
   <script async>
-    function blog_menu_button() {
+    function blog_menu_button(event) {
+      event.preventDefault();
       var blog_menu = document.getElementById("sidebar-blog-menu");
       if (blog_menu.classList.contains("sidebar-show-blog-menu")) {
         blog_menu.classList.remove("sidebar-show-blog-menu");
@@ -73,7 +74,7 @@ if (!doNotTrack) {
         <li>
           
             <a id="sidebar-blog-text" href="/blog" title="Blog">Blog</a>
-            <a id="sidebar-blog-button" onclick="blog_menu_button()" tabindex="0">&nbsp;+</a>
+            <button id="sidebar-blog-button" onclick="blog_menu_button(event)" type="button">&nbsp;+</button>
             <ul id="sidebar-blog-menu">
               <li><a href="/categories/learn-japanese/" title="Learn Japanese">
                 <span class="blog-menu-link">Learn Japanese</span>
@@ -135,9 +136,9 @@ if (!doNotTrack) {
     </div>
   </div>
 
-  <a id="mobile-icon" onclick="mobileMenu()" aria-label="Open mobile menu" tabindex="0">
+  <button id="mobile-icon" onclick="mobileMenu()" aria-label="Open mobile menu">
     <i class="fa fa-bars"></i>
-  </a>
+  </button>
 </header>
 <div id="page-title">
         
@@ -229,50 +230,12 @@ if (!doNotTrack) {
     
       <div class="post-block">
   
-    <a href="https://www.voylinslife.com/posts/2017/04/13_mobile-home-adventure/"><img src="/images/posts/2017/04/mobile-home-adventure.webp" alt="6 Dog&#39;s &#43; Mobile Home Adventure! post image" width="336" height="189" loading="lazy"></a>
+    <a href="https://www.voylinslife.com/posts/2016/01/31_budgeting-whilst-backpacking/"><img src="/images/posts/2016/01/Budgeting-while-backpacking.webp" alt="Budgeting whilst backpacking post image" width="336" height="189" loading="lazy"></a>
   
   <br>
   <div class="post-block-info" >
-    <a href="https://www.voylinslife.com/posts/2017/04/13_mobile-home-adventure/" class="post-block-info-title"><b>6 Dog&#39;s &#43; Mobile Home Adventure!</b></a><br>
-    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2017-04-13</i>
-    
-      &nbsp;-&nbsp;
-      <i class="far fa-folder-open"></i>&nbsp;
-      <a href="/categories/voylins-life">Voylin&#39;s Life</a>
-      
-    
-    </p>
-    <p>This weekend I have been on a small trip in a mobile home with my 6 dog&#39;s, it was quite the adventure but it was mostly to test the mobile home to see if everything was working properly. &nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2017/04/13_mobile-home-adventure/">[...] Read more</a></p>
-  </div>
-</div>
-    
-      <div class="post-block">
-  
-    <a href="https://www.voylinslife.com/posts/2020/03/22_first-month-japan/"><img src="/images/posts/2020/03/first-month-in-Japan.webp" alt="My first month in Japan post image" width="336" height="189" loading="lazy"></a>
-  
-  <br>
-  <div class="post-block-info" >
-    <a href="https://www.voylinslife.com/posts/2020/03/22_first-month-japan/" class="post-block-info-title"><b>My first month in Japan</b></a><br>
-    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2020-03-22</i>
-    
-      &nbsp;-&nbsp;
-      <i class="far fa-folder-open"></i>&nbsp;
-      <a href="/categories/our-life">Our Life</a>
-      
-    
-    </p>
-    <p>The whole move to Japan went smooth, until the paperwork started. The whole process for the wedding papers and visa papers was quite stressful. But I became a Japanese resident in the end and I&#39;m happily married now!&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2020/03/22_first-month-japan/">[...] Read more</a></p>
-  </div>
-</div>
-    
-      <div class="post-block">
-  
-    <a href="https://www.voylinslife.com/posts/2016/01/04_planning_a_trip_tips_-_backpacking_tips/"><img src="/images/posts/2016/01/Planning-your-trip.webp" alt="Planning a trip tips - Backpacking tips post image" width="336" height="189" loading="lazy"></a>
-  
-  <br>
-  <div class="post-block-info" >
-    <a href="https://www.voylinslife.com/posts/2016/01/04_planning_a_trip_tips_-_backpacking_tips/" class="post-block-info-title"><b>Planning a trip tips - Backpacking tips</b></a><br>
-    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2016-01-04</i>
+    <a href="https://www.voylinslife.com/posts/2016/01/31_budgeting-whilst-backpacking/" class="post-block-info-title"><b>Budgeting whilst backpacking</b></a><br>
+    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2016-01-31</i>
     
       &nbsp;-&nbsp;
       <i class="far fa-folder-open"></i>&nbsp;
@@ -281,46 +244,27 @@ if (!doNotTrack) {
       
     
     </p>
-    <p>As a backpacker, planning can be quite necessary to not end up in uncomfortable situations.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2016/01/04_planning_a_trip_tips_-_backpacking_tips/">[...] Read more</a></p>
+    <p>Saving money whilst traveling, but still getting an amazing tavel experience? Let&#39;s talk about how to achieve this as it is easier then you might think and sometimes even give a better traveling experience.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2016/01/31_budgeting-whilst-backpacking/">[...] Read more</a></p>
   </div>
 </div>
     
       <div class="post-block">
   
-    <a href="https://www.voylinslife.com/posts/2017/11/05_hiragana-katakana-one-day/"><img src="/images/posts/2017/11/hiragana-katakana-one-day.webp" alt="Hiragana &amp; Katakana In One Day post image" width="336" height="189" loading="lazy"></a>
+    <a href="https://www.voylinslife.com/posts/2016/07/07_7kg-backpack-worldtrip/"><img src="/images/posts/2016/07/worldtrip.webp" alt="7kg Backpack Worldtrip - Winter edition post image" width="336" height="189" loading="lazy"></a>
   
   <br>
   <div class="post-block-info" >
-    <a href="https://www.voylinslife.com/posts/2017/11/05_hiragana-katakana-one-day/" class="post-block-info-title"><b>Hiragana &amp; Katakana In One Day</b></a><br>
-    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2017-11-05</i>
+    <a href="https://www.voylinslife.com/posts/2016/07/07_7kg-backpack-worldtrip/" class="post-block-info-title"><b>7kg Backpack Worldtrip - Winter edition</b></a><br>
+    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2016-07-07</i>
     
       &nbsp;-&nbsp;
       <i class="far fa-folder-open"></i>&nbsp;
       <a href="/categories/voylins-life">Voylin&#39;s Life</a>
-      , <a href="/categories/learn-japanese">Learn Japanese</a>
+      , <a href="/categories/travel-advice">Travel Advice</a>
       
     
     </p>
-    <p>Let&#39;s learn Hiragana and Katakana today! This is the first big step you should take when starting with learning Japanese and once you know them, you don&#39;t have to review them that often.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2017/11/05_hiragana-katakana-one-day/">[...] Read more</a></p>
-  </div>
-</div>
-    
-      <div class="post-block">
-  
-    <a href="https://www.voylinslife.com/posts/2016/06/15_streetfestival-belgium/"><img src="/images/posts/2016/06/streetfestival.webp" alt="Streetfestival Belgium post image" width="336" height="189" loading="lazy"></a>
-  
-  <br>
-  <div class="post-block-info" >
-    <a href="https://www.voylinslife.com/posts/2016/06/15_streetfestival-belgium/" class="post-block-info-title"><b>Streetfestival Belgium</b></a><br>
-    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2016-06-15</i>
-    
-      &nbsp;-&nbsp;
-      <i class="far fa-folder-open"></i>&nbsp;
-      <a href="/categories/voylins-life">Voylin&#39;s Life</a>
-      
-    
-    </p>
-    <p>In my neighborhood in Belgium where I used to live, we started having a meetup once a year to improve the overall relationship between the neighbors as our whole area had only 1 entry/exit street.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2016/06/15_streetfestival-belgium/">[...] Read more</a></p>
+    <p>When planning a long-term trip or a world trip, it&#39;s easy to be tempted by the idea of packing multiple bags, each with its own specific purpose. However, after having traveled enough with a single backpack, I can confidently say that traveling with just one bag is the way to go, and what I prefer to do when going on a trip.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2016/07/07_7kg-backpack-worldtrip/">[...] Read more</a></p>
   </div>
 </div>
     
@@ -346,12 +290,12 @@ if (!doNotTrack) {
     
       <div class="post-block">
   
-    <a href="https://www.voylinslife.com/posts/2017/05/06_knife-airport-story/"><img src="/images/posts/2017/05/knife-airport-story.webp" alt="W/ Knife through Airport Security post image" width="336" height="189" loading="lazy"></a>
+    <a href="https://www.voylinslife.com/posts/2020/12/09_no-jlpt-this-year/"><img src="/images/posts/2020/12/Bad-News.webp" alt="No JLPT this year post image" width="336" height="189" loading="lazy"></a>
   
   <br>
   <div class="post-block-info" >
-    <a href="https://www.voylinslife.com/posts/2017/05/06_knife-airport-story/" class="post-block-info-title"><b>W/ Knife through Airport Security</b></a><br>
-    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2017-05-06</i>
+    <a href="https://www.voylinslife.com/posts/2020/12/09_no-jlpt-this-year/" class="post-block-info-title"><b>No JLPT this year</b></a><br>
+    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2020-12-09</i>
     
       &nbsp;-&nbsp;
       <i class="far fa-folder-open"></i>&nbsp;
@@ -359,18 +303,78 @@ if (!doNotTrack) {
       
     
     </p>
-    <p>Welcome to my first Story time! Today I am talking about the time that I accidentally took a knife through airport security.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2017/05/06_knife-airport-story/">[...] Read more</a></p>
+    <p>A loot has been happening in this year. Because of those things, I won&#39;t be taken the JLPT this year. It can&#39;t be helped.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2020/12/09_no-jlpt-this-year/">[...] Read more</a></p>
   </div>
 </div>
     
       <div class="post-block">
   
-    <a href="https://www.voylinslife.com/posts/2016/10/22_departure-big-adventure/"><img src="/images/posts/2016/10/departure-big-adventure.webp" alt="Departure on My Big Adventure post image" width="336" height="189" loading="lazy"></a>
+    <a href="https://www.voylinslife.com/posts/2016/01/17_sleeping_on_a_plane/"><img src="/images/posts/2016/01/sleeping-on-a-plane.webp" alt="Sleeping on a plane post image" width="336" height="189" loading="lazy"></a>
   
   <br>
   <div class="post-block-info" >
-    <a href="https://www.voylinslife.com/posts/2016/10/22_departure-big-adventure/" class="post-block-info-title"><b>Departure on My Big Adventure</b></a><br>
-    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2016-10-22</i>
+    <a href="https://www.voylinslife.com/posts/2016/01/17_sleeping_on_a_plane/" class="post-block-info-title"><b>Sleeping on a plane</b></a><br>
+    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2016-01-17</i>
+    
+      &nbsp;-&nbsp;
+      <i class="far fa-folder-open"></i>&nbsp;
+      <a href="/categories/voylins-life">Voylin&#39;s Life</a>
+      , <a href="/categories/travel-advice">Travel Advice</a>
+      
+    
+    </p>
+    <p>Planes are probably one of the most annoying things when traveling as you can never get enough sleep on them. Let&#39;s talk about methods to improve your sleeping experience.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2016/01/17_sleeping_on_a_plane/">[...] Read more</a></p>
+  </div>
+</div>
+    
+      <div class="post-block">
+  
+    <a href="https://www.voylinslife.com/posts/2016/01/21_best-plane-seats/"><img src="/images/posts/2016/01/best-plane-seats.webp" alt="Best Plane Seats post image" width="336" height="189" loading="lazy"></a>
+  
+  <br>
+  <div class="post-block-info" >
+    <a href="https://www.voylinslife.com/posts/2016/01/21_best-plane-seats/" class="post-block-info-title"><b>Best Plane Seats</b></a><br>
+    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2016-02-21</i>
+    
+      &nbsp;-&nbsp;
+      <i class="far fa-folder-open"></i>&nbsp;
+      <a href="/categories/voylins-life">Voylin&#39;s Life</a>
+      , <a href="/categories/travel-advice">Travel Advice</a>
+      
+    
+    </p>
+    <p>Probably some of the most uncomfortable things about having a trip to a different country by plane. In this video we go over some of the tips on how to make this more comfortable.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2016/01/21_best-plane-seats/">[...] Read more</a></p>
+  </div>
+</div>
+    
+      <div class="post-block">
+  
+    <a href="https://www.voylinslife.com/posts/2022/04/08_japan-free-wifi/"><img src="/images/posts/2022/04/japan-free-wifi.webp" alt="Do you need a data sim card in Japan? post image" width="336" height="189" loading="lazy"></a>
+  
+  <br>
+  <div class="post-block-info" >
+    <a href="https://www.voylinslife.com/posts/2022/04/08_japan-free-wifi/" class="post-block-info-title"><b>Do you need a data sim card in Japan?</b></a><br>
+    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2022-04-08</i>
+    
+      &nbsp;-&nbsp;
+      <i class="far fa-folder-open"></i>&nbsp;
+      <a href="/categories/voylins-life">Voylin&#39;s Life</a>
+      , <a href="/categories/travel-advice">Travel Advice</a>
+      
+    
+    </p>
+    <p>You are planning your trip in Japan and you want to stay connected with the internet for convenience. Do you need a simcard or not? Let&#39;s talk about why you may not need a simcard at all.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2022/04/08_japan-free-wifi/">[...] Read more</a></p>
+  </div>
+</div>
+    
+      <div class="post-block">
+  
+    <a href="https://www.voylinslife.com/posts/2017/06/29_kayaking-adventure/"><img src="/images/posts/2017/06/kayaking-adventure.webp" alt="Kayaking Adventure - Semoine post image" width="336" height="189" loading="lazy"></a>
+  
+  <br>
+  <div class="post-block-info" >
+    <a href="https://www.voylinslife.com/posts/2017/06/29_kayaking-adventure/" class="post-block-info-title"><b>Kayaking Adventure - Semoine</b></a><br>
+    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2017-06-29</i>
     
       &nbsp;-&nbsp;
       <i class="far fa-folder-open"></i>&nbsp;
@@ -378,7 +382,7 @@ if (!doNotTrack) {
       
     
     </p>
-    <p>The departure on my big adventure was quite a big one, as I quit my job to go on this adventure. What many people didn&#39;t know was that I had a mission, but there were reasons behind this decision.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2016/10/22_departure-big-adventure/">[...] Read more</a></p>
+    <p>A long and hard adventure in a kayak, I felt so tired and I really thought I filmed more. I really like kayaking, but the river was in a very terrible shape with all the greenery.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2017/06/29_kayaking-adventure/">[...] Read more</a></p>
   </div>
 </div>
     

@@ -23,15 +23,24 @@
   --footer-info-text-color: #bcbcbc;
 } body {margin: 0px; }
 
-a {
+a, button {
   color: var(--link-color);
   text-decoration: none;
   transition: 0.5s;
 }
 
-a:hover {
+a:hover, button:hover  {
+  content: "";
   color: var(--link-hover-color);
 }
+
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  box-shadow: none;
+}
+
 
 /** HEADER STUFF **/
 
@@ -97,14 +106,19 @@ nav a {
 }
 
 #sidebar-blog-button {
-  display: inline-flex;
+  display: table-cell;
+  vertical-align: middle;
   float: right;
   z-index: 1;
-  width: 40px ;
+  width: 50px;
+  height: 40px;
   border-bottom: 0px;
   margin-top: -45px;
   cursor: pointer;
   text-align: center;
+  font-size: x-large;
+  position: relative;
+  z-index: 999;
 }
 
 #sidebar-blog-menu {

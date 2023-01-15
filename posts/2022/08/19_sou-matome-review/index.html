@@ -45,7 +45,8 @@ if (!doNotTrack) {
   </a>
 
   <script async>
-    function blog_menu_button() {
+    function blog_menu_button(event) {
+      event.preventDefault();
       var blog_menu = document.getElementById("sidebar-blog-menu");
       if (blog_menu.classList.contains("sidebar-show-blog-menu")) {
         blog_menu.classList.remove("sidebar-show-blog-menu");
@@ -73,7 +74,7 @@ if (!doNotTrack) {
         <li>
           
             <a id="sidebar-blog-text" href="/blog" title="Blog">Blog</a>
-            <a id="sidebar-blog-button" onclick="blog_menu_button()" tabindex="0">&nbsp;+</a>
+            <button id="sidebar-blog-button" onclick="blog_menu_button(event)" type="button">&nbsp;+</button>
             <ul id="sidebar-blog-menu">
               <li><a href="/categories/learn-japanese/" title="Learn Japanese">
                 <span class="blog-menu-link">Learn Japanese</span>
@@ -135,9 +136,9 @@ if (!doNotTrack) {
     </div>
   </div>
 
-  <a id="mobile-icon" onclick="mobileMenu()" aria-label="Open mobile menu" tabindex="0">
+  <button id="mobile-icon" onclick="mobileMenu()" aria-label="Open mobile menu">
     <i class="fa fa-bars"></i>
-  </a>
+  </button>
 </header>
 <div id="page-title">
         
@@ -240,12 +241,31 @@ if (!doNotTrack) {
     
       <div class="post-block">
   
-    <a href="https://www.voylinslife.com/posts/2017/04/11_packing-list-essentials/"><img src="/images/posts/2017/04/packing-list-essentials.webp" alt="Travel List Packing - Essentials Only post image" width="336" height="189" loading="lazy"></a>
+    <a href="https://www.voylinslife.com/posts/2015/12/28_posting-a-letter-daytrip-by-bike/"><img src="/images/posts/2015/12/posting-a-letter.webp" alt="Posting a Letter - Day-trip by Bike post image" width="336" height="189" loading="lazy"></a>
   
   <br>
   <div class="post-block-info" >
-    <a href="https://www.voylinslife.com/posts/2017/04/11_packing-list-essentials/" class="post-block-info-title"><b>Travel List Packing - Essentials Only</b></a><br>
-    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2017-04-11</i>
+    <a href="https://www.voylinslife.com/posts/2015/12/28_posting-a-letter-daytrip-by-bike/" class="post-block-info-title"><b>Posting a Letter - Day-trip by Bike</b></a><br>
+    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2015-12-28</i>
+    
+      &nbsp;-&nbsp;
+      <i class="far fa-folder-open"></i>&nbsp;
+      <a href="/categories/voylins-life">Voylin&#39;s Life</a>
+      
+    
+    </p>
+    <p>It was a fun day-trip and now 6 years after making this video, I feel kind of nostalgic about Belgium and the relaxing area where I used to grew up in. &nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2015/12/28_posting-a-letter-daytrip-by-bike/">[...] Read more</a></p>
+  </div>
+</div>
+    
+      <div class="post-block">
+  
+    <a href="https://www.voylinslife.com/posts/2022/04/08_japan-free-wifi/"><img src="/images/posts/2022/04/japan-free-wifi.webp" alt="Do you need a data sim card in Japan? post image" width="336" height="189" loading="lazy"></a>
+  
+  <br>
+  <div class="post-block-info" >
+    <a href="https://www.voylinslife.com/posts/2022/04/08_japan-free-wifi/" class="post-block-info-title"><b>Do you need a data sim card in Japan?</b></a><br>
+    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2022-04-08</i>
     
       &nbsp;-&nbsp;
       <i class="far fa-folder-open"></i>&nbsp;
@@ -254,18 +274,38 @@ if (!doNotTrack) {
       
     
     </p>
-    <p>Traveling for an extended period of time can be daunting, especially when it comes to packing all of your essentials into one backpack. In this article, we&#39;ll show you how to pack your backpack efficiently and still have room for souvenirs.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2017/04/11_packing-list-essentials/">[...] Read more</a></p>
+    <p>You are planning your trip in Japan and you want to stay connected with the internet for convenience. Do you need a simcard or not? Let&#39;s talk about why you may not need a simcard at all.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2022/04/08_japan-free-wifi/">[...] Read more</a></p>
   </div>
 </div>
     
       <div class="post-block">
   
-    <a href="https://www.voylinslife.com/posts/2018/06/29_fulltime-japanese-student/"><img src="/images/posts/2018/06/fulltime-japanese-student.webp" alt="Full-time Japanese Student (2018) post image" width="336" height="189" loading="lazy"></a>
+    <a href="https://www.voylinslife.com/posts/2016/01/07_what-you-cant-take-on-a-plane/"><img src="/images/posts/2016/01/Airport-Luggage.webp" alt="What you can&#39;t take on a plane post image" width="336" height="189" loading="lazy"></a>
   
   <br>
   <div class="post-block-info" >
-    <a href="https://www.voylinslife.com/posts/2018/06/29_fulltime-japanese-student/" class="post-block-info-title"><b>Full-time Japanese Student (2018)</b></a><br>
-    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2018-06-29</i>
+    <a href="https://www.voylinslife.com/posts/2016/01/07_what-you-cant-take-on-a-plane/" class="post-block-info-title"><b>What you can&#39;t take on a plane</b></a><br>
+    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2016-01-07</i>
+    
+      &nbsp;-&nbsp;
+      <i class="far fa-folder-open"></i>&nbsp;
+      <a href="/categories/voylins-life">Voylin&#39;s Life</a>
+      , <a href="/categories/travel-advice">Travel Advice</a>
+      
+    
+    </p>
+    <p>When traveling by plane, there is always a slight fear if something will be wrong with your luggage or not.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2016/01/07_what-you-cant-take-on-a-plane/">[...] Read more</a></p>
+  </div>
+</div>
+    
+      <div class="post-block">
+  
+    <a href="https://www.voylinslife.com/posts/2021/09/30_road-to-n1/"><img src="/images/posts/2021/09/road-to-n1.webp" alt="Beginning of Road to N1 post image" width="336" height="189" loading="lazy"></a>
+  
+  <br>
+  <div class="post-block-info" >
+    <a href="https://www.voylinslife.com/posts/2021/09/30_road-to-n1/" class="post-block-info-title"><b>Beginning of Road to N1</b></a><br>
+    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2022-01-12</i>
     
       &nbsp;-&nbsp;
       <i class="far fa-folder-open"></i>&nbsp;
@@ -274,18 +314,18 @@ if (!doNotTrack) {
       
     
     </p>
-    <p>In this video, I explain how it is to be studying Japanese in a way like having a full-time job. I explain how it feels like and what you have to take in mind.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2018/06/29_fulltime-japanese-student/">[...] Read more</a></p>
+    <p>Road to N1 is the name of the vlog series in which I try to work towards achieving JLPT N1 level. It is the highest level of the JLPT and some say that even Japanese people have a hard time not making any mistakes. It is a big goal and something which is still very far away for me to achieve.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2021/09/30_road-to-n1/">[...] Read more</a></p>
   </div>
 </div>
     
       <div class="post-block">
   
-    <a href="https://www.voylinslife.com/posts/2016/02/03_4-most-common-travel-scams/"><img src="/images/posts/2016/02/4-most-common-travel-scams.webp" alt="4 Most Common Travel Scams post image" width="336" height="189" loading="lazy"></a>
+    <a href="https://www.voylinslife.com/posts/2016/01/17_sleeping_on_a_plane/"><img src="/images/posts/2016/01/sleeping-on-a-plane.webp" alt="Sleeping on a plane post image" width="336" height="189" loading="lazy"></a>
   
   <br>
   <div class="post-block-info" >
-    <a href="https://www.voylinslife.com/posts/2016/02/03_4-most-common-travel-scams/" class="post-block-info-title"><b>4 Most Common Travel Scams</b></a><br>
-    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2016-02-03</i>
+    <a href="https://www.voylinslife.com/posts/2016/01/17_sleeping_on_a_plane/" class="post-block-info-title"><b>Sleeping on a plane</b></a><br>
+    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2016-01-17</i>
     
       &nbsp;-&nbsp;
       <i class="far fa-folder-open"></i>&nbsp;
@@ -294,7 +334,7 @@ if (!doNotTrack) {
       
     
     </p>
-    <p>Whilst traveling, there’s nothing worse than falling into a scam and possibly losing a lot of money, ruining your vacations or in the worst case, getting stuck abroad because you have nothing left to afford your way back home nor contact home.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2016/02/03_4-most-common-travel-scams/">[...] Read more</a></p>
+    <p>Planes are probably one of the most annoying things when traveling as you can never get enough sleep on them. Let&#39;s talk about methods to improve your sleeping experience.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2016/01/17_sleeping_on_a_plane/">[...] Read more</a></p>
   </div>
 </div>
     
@@ -319,12 +359,12 @@ if (!doNotTrack) {
     
       <div class="post-block">
   
-    <a href="https://www.voylinslife.com/posts/2017/04/06_packing-list-clothes/"><img src="/images/posts/2017/04/packing-list-clothes.webp" alt="Packing list - Clothes -Travel Essentials post image" width="336" height="189" loading="lazy"></a>
+    <a href="https://www.voylinslife.com/posts/2016/01/27_japan-travel-advice-2/"><img src="/images/posts/2016/01/japan-advice-2.webp" alt="Japan - Travel advice 2 post image" width="336" height="189" loading="lazy"></a>
   
   <br>
   <div class="post-block-info" >
-    <a href="https://www.voylinslife.com/posts/2017/04/06_packing-list-clothes/" class="post-block-info-title"><b>Packing list - Clothes -Travel Essentials</b></a><br>
-    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2017-04-06</i>
+    <a href="https://www.voylinslife.com/posts/2016/01/27_japan-travel-advice-2/" class="post-block-info-title"><b>Japan - Travel advice 2</b></a><br>
+    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2016-01-27</i>
     
       &nbsp;-&nbsp;
       <i class="far fa-folder-open"></i>&nbsp;
@@ -333,65 +373,27 @@ if (!doNotTrack) {
       
     
     </p>
-    <p>When it comes to packing for a backpacking trip, it can be tempting to bring along every piece of clothing you own. However, it&#39;s important to remember that space and weight are limited, so it&#39;s important to be selective about the clothes you bring.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2017/04/06_packing-list-clothes/">[...] Read more</a></p>
+    <p>Made another blogpost about travel advice for Japan, but there were some things I wanted to add to it so I made a new post and video for this.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2016/01/27_japan-travel-advice-2/">[...] Read more</a></p>
   </div>
 </div>
     
       <div class="post-block">
   
-    <a href="https://www.voylinslife.com/posts/2016/06/15_streetfestival-belgium/"><img src="/images/posts/2016/06/streetfestival.webp" alt="Streetfestival Belgium post image" width="336" height="189" loading="lazy"></a>
+    <a href="https://www.voylinslife.com/posts/2016/01/21_one-bag-travel/"><img src="/images/posts/2016/01/One-bag-travel.webp" alt="One Bag Travel - Winter post image" width="336" height="189" loading="lazy"></a>
   
   <br>
   <div class="post-block-info" >
-    <a href="https://www.voylinslife.com/posts/2016/06/15_streetfestival-belgium/" class="post-block-info-title"><b>Streetfestival Belgium</b></a><br>
-    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2016-06-15</i>
+    <a href="https://www.voylinslife.com/posts/2016/01/21_one-bag-travel/" class="post-block-info-title"><b>One Bag Travel - Winter</b></a><br>
+    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2016-01-21</i>
     
       &nbsp;-&nbsp;
       <i class="far fa-folder-open"></i>&nbsp;
       <a href="/categories/voylins-life">Voylin&#39;s Life</a>
+      , <a href="/categories/travel-advice">Travel Advice</a>
       
     
     </p>
-    <p>In my neighborhood in Belgium where I used to live, we started having a meetup once a year to improve the overall relationship between the neighbors as our whole area had only 1 entry/exit street.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2016/06/15_streetfestival-belgium/">[...] Read more</a></p>
-  </div>
-</div>
-    
-      <div class="post-block">
-  
-    <a href="https://www.voylinslife.com/posts/2018/06/30_pimsleur-japanese/"><img src="/images/posts/2018/06/pimsleur-japanese.webp" alt="Pimsleur Japanese Review post image" width="336" height="189" loading="lazy"></a>
-  
-  <br>
-  <div class="post-block-info" >
-    <a href="https://www.voylinslife.com/posts/2018/06/30_pimsleur-japanese/" class="post-block-info-title"><b>Pimsleur Japanese Review</b></a><br>
-    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2018-06-30</i>
-    
-      &nbsp;-&nbsp;
-      <i class="far fa-folder-open"></i>&nbsp;
-      <a href="/categories/voylins-life">Voylin&#39;s Life</a>
-      , <a href="/categories/learn-japanese">Learn Japanese</a>
-      
-    
-    </p>
-    <p>A review about Pimsleur, which I personally find one of the best audio lessons for helping with learning Japanese. But the price tag is unreasonable and hard to justify when there are other audio lessons for free like NHK.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2018/06/30_pimsleur-japanese/">[...] Read more</a></p>
-  </div>
-</div>
-    
-      <div class="post-block">
-  
-    <a href="https://www.voylinslife.com/posts/2020/03/22_first-month-japan/"><img src="/images/posts/2020/03/first-month-in-Japan.webp" alt="My first month in Japan post image" width="336" height="189" loading="lazy"></a>
-  
-  <br>
-  <div class="post-block-info" >
-    <a href="https://www.voylinslife.com/posts/2020/03/22_first-month-japan/" class="post-block-info-title"><b>My first month in Japan</b></a><br>
-    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2020-03-22</i>
-    
-      &nbsp;-&nbsp;
-      <i class="far fa-folder-open"></i>&nbsp;
-      <a href="/categories/our-life">Our Life</a>
-      
-    
-    </p>
-    <p>The whole move to Japan went smooth, until the paperwork started. The whole process for the wedding papers and visa papers was quite stressful. But I became a Japanese resident in the end and I&#39;m happily married now!&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2020/03/22_first-month-japan/">[...] Read more</a></p>
+    <p>There is nothing as convenient as travelling somewhere with just a backpack. Let&#39;s talk about the benefits and how to do it correctly.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2016/01/21_one-bag-travel/">[...] Read more</a></p>
   </div>
 </div>
     
