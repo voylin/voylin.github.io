@@ -5,10 +5,9 @@
   <title>Voylin&#39;s Life - 4 years learning Japanese - </title>
   <meta name="description" content="Having learned Japanese for the past 4 years has been quite a big challenge. I would like to share this entire learning journey so far, as in a couple of months I&#39;ll be moving to Japan.">
   <link rel="icon" type="image/x-icon" href="/site_assets/favicon.svg">
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/style_v1.css">
+  <link rel="stylesheet" href="/css/font-awesome-all_v1.css">
   <link rel="canonical" href="https://www.voylinslife.com/posts/2020/01/16_4-years-learning-japanese/">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8509752797763329" crossorigin="anonymous"></script>
   <meta property="og:title" content="4 years learning Japanese" />
 <meta property="og:description" content="Having learned Japanese for the past 4 years has been quite a big challenge. I would like to share this entire learning journey so far, as in a couple of months I&#39;ll be moving to Japan." />
 <meta property="og:type" content="article" />
@@ -21,21 +20,6 @@
 <meta name="twitter:title" content="4 years learning Japanese"/>
 <meta name="twitter:description" content="Having learned Japanese for the past 4 years has been quite a big challenge. I would like to share this entire learning journey so far, as in a couple of months I&#39;ll be moving to Japan."/>
 
-
-  
-    
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'G-15YVCH6129', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
-  
 </head>
 
 <body><header>
@@ -43,8 +27,9 @@ if (!doNotTrack) {
     <img src="/site_assets/site-logo.svg" alt="Voylin's Life" width="258" height="62">
   </a>
 
-  <script>
-    function blog_menu_button() {
+  <script async>
+    function blog_menu_button(event) {
+      event.preventDefault();
       var blog_menu = document.getElementById("sidebar-blog-menu");
       if (blog_menu.classList.contains("sidebar-show-blog-menu")) {
         blog_menu.classList.remove("sidebar-show-blog-menu");
@@ -72,7 +57,7 @@ if (!doNotTrack) {
         <li>
           
             <a id="sidebar-blog-text" href="/blog" title="Blog">Blog</a>
-            <a id="sidebar-blog-button" onclick="blog_menu_button()">&nbsp;+</a>
+            <button id="sidebar-blog-button" onclick="blog_menu_button(event)" type="button">&nbsp;+</button>
             <ul id="sidebar-blog-menu">
               <li><a href="/categories/learn-japanese/" title="Learn Japanese">
                 <span class="blog-menu-link">Learn Japanese</span>
@@ -89,10 +74,6 @@ if (!doNotTrack) {
               <li><a href="/categories/voylins-life/" title="Voylin's life">
                 <span class="blog-menu-link">Voylin's life</span>
                 <span class="blog-menu-link-info">Everything about my youtube channel</span>
-              </a></li>
-              <li><a href="/categories/日本語で/" title="日本語で">
-                <span class="blog-menu-link">日本語で</span>
-                <span class="blog-menu-link-info">日本語だけです。できるかな？</span>
               </a></li>
             </ul>
           
@@ -129,14 +110,12 @@ if (!doNotTrack) {
       
         <a href="https://twitter.com/voylinslife" title="Twitter" target="_blank"><i class='fab fa-twitter'></i></a>
       
-        <a href="https://www.twitch.tv/voylin" title="Twitch" target="_blank"><i class='fab fa-twitch'></i></a>
-      
     </div>
   </div>
 
-  <a href="javascript:void(0);" id="mobile-icon" onclick="mobileMenu()">
+  <button id="mobile-icon" onclick="mobileMenu()" aria-label="Open mobile menu">
     <i class="fa fa-bars"></i>
-  </a>
+  </button>
 </header>
 <div id="page-title">
         
@@ -240,7 +219,7 @@ Over-exhausting, discovering limits, fun adventures in Japan and camping, meetin
     <p id="prev-post-button">
       
         Previous post:<br/>
-        <a href="https://www.voylinslife.com/posts/2018/07/08_linux-japanese-keyboard/">Typing Japanese on Linux - [AZERY and QWERTY]</a>
+        <a href="https://www.voylinslife.com/posts/2020/01/09_denshi-jisho/">Do you need an Electronic Dictionary</a>
       
     </p>
     <p id="next-post-button">
@@ -257,71 +236,12 @@ Over-exhausting, discovering limits, fun adventures in Japan and camping, meetin
     
       <div class="post-block">
   
-    <a href="https://www.voylinslife.com/posts/2021/10/10_%E3%81%8B%E3%81%AB%E3%81%8B%E3%81%AB/"><img src="/images/posts/2021/10/kanikani.webp" alt="かにかに post image" width="336" height="189" loading="lazy"></a>
+    <a href="https://www.voylinslife.com/posts/2020/08/23_ultimate-anki-deck/"><img src="/images/posts/2020/08/ultimate-anki-deck.webp" alt="Ultimate Japanese Anki Deck - JPSB post image" width="336" height="189" loading="lazy"></a>
   
   <br>
   <div class="post-block-info" >
-    <a href="https://www.voylinslife.com/posts/2021/10/10_%E3%81%8B%E3%81%AB%E3%81%8B%E3%81%AB/" class="post-block-info-title"><b>かにかに</b></a><br>
-    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2021-10-10</i>
-    
-      &nbsp;-&nbsp;
-      <i class="far fa-folder-open"></i>&nbsp;
-      <a href="/categories/our-life">Our Life</a>
-      , <a href="/categories/%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%81%A7">日本語で</a>
-      
-    
-    </p>
-    <p>このことに2日前に気付いた私の父は何かをしようと企んだが、私が「かに道楽は？」というとそこになった。かに大好き一族。&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2021/10/10_%E3%81%8B%E3%81%AB%E3%81%8B%E3%81%AB/">[...] Read more</a></p>
-  </div>
-</div>
-    
-      <div class="post-block">
-  
-    <a href="https://www.voylinslife.com/posts/2016/05/03_first-trip-to-japan/"><img src="/images/posts/2016/05/First-trip-to-Japan.webp" alt="First trip to Japan post image" width="336" height="189" loading="lazy"></a>
-  
-  <br>
-  <div class="post-block-info" >
-    <a href="https://www.voylinslife.com/posts/2016/05/03_first-trip-to-japan/" class="post-block-info-title"><b>First trip to Japan</b></a><br>
-    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2016-05-03</i>
-    
-      &nbsp;-&nbsp;
-      <i class="far fa-folder-open"></i>&nbsp;
-      <a href="/categories/voylins-life">Voylin&#39;s Life</a>
-      , <a href="/categories/travel-advice">Travel Advice</a>
-      
-    
-    </p>
-    <p>I went on my first trip to Japan in 2016 and was completely sold to the nature, culture, history, ... 2 weeks after being back in Belgium I decided to quit my job and stay there for some time as a tourist.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2016/05/03_first-trip-to-japan/">[...] Read more</a></p>
-  </div>
-</div>
-    
-      <div class="post-block">
-  
-    <a href="https://www.voylinslife.com/posts/2016/01/23_starting-with-photography/"><img src="/images/posts/2016/01/photography.webp" alt="Starting With Photography post image" width="336" height="189" loading="lazy"></a>
-  
-  <br>
-  <div class="post-block-info" >
-    <a href="https://www.voylinslife.com/posts/2016/01/23_starting-with-photography/" class="post-block-info-title"><b>Starting With Photography</b></a><br>
-    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2016-01-23</i>
-    
-      &nbsp;-&nbsp;
-      <i class="far fa-folder-open"></i>&nbsp;
-      <a href="/categories/voylins-life">Voylin&#39;s Life</a>
-      
-    
-    </p>
-    <p>Today I wanted to try out photography, to see how good or how bad I am xp I had these pictures saved somewhere but I lost them sadly enough. ^^&#39; Oh well, look on my instagram if you want to see if my skills became any better hahah.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2016/01/23_starting-with-photography/">[...] Read more</a></p>
-  </div>
-</div>
-    
-      <div class="post-block">
-  
-    <a href="https://www.voylinslife.com/posts/2020/04/29_all-jlpt-n4-grammar/"><img src="/images/posts/2020/04/All-JLPT-N4-Grammar.webp" alt="All JLPT N4 Grammar post image" width="336" height="189" loading="lazy"></a>
-  
-  <br>
-  <div class="post-block-info" >
-    <a href="https://www.voylinslife.com/posts/2020/04/29_all-jlpt-n4-grammar/" class="post-block-info-title"><b>All JLPT N4 Grammar</b></a><br>
-    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2020-04-29</i>
+    <a href="https://www.voylinslife.com/posts/2020/08/23_ultimate-anki-deck/" class="post-block-info-title"><b>Ultimate Japanese Anki Deck - JPSB</b></a><br>
+    <p class="metadata"><i class="far fa-calendar-alt" ></i>&nbsp;2020-08-23
     
       &nbsp;-&nbsp;
       <i class="far fa-folder-open"></i>&nbsp;
@@ -330,27 +250,47 @@ Over-exhausting, discovering limits, fun adventures in Japan and camping, meetin
       
     
     </p>
-    <p>All JLPT N4 grammar rules which I could find, put into an easy to watch video. Enjoy!&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2020/04/29_all-jlpt-n4-grammar/">[...] Read more</a></p>
+    <p>Learn this all and you can pass the JLPT N3 test, and you will be halfway passing the N2 as well. But this was made to learn Japanese, not to pass any kind of test.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2020/08/23_ultimate-anki-deck/">[...] Read more</a></p>
   </div>
 </div>
     
       <div class="post-block">
   
-    <a href="https://www.voylinslife.com/posts/2016/01/21_best-plane-seats/"><img src="/images/posts/2016/01/best-plane-seats.webp" alt="Best Plane Seats post image" width="336" height="189" loading="lazy"></a>
+    <a href="https://www.voylinslife.com/posts/2018/07/19_secret-to-learning-japanese/"><img src="/images/posts/2018/07/secret-to-learning-japanese.webp" alt="Secret to Learning Japanese post image" width="336" height="189" loading="lazy"></a>
   
   <br>
   <div class="post-block-info" >
-    <a href="https://www.voylinslife.com/posts/2016/01/21_best-plane-seats/" class="post-block-info-title"><b>Best Plane Seats</b></a><br>
-    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2016-02-21</i>
+    <a href="https://www.voylinslife.com/posts/2018/07/19_secret-to-learning-japanese/" class="post-block-info-title"><b>Secret to Learning Japanese</b></a><br>
+    <p class="metadata"><i class="far fa-calendar-alt" ></i>&nbsp;2018-07-19
     
       &nbsp;-&nbsp;
       <i class="far fa-folder-open"></i>&nbsp;
       <a href="/categories/voylins-life">Voylin&#39;s Life</a>
-      , <a href="/categories/travel-advice">Travel Advice</a>
+      , <a href="/categories/learn-japanese">Learn Japanese</a>
       
     
     </p>
-    <p>Probably some of the most uncomfortable things about having a trip to a different country by plane. In this video we go over some of the tips on how to make this more comfortable.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2016/01/21_best-plane-seats/">[...] Read more</a></p>
+    <p>Basic description&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2018/07/19_secret-to-learning-japanese/">[...] Read more</a></p>
+  </div>
+</div>
+    
+      <div class="post-block">
+  
+    <a href="https://www.voylinslife.com/posts/2020/01/06_my-anki-setup/"><img src="/images/posts/2020/01/my-anki-setup.webp" alt="My Anki Setup – Learning Japanese post image" width="336" height="189" loading="lazy"></a>
+  
+  <br>
+  <div class="post-block-info" >
+    <a href="https://www.voylinslife.com/posts/2020/01/06_my-anki-setup/" class="post-block-info-title"><b>My Anki Setup – Learning Japanese</b></a><br>
+    <p class="metadata"><i class="far fa-calendar-alt" ></i>&nbsp;2020-01-06
+    
+      &nbsp;-&nbsp;
+      <i class="far fa-folder-open"></i>&nbsp;
+      <a href="/categories/voylins-life">Voylin&#39;s Life</a>
+      , <a href="/categories/learn-japanese">Learn Japanese</a>
+      
+    
+    </p>
+    <p>An Anki setup is like a living breathing thing, it always changes and evolves, it basically can grow together with you if you can work with it in harmony.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2020/01/06_my-anki-setup/">[...] Read more</a></p>
   </div>
 </div>
     
@@ -361,7 +301,7 @@ Over-exhausting, discovering limits, fun adventures in Japan and camping, meetin
   <br>
   <div class="post-block-info" >
     <a href="https://www.voylinslife.com/posts/2017/01/06_exploring-bali/" class="post-block-info-title"><b>Adventures in Bali</b></a><br>
-    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2017-01-06</i>
+    <p class="metadata"><i class="far fa-calendar-alt" ></i>&nbsp;2017-01-06
     
       &nbsp;-&nbsp;
       <i class="far fa-folder-open"></i>&nbsp;
@@ -375,31 +315,52 @@ Over-exhausting, discovering limits, fun adventures in Japan and camping, meetin
     
       <div class="post-block">
   
-    <a href="https://www.voylinslife.com/posts/2017/07/13_plane-convention/"><img src="/images/posts/2017/07/plane-convention.webp" alt="Plane Convention Fly-in Moorsele post image" width="336" height="189" loading="lazy"></a>
+    <a href="https://www.voylinslife.com/posts/2017/11/05_hiragana-katakana-one-day/"><img src="/images/posts/2017/11/hiragana-katakana-one-day.webp" alt="Hiragana &amp; Katakana In One Day post image" width="336" height="189" loading="lazy"></a>
   
   <br>
   <div class="post-block-info" >
-    <a href="https://www.voylinslife.com/posts/2017/07/13_plane-convention/" class="post-block-info-title"><b>Plane Convention Fly-in Moorsele</b></a><br>
-    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2017-07-13</i>
+    <a href="https://www.voylinslife.com/posts/2017/11/05_hiragana-katakana-one-day/" class="post-block-info-title"><b>Hiragana &amp; Katakana In One Day</b></a><br>
+    <p class="metadata"><i class="far fa-calendar-alt" ></i>&nbsp;2017-11-05
     
       &nbsp;-&nbsp;
       <i class="far fa-folder-open"></i>&nbsp;
       <a href="/categories/voylins-life">Voylin&#39;s Life</a>
+      , <a href="/categories/learn-japanese">Learn Japanese</a>
       
     
     </p>
-    <p>Small video of my trip to a plane and fly convention near my city. I&#39;ve always been quite interested in planes and everything that flies (like birds :p).&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2017/07/13_plane-convention/">[...] Read more</a></p>
+    <p>Let&#39;s learn Hiragana and Katakana today! This is the first big step you should take when starting with learning Japanese and once you know them, you don&#39;t have to review them that often.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2017/11/05_hiragana-katakana-one-day/">[...] Read more</a></p>
   </div>
 </div>
     
       <div class="post-block">
   
-    <a href="https://www.voylinslife.com/posts/2020/02/05_moving-to-japan/"><img src="/images/posts/2020/02/moving-to-Japan.webp" alt="Moving to Japan post image" width="336" height="189" loading="lazy"></a>
+    <a href="https://www.voylinslife.com/posts/2020/07/29_day-in-life-lockdown/"><img src="/images/posts/2020/07/day-in-life-lockdown.webp" alt="A day in my life in Japan - During Lockdown post image" width="336" height="189" loading="lazy"></a>
   
   <br>
   <div class="post-block-info" >
-    <a href="https://www.voylinslife.com/posts/2020/02/05_moving-to-japan/" class="post-block-info-title"><b>Moving to Japan</b></a><br>
-    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2020-02-05</i>
+    <a href="https://www.voylinslife.com/posts/2020/07/29_day-in-life-lockdown/" class="post-block-info-title"><b>A day in my life in Japan - During Lockdown</b></a><br>
+    <p class="metadata"><i class="far fa-calendar-alt" ></i>&nbsp;2020-07-29
+    
+      &nbsp;-&nbsp;
+      <i class="far fa-folder-open"></i>&nbsp;
+      <a href="/categories/voylins-life">Voylin&#39;s Life</a>
+      , <a href="/categories/our-life">Our Life</a>
+      
+    
+    </p>
+    <p>Not much to do as everything is closed and we are advised to stay inside. Most day&#39;s I study, play games, study and that&#39;s about it. Not really interesting, or is it?&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2020/07/29_day-in-life-lockdown/">[...] Read more</a></p>
+  </div>
+</div>
+    
+      <div class="post-block">
+  
+    <a href="https://www.voylinslife.com/posts/2017/04/13_mobile-home-adventure/"><img src="/images/posts/2017/04/mobile-home-adventure.webp" alt="6 Dog&#39;s &#43; Mobile Home Adventure! post image" width="336" height="189" loading="lazy"></a>
+  
+  <br>
+  <div class="post-block-info" >
+    <a href="https://www.voylinslife.com/posts/2017/04/13_mobile-home-adventure/" class="post-block-info-title"><b>6 Dog&#39;s &#43; Mobile Home Adventure!</b></a><br>
+    <p class="metadata"><i class="far fa-calendar-alt" ></i>&nbsp;2017-04-13
     
       &nbsp;-&nbsp;
       <i class="far fa-folder-open"></i>&nbsp;
@@ -407,7 +368,27 @@ Over-exhausting, discovering limits, fun adventures in Japan and camping, meetin
       
     
     </p>
-    <p>After having studied Japanese for 4 years (which is not enough at all), I&#39;ll be moving to Japan. Here is the journey of how I moved to Japan!&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2020/02/05_moving-to-japan/">[...] Read more</a></p>
+    <p>This weekend I have been on a small trip in a mobile home with my 6 dog&#39;s, it was quite the adventure but it was mostly to test the mobile home to see if everything was working properly. &nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2017/04/13_mobile-home-adventure/">[...] Read more</a></p>
+  </div>
+</div>
+    
+      <div class="post-block">
+  
+    <a href="https://www.voylinslife.com/posts/2020/04/29_all-jlpt-n4-grammar/"><img src="/images/posts/2020/04/All-JLPT-N4-Grammar.webp" alt="All JLPT N4 Grammar post image" width="336" height="189" loading="lazy"></a>
+  
+  <br>
+  <div class="post-block-info" >
+    <a href="https://www.voylinslife.com/posts/2020/04/29_all-jlpt-n4-grammar/" class="post-block-info-title"><b>All JLPT N4 Grammar</b></a><br>
+    <p class="metadata"><i class="far fa-calendar-alt" ></i>&nbsp;2020-04-29
+    
+      &nbsp;-&nbsp;
+      <i class="far fa-folder-open"></i>&nbsp;
+      <a href="/categories/voylins-life">Voylin&#39;s Life</a>
+      , <a href="/categories/learn-japanese">Learn Japanese</a>
+      
+    
+    </p>
+    <p>All JLPT N4 grammar rules which I could find, put into an easy to watch video. Enjoy!&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2020/04/29_all-jlpt-n4-grammar/">[...] Read more</a></p>
   </div>
 </div>
     
@@ -437,10 +418,6 @@ Over-exhausting, discovering limits, fun adventures in Japan and camping, meetin
       
         <a href="https://twitter.com/voylinslife" title="Twitter">
           <i class='fab fa-twitter'></i>
-        </a>
-      
-        <a href="https://www.twitch.tv/voylin" title="Twitch">
-          <i class='fab fa-twitch'></i>
         </a>
       
     </div>

@@ -5,10 +5,9 @@
   <title>Voylin&#39;s Life - Moving to Japan - </title>
   <meta name="description" content="After having studied Japanese for 4 years (which is not enough at all), I&#39;ll be moving to Japan. Here is the journey of how I moved to Japan!">
   <link rel="icon" type="image/x-icon" href="/site_assets/favicon.svg">
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/style_v1.css">
+  <link rel="stylesheet" href="/css/font-awesome-all_v1.css">
   <link rel="canonical" href="https://www.voylinslife.com/posts/2020/02/05_moving-to-japan/">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8509752797763329" crossorigin="anonymous"></script>
   <meta property="og:title" content="Moving to Japan" />
 <meta property="og:description" content="After having studied Japanese for 4 years (which is not enough at all), I&#39;ll be moving to Japan. Here is the journey of how I moved to Japan!" />
 <meta property="og:type" content="article" />
@@ -21,21 +20,6 @@
 <meta name="twitter:title" content="Moving to Japan"/>
 <meta name="twitter:description" content="After having studied Japanese for 4 years (which is not enough at all), I&#39;ll be moving to Japan. Here is the journey of how I moved to Japan!"/>
 
-
-  
-    
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'G-15YVCH6129', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
-  
 </head>
 
 <body><header>
@@ -43,8 +27,9 @@ if (!doNotTrack) {
     <img src="/site_assets/site-logo.svg" alt="Voylin's Life" width="258" height="62">
   </a>
 
-  <script>
-    function blog_menu_button() {
+  <script async>
+    function blog_menu_button(event) {
+      event.preventDefault();
       var blog_menu = document.getElementById("sidebar-blog-menu");
       if (blog_menu.classList.contains("sidebar-show-blog-menu")) {
         blog_menu.classList.remove("sidebar-show-blog-menu");
@@ -72,7 +57,7 @@ if (!doNotTrack) {
         <li>
           
             <a id="sidebar-blog-text" href="/blog" title="Blog">Blog</a>
-            <a id="sidebar-blog-button" onclick="blog_menu_button()">&nbsp;+</a>
+            <button id="sidebar-blog-button" onclick="blog_menu_button(event)" type="button">&nbsp;+</button>
             <ul id="sidebar-blog-menu">
               <li><a href="/categories/learn-japanese/" title="Learn Japanese">
                 <span class="blog-menu-link">Learn Japanese</span>
@@ -89,10 +74,6 @@ if (!doNotTrack) {
               <li><a href="/categories/voylins-life/" title="Voylin's life">
                 <span class="blog-menu-link">Voylin's life</span>
                 <span class="blog-menu-link-info">Everything about my youtube channel</span>
-              </a></li>
-              <li><a href="/categories/日本語で/" title="日本語で">
-                <span class="blog-menu-link">日本語で</span>
-                <span class="blog-menu-link-info">日本語だけです。できるかな？</span>
               </a></li>
             </ul>
           
@@ -129,14 +110,12 @@ if (!doNotTrack) {
       
         <a href="https://twitter.com/voylinslife" title="Twitter" target="_blank"><i class='fab fa-twitter'></i></a>
       
-        <a href="https://www.twitch.tv/voylin" title="Twitch" target="_blank"><i class='fab fa-twitch'></i></a>
-      
     </div>
   </div>
 
-  <a href="javascript:void(0);" id="mobile-icon" onclick="mobileMenu()">
+  <button id="mobile-icon" onclick="mobileMenu()" aria-label="Open mobile menu">
     <i class="fa fa-bars"></i>
-  </a>
+  </button>
 </header>
 <div id="page-title">
         
@@ -152,7 +131,7 @@ if (!doNotTrack) {
     
       &nbsp;-&nbsp;
       <i class="far fa-folder-open"></i>&nbsp;
-      <a href="/categories/voylins-life">Voylin&#39;s Life</a>
+      <a href="/categories/voylins-life">Voylin&#39;s Life</a>, <a href="/categories/our-life">Our life</a>
     
   </p>
 
@@ -200,6 +179,7 @@ if (!doNotTrack) {
 <p>I felt sad leaving my family behind, but I also realized that if I would keep living in Belgium that I probably won’t be able to be as happy as to where I am now. Still, I can’t thank my family enough for raising me the way I am and for all the care and support they have given me.</p>
 <p>On the plane I found people to talk to again, like usual, and I was also not able to fall asleep again, like usual. Luckily this time I had a free update to an extra leg space seat!! it was the first time that I was truly sitting comfortably in a plane.</p>
 <p>When I arrived in Japan I was being waited up, we head home and I don’t quite remember what we did anymore as the jet-lag kicked in, yet again.</p>
+<p class="text-center"><img src="/images/posts/2020/02/moving-to-japan-part-2.webp" alt="Moving to Japan part 2"></p>
 <h1 id="whats-up-next">What&rsquo;s up next?</h1>
 <p>In the next couple of month’s, I’ll probably be busy with paperwork and studying Japanese. Not sure yet what kind of a job I will be able to do here, but I hope I will have better working conditions here compared to Belgium.</p>
 <p>As for videos, I would love to make more video’s but I’m not exactly living alone right now so finding the time and space to film could be rather tricky. I have however filmed 2 new video’s here which I would love to publish, but I haven’t yet been able to start editing them yet as my time is being taken up by more important things at this moment.</p>
@@ -228,51 +208,52 @@ if (!doNotTrack) {
     
       <div class="post-block">
   
-    <a href="https://www.voylinslife.com/posts/2021/10/10_%E3%81%8B%E3%81%AB%E3%81%8B%E3%81%AB/"><img src="/images/posts/2021/10/kanikani.webp" alt="かにかに post image" width="336" height="189" loading="lazy"></a>
+    <a href="https://www.voylinslife.com/posts/2020/01/09_denshi-jisho/"><img src="/images/posts/2020/01/denshi-jisho.webp" alt="Do you need an Electronic Dictionary post image" width="336" height="189" loading="lazy"></a>
   
   <br>
   <div class="post-block-info" >
-    <a href="https://www.voylinslife.com/posts/2021/10/10_%E3%81%8B%E3%81%AB%E3%81%8B%E3%81%AB/" class="post-block-info-title"><b>かにかに</b></a><br>
-    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2021-10-10</i>
-    
-      &nbsp;-&nbsp;
-      <i class="far fa-folder-open"></i>&nbsp;
-      <a href="/categories/our-life">Our Life</a>
-      , <a href="/categories/%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%81%A7">日本語で</a>
-      
-    
-    </p>
-    <p>このことに2日前に気付いた私の父は何かをしようと企んだが、私が「かに道楽は？」というとそこになった。かに大好き一族。&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2021/10/10_%E3%81%8B%E3%81%AB%E3%81%8B%E3%81%AB/">[...] Read more</a></p>
-  </div>
-</div>
-    
-      <div class="post-block">
-  
-    <a href="https://www.voylinslife.com/posts/2016/10/22_departure-big-adventure/"><img src="/images/posts/2016/10/departure-big-adventure.webp" alt="Departure on My Big Adventure post image" width="336" height="189" loading="lazy"></a>
-  
-  <br>
-  <div class="post-block-info" >
-    <a href="https://www.voylinslife.com/posts/2016/10/22_departure-big-adventure/" class="post-block-info-title"><b>Departure on My Big Adventure</b></a><br>
-    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2016-10-22</i>
+    <a href="https://www.voylinslife.com/posts/2020/01/09_denshi-jisho/" class="post-block-info-title"><b>Do you need an Electronic Dictionary</b></a><br>
+    <p class="metadata"><i class="far fa-calendar-alt" ></i>&nbsp;2020-01-09
     
       &nbsp;-&nbsp;
       <i class="far fa-folder-open"></i>&nbsp;
       <a href="/categories/voylins-life">Voylin&#39;s Life</a>
+      , <a href="/categories/learn-japanese">Learn Japanese</a>
       
     
     </p>
-    <p>The departure on my big adventure was quite a big one, as I quit my job to go on this adventure. What many people, including my family, didn&#39;t know was that I had a mission, a goal for this trip. People thought I just wanted to travel, but there were more reasons behind this.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2016/10/22_departure-big-adventure/">[...] Read more</a></p>
+    <p>It&#39;s a nice thing to have, actually finding use cases for it when you have a smartphone is difficult. Prices for these things have also not gone down at all.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2020/01/09_denshi-jisho/">[...] Read more</a></p>
   </div>
 </div>
     
       <div class="post-block">
   
-    <a href="https://www.voylinslife.com/posts/2016/01/07_what-you-cant-take-on-a-plane/"><img src="/images/posts/2016/01/Airport-Luggage.webp" alt="What you can&#39;t take on a plane post image" width="336" height="189" loading="lazy"></a>
+    <a href="https://www.voylinslife.com/posts/2020/12/31_japanese-learning-mistakes/"><img src="/images/posts/2020/12/japanese-learning-mistakes.webp" alt="My Japanese learning mistakes - Self evaluation 2020 post image" width="336" height="189" loading="lazy"></a>
   
   <br>
   <div class="post-block-info" >
-    <a href="https://www.voylinslife.com/posts/2016/01/07_what-you-cant-take-on-a-plane/" class="post-block-info-title"><b>What you can&#39;t take on a plane</b></a><br>
-    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2016-01-07</i>
+    <a href="https://www.voylinslife.com/posts/2020/12/31_japanese-learning-mistakes/" class="post-block-info-title"><b>My Japanese learning mistakes - Self evaluation 2020</b></a><br>
+    <p class="metadata"><i class="far fa-calendar-alt" ></i>&nbsp;2020-12-31
+    
+      &nbsp;-&nbsp;
+      <i class="far fa-folder-open"></i>&nbsp;
+      <a href="/categories/voylins-life">Voylin&#39;s Life</a>
+      , <a href="/categories/learn-japanese">Learn Japanese</a>
+      
+    
+    </p>
+    <p>I&#39;ve made many mistakes in the past four years of studying Japanese, in 2 months time it will have been five years since I officially started. I never thought I would continue to study Japanese for this long.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2020/12/31_japanese-learning-mistakes/">[...] Read more</a></p>
+  </div>
+</div>
+    
+      <div class="post-block">
+  
+    <a href="https://www.voylinslife.com/posts/2016/05/03_first-trip-to-japan/"><img src="/images/posts/2016/05/First-trip-to-Japan.webp" alt="First trip to Japan post image" width="336" height="189" loading="lazy"></a>
+  
+  <br>
+  <div class="post-block-info" >
+    <a href="https://www.voylinslife.com/posts/2016/05/03_first-trip-to-japan/" class="post-block-info-title"><b>First trip to Japan</b></a><br>
+    <p class="metadata"><i class="far fa-calendar-alt" ></i>&nbsp;2016-05-03
     
       &nbsp;-&nbsp;
       <i class="far fa-folder-open"></i>&nbsp;
@@ -281,7 +262,65 @@ if (!doNotTrack) {
       
     
     </p>
-    <p>When traveling by plane, there is always a slight fear if something will be wrong with your luggage or not.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2016/01/07_what-you-cant-take-on-a-plane/">[...] Read more</a></p>
+    <p>I went on my first trip to Japan in 2016 and was completely sold to the nature, culture, history, ... 2 weeks after being back in Belgium I decided to quit my job and stay there for some time as a tourist.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2016/05/03_first-trip-to-japan/">[...] Read more</a></p>
+  </div>
+</div>
+    
+      <div class="post-block">
+  
+    <a href="https://www.voylinslife.com/posts/2017/06/01_lost-in-a-forest-semoine/"><img src="/images/posts/2017/06/lost-in-a-forest-semoine.webp" alt="Lost in a Forest Semoine post image" width="336" height="189" loading="lazy"></a>
+  
+  <br>
+  <div class="post-block-info" >
+    <a href="https://www.voylinslife.com/posts/2017/06/01_lost-in-a-forest-semoine/" class="post-block-info-title"><b>Lost in a Forest Semoine</b></a><br>
+    <p class="metadata"><i class="far fa-calendar-alt" ></i>&nbsp;2017-06-01
+    
+      &nbsp;-&nbsp;
+      <i class="far fa-folder-open"></i>&nbsp;
+      <a href="/categories/voylins-life">Voylin&#39;s Life</a>
+      
+    
+    </p>
+    <p>A small trip with our mobile home to a Semoine, in the French part of Belgium, where I went on a solo hike.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2017/06/01_lost-in-a-forest-semoine/">[...] Read more</a></p>
+  </div>
+</div>
+    
+      <div class="post-block">
+  
+    <a href="https://www.voylinslife.com/posts/2019/12/01_lingodeer-expensive/"><img src="/images/posts/2019/12/lingodeer-expensive.webp" alt="Lingodeer has a reasonable price for now! post image" width="336" height="189" loading="lazy"></a>
+  
+  <br>
+  <div class="post-block-info" >
+    <a href="https://www.voylinslife.com/posts/2019/12/01_lingodeer-expensive/" class="post-block-info-title"><b>Lingodeer has a reasonable price for now!</b></a><br>
+    <p class="metadata"><i class="far fa-calendar-alt" ></i>&nbsp;2019-12-01
+    
+      &nbsp;-&nbsp;
+      <i class="far fa-folder-open"></i>&nbsp;
+      <a href="/categories/voylins-life">Voylin&#39;s Life</a>
+      , <a href="/categories/learn-japanese">Learn Japanese</a>
+      
+    
+    </p>
+    <p>I myself have Lingodeer lifetime and I&#39;m glad I have it ... but I haven&#39;t used it after I got it. The Japanese lessons are ... great ... but not that useful for my level.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2019/12/01_lingodeer-expensive/">[...] Read more</a></p>
+  </div>
+</div>
+    
+      <div class="post-block">
+  
+    <a href="https://www.voylinslife.com/posts/2017/01/07_tree-parkour-bali/"><img src="/images/posts/2017/01/tree-parkour.webp" alt="Tree parkour Bali - Last day&#39;s in Bali post image" width="336" height="189" loading="lazy"></a>
+  
+  <br>
+  <div class="post-block-info" >
+    <a href="https://www.voylinslife.com/posts/2017/01/07_tree-parkour-bali/" class="post-block-info-title"><b>Tree parkour Bali - Last day&#39;s in Bali</b></a><br>
+    <p class="metadata"><i class="far fa-calendar-alt" ></i>&nbsp;2017-01-07
+    
+      &nbsp;-&nbsp;
+      <i class="far fa-folder-open"></i>&nbsp;
+      <a href="/categories/voylins-life">Voylin&#39;s Life</a>
+      
+    
+    </p>
+    <p>My last couple of days in Bali and I kept trying to push my limits, by hiking in a jungle and trying to fight my fear of hights by doing a tree parkour. Those were some of my most exhausting days of my time in Bali.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2017/01/07_tree-parkour-bali/">[...] Read more</a></p>
   </div>
 </div>
     
@@ -292,7 +331,7 @@ if (!doNotTrack) {
   <br>
   <div class="post-block-info" >
     <a href="https://www.voylinslife.com/posts/2017/04/06_packing-list-clothes/" class="post-block-info-title"><b>Packing list - Clothes -Travel Essentials</b></a><br>
-    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2017-04-06</i>
+    <p class="metadata"><i class="far fa-calendar-alt" ></i>&nbsp;2017-04-06
     
       &nbsp;-&nbsp;
       <i class="far fa-folder-open"></i>&nbsp;
@@ -307,79 +346,22 @@ if (!doNotTrack) {
     
       <div class="post-block">
   
-    <a href="https://www.voylinslife.com/posts/2016/12/30_arriving-bali/"><img src="/images/posts/2016/12/arriving-bali.webp" alt="Arriving in Bali Indonesia - Second country of the Big Adventure Trip post image" width="336" height="189" loading="lazy"></a>
+    <a href="https://www.voylinslife.com/posts/2020/10/28_nara-ryokan/"><img src="/images/posts/2020/10/nara-ryokan.webp" alt="Ryokan Experience in Japan Nara - Mikasa post image" width="336" height="189" loading="lazy"></a>
   
   <br>
   <div class="post-block-info" >
-    <a href="https://www.voylinslife.com/posts/2016/12/30_arriving-bali/" class="post-block-info-title"><b>Arriving in Bali Indonesia - Second country of the Big Adventure Trip</b></a><br>
-    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2016-12-30</i>
+    <a href="https://www.voylinslife.com/posts/2020/10/28_nara-ryokan/" class="post-block-info-title"><b>Ryokan Experience in Japan Nara - Mikasa</b></a><br>
+    <p class="metadata"><i class="far fa-calendar-alt" ></i>&nbsp;2020-10-28
     
       &nbsp;-&nbsp;
       <i class="far fa-folder-open"></i>&nbsp;
       <a href="/categories/voylins-life">Voylin&#39;s Life</a>
-      
-    
-    </p>
-    <p>When I arrived in Bali I was happy, but also very exhausted. I arrived and basically slept in the airport because I booked my hostel for the wrong day. Still not certain how I managed to do that, but it happened.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2016/12/30_arriving-bali/">[...] Read more</a></p>
-  </div>
-</div>
-    
-      <div class="post-block">
-  
-    <a href="https://www.voylinslife.com/posts/2016/06/29_travel-clothes/"><img src="/images/posts/2016/06/travel-clothes.webp" alt="Travel Clothes - Fabrics and fast drying post image" width="336" height="189" loading="lazy"></a>
-  
-  <br>
-  <div class="post-block-info" >
-    <a href="https://www.voylinslife.com/posts/2016/06/29_travel-clothes/" class="post-block-info-title"><b>Travel Clothes - Fabrics and fast drying</b></a><br>
-    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2016-06-29</i>
-    
-      &nbsp;-&nbsp;
-      <i class="far fa-folder-open"></i>&nbsp;
-      <a href="/categories/voylins-life">Voylin&#39;s Life</a>
+      , <a href="/categories/our-life">Our Life</a>
       , <a href="/categories/travel-advice">Travel Advice</a>
       
     
     </p>
-    <p>In general, it&#39;s important to choose travel clothes that are made from lightweight and breathable fabrics. This will not only make them more comfortable to wear, but also help them dry faster when you need to wash them on the go. In this video, I test out some different fabrics to see how quickly they dry, and share my findings with you.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2016/06/29_travel-clothes/">[...] Read more</a></p>
-  </div>
-</div>
-    
-      <div class="post-block">
-  
-    <a href="https://www.voylinslife.com/posts/2020/12/09_no-jlpt-this-year/"><img src="/images/posts/2020/12/Bad-News.webp" alt="No JLPT this year post image" width="336" height="189" loading="lazy"></a>
-  
-  <br>
-  <div class="post-block-info" >
-    <a href="https://www.voylinslife.com/posts/2020/12/09_no-jlpt-this-year/" class="post-block-info-title"><b>No JLPT this year</b></a><br>
-    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2020-12-09</i>
-    
-      &nbsp;-&nbsp;
-      <i class="far fa-folder-open"></i>&nbsp;
-      <a href="/categories/voylins-life">Voylin&#39;s Life</a>
-      
-    
-    </p>
-    <p>A loot has been happening in this year. Because of those things, I won&#39;t be taken the JLPT this year. It can&#39;t be helped.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2020/12/09_no-jlpt-this-year/">[...] Read more</a></p>
-  </div>
-</div>
-    
-      <div class="post-block">
-  
-    <a href="https://www.voylinslife.com/posts/2017/04/11_packing-list-essentials/"><img src="/images/posts/2017/04/packing-list-essentials.webp" alt="Travel List Packing - Essentials Only post image" width="336" height="189" loading="lazy"></a>
-  
-  <br>
-  <div class="post-block-info" >
-    <a href="https://www.voylinslife.com/posts/2017/04/11_packing-list-essentials/" class="post-block-info-title"><b>Travel List Packing - Essentials Only</b></a><br>
-    <p class="metadata"><i class="far fa-calendar-alt" >&nbsp;2017-04-11</i>
-    
-      &nbsp;-&nbsp;
-      <i class="far fa-folder-open"></i>&nbsp;
-      <a href="/categories/voylins-life">Voylin&#39;s Life</a>
-      , <a href="/categories/travel-advice">Travel Advice</a>
-      
-    
-    </p>
-    <p>Traveling for an extended period of time can be daunting, especially when it comes to packing all of your essentials into one backpack. In this article, we&#39;ll show you how to pack your backpack efficiently and still have room for souvenirs.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2017/04/11_packing-list-essentials/">[...] Read more</a></p>
+    <p>Staying at a Ryokan is such a nice relaxing experience, although I must admit that the food is always too much and very difficult to eat.&nbsp;&nbsp;<a href="https://www.voylinslife.com/posts/2020/10/28_nara-ryokan/">[...] Read more</a></p>
   </div>
 </div>
     
@@ -409,10 +391,6 @@ if (!doNotTrack) {
       
         <a href="https://twitter.com/voylinslife" title="Twitter">
           <i class='fab fa-twitter'></i>
-        </a>
-      
-        <a href="https://www.twitch.tv/voylin" title="Twitch">
-          <i class='fab fa-twitch'></i>
         </a>
       
     </div>
