@@ -156,6 +156,23 @@ nav a {
   display: block !important;
 }
 
+#search_form {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+#search_form input {
+  font-size:medium;
+  min-width: 50px;
+}
+
+#search_form_input {
+  margin-right: 5px;
+  flex: 1;
+}
+
 #top_social {
   text-align: center;
   padding-top: 30px;
@@ -173,6 +190,7 @@ nav a {
 }
 
 #mobile-icon {
+  margin-top: 6px;
   display: none;
 }
 
