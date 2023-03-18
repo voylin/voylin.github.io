@@ -99,6 +99,12 @@
         margin-bottom: 20px;
       }
 
+      #WIP p {
+        margin: 10px 20%;
+        padding-top: 10px;
+        text-align: center;
+      }
+
       .split_container {
         display: flex;
         margin: 17px 20px;
@@ -106,7 +112,6 @@
         align-items: center;
       }
       .split_container div {
-        display: inline-flex;
         width: 47%;
         padding: 10px;
         flex-direction: row;
@@ -118,12 +123,21 @@
         padding: 10px 20px; 
         border-radius: 17px;
       }
+      .split_container .split_box a { color: white; }
 
       #about_me_pic {
         width: 47%;
         height: 47%;
         border-radius: 17px;
       }
+
+      .project_box {
+        padding: 10px 15px;
+        margin: 5px;
+        box-shadow: 0 0 10px var(--primary-color);
+        border-radius: 17px;
+      }
+      .project_box h3 { text-align: center; }
 
       footer {
         margin-left: var(--header-width);
@@ -146,10 +160,16 @@
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#resume">Resume</a></li>
       </ul>
     </header>
     <div id="content">
+      <section id="WIP">
+        <h1>WIP</h1>
+        <p>
+          This site is still a work in progress!<br>
+          Things which still need work on is making the website responsive for mobile viewing. That's basically it, I have no idea what else to do with this website but it's a nice page I guess for people to come to to know a bit more about me and to see the projects which I can show off. I still have many projects which I'm not sharing the code for just yet as those are still being worked on and the code is too messy to actually share. ^^"
+        </p>
+      </section>
       <section id="about">
         <h1>About me</h1>
         <div class="split_container">
@@ -186,9 +206,54 @@
       </section>
       <section id="projects">
         <h1>My projects</h1>
-      </section>
-      <section id="resume">
-        <h1>My resume</h1>
+        <div class="split_container">
+          <div class="project_box">
+            <h3>voylin.github.io</h3>
+            <p>
+              This site was made by scratch and as an attempt to make a single file website. Pictures are separate however. ^^"
+            </p>
+            <a href="https://github.com/voylin/voylin.github.io" target="_blank">Link to repo</a>
+          </div>
+          <div class="project_box">
+            <h3>Java game engine</h3>
+            <p>
+              An unfinished project which I started with LWJGL to learn about Java and game development with OpenGL.
+            </p>
+            <a href="https://github.com/voylin/java_game_engine" target="_blank">Link to repo</a>
+          </div>
+        </div>
+        <div class="split_container">
+          <div class="project_box">
+            <h3>C++ game engine</h3>
+            <p>
+              Learning about c++ and game development at the same time. Game engines are complex and I never intended on finishing this one either. I just wanted to play around with c++.
+            </p>
+            <a href="https://github.com/voylin/cpp_game_engine" target="_blank">Link to repo</a>
+          </div>
+          <div class="project_box">
+            <h3>My games</h3>
+            <p>
+              I have some games I'm working on which aren't open source. These games are being developed with Godot. The games I am mainly working on at the moment are Meikyuu Kazan, Kanji Farming and Tabi Japan.
+            </p>
+            <a href="https://www.voylin.com" target="_blank">Link to website</a>
+          </div>
+        </div>
+        <div class="split_container">
+          <div class="project_box">
+            <h3>Voylin's life website</h3>
+            <p>
+              The website Voylin's life is made by me and will be switched to my custom made site builder in the near future so I have better control of the pages and other things related to the content management of this blog.
+            </p>
+            <a href="https://www.voylinslife.com" target="_blank">Link to Voylin's Life</a>
+          </div>
+          <div class="project_box">
+            <h3>Voylin's Gamedev Journey website</h3>
+            <p>
+              This site is made by me together with my custom site generator which I build in python. It also contains blogs for each project. This website is mainly intended for people to easily see the progress I'm making on my game projects.
+            </p>
+            <a href="https://www.voylin.com" target="_blank">Link to Voylin's Gamedev Journey</a>
+          </div>
+        </div>
       </section>
     </div>
     <footer>
