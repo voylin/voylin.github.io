@@ -2,119 +2,81 @@
 <html lang="en">
   <head>
     <title>Voylin's portfolio</title>
-    <meta name="description" content="This one-pager is my portfolio to show of my programming knowledge.">
+    <meta name="description" content="A little website with some info about me and my projects">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header>
-      <img id="profile_pic" src="/profile_pic.webp" alt="Formal profile picture"><br>
-      <b id="site_name">Voylin's Profile</b>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-      </ul>
+      <img id="profile_pic" src="/images/profile_pic.jpg" alt="Profile picture">
+      <nav>
+        <a href="contact_me.html">
+          <!-- Contact me -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70">
+            <image xlink:href="/images/svg/contact_page.svg" width="70" height="70" />
+            <title>Contact me</title>
+            <desc>Contact me button</desc>
+          </svg>
+        </a>
+        <a href="projects.html">
+          <!-- Projects -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70">
+            <image xlink:href="/images/svg/source.svg" width="70" height="70" />
+            <title>My projects</title>
+            <desc>My projects button</desc>
+          </svg>
+        </a>
+        <a href="my_skills.html">
+          <!-- My skills -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70">
+            <image xlink:href="/images/svg/description.svg" width="70" height="70" />
+            <title>My skills</title>
+            <desc>My skills button</desc>
+          </svg>
+        </a>
+        <a href="youtube_channels.html">
+          <!-- Youtube channels -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70">
+            <image xlink:href="/images/svg/movie.svg" width="70" height="70" />
+            <title>My youtube channels</title>
+            <desc>My youtube channels button</desc>
+          </svg>
+        </a>
+        <a href="support_me.html">
+          <!-- Donate -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70">
+            <image xlink:href="/images/svg/savings.svg" width="70" height="70" />
+            <title>Support me</title>
+            <desc>Support me button</desc>
+          </svg>
+        </a>
+      </nav>
     </header>
-    <div id="content">
-      <section id="WIP">
-        <h1>WIP</h1>
+    <main>
+      <img id="homepage_picture" src="/images/homepage.jpg" alt="Picture of me with mask">
+      <div>
+        <h1>Voylin</h1>
         <p>
-          This site is still a work in progress!<br>
-          Things which still need work on is making the website responsive for mobile viewing. That's basically it, I have no idea what else to do with this website but it's a nice page I guess for people to come to to know a bit more about me and to see the projects which I can show off. I still have many projects which I'm not sharing the code for just yet as those are still being worked on and the code is too messy to actually share. ^^"
+          I'm a Belgium guy living in Japan and
+          programming whatever I feel like.
         </p>
-      </section>
-      <section id="about">
-        <h1>About me</h1>
-        <div class="split_container">
-          <div class="split_box">
-            <h2>Who am I?</h2>
-            <p>
-              I'm Voylin, 28 years old, born and raised in Belgium and now living in Japan together with my wife and 1 year old kid. Voylin is my nickname as I prefer not to use my real name online for privacy (even though I share quite a large part online on my <a href="http://youtube.com/voylin" target="_blank">youtube channel</a>).
-            </p>
-            <p>
-              Programming has been a passion of me since I got my first pc when I was 8/9 years old. Whilst playing games I would always try to find ways to discover how those games were made. Figuring out how things work has been a part of my life for as long as I can remember, as a kid I would open almost anything which I didn't understand to see if I could understand by looking and tinkering.
-            </p>
-            The languages which I speak are:
-            <ul>
-              <li>Dutch (Mother tongue)</li>
-              <li>English (Native level)</li>
-              <li>Japanese (JLPT N3 level)</li>
-            </ul>
-            The programming languages which I use/used:
-            <ul>
-              <li>GDScript; (Mainly for games and applications)</li>
-              <li>Python; (Use this one quite often)</li>
-              <li>C++;</li>
-              <li>Java;</li>
-              <li>Kotlin;</li>
-              <li>Html + CSS.</li>
-            </ul>
-            <p>
-              I really love experimenting with different languages, Rust by example is still on my to do list, but the time investment needed is something which I'm lacking of at the moment. I really prefer working with GDScript as it is similar to Python and because of the GD Engine it becomes very easily to work on prototypes for applications.
-            </p>
-          </div>
-          <img id="about_me_pic" src="/about_me.webp" alt="About me picture - me in a forest">
-        </div>
-        <p></p>
-      </section>
-      <section id="projects">
-        <h1>My projects</h1>
-        <div class="split_container">
-          <div class="project_box">
-            <h3>voylin.github.io</h3>
-            <p>
-              This site was made by scratch and as an attempt to make a single file website. Pictures are separate however. ^^"
-            </p>
-            <a href="https://github.com/voylin/voylin.github.io" target="_blank">Link to repo</a>
-          </div>
-          <div class="project_box">
-            <h3>Java game engine</h3>
-            <p>
-              An unfinished project which I started with LWJGL to learn about Java and game development with OpenGL.
-            </p>
-            <a href="https://github.com/voylin/java_game_engine" target="_blank">Link to repo</a>
-          </div>
-        </div>
-        <div class="split_container">
-          <div class="project_box">
-            <h3>C++ game engine</h3>
-            <p>
-              Learning about c++ and game development at the same time. Game engines are complex and I never intended on finishing this one either. I just wanted to play around with c++.
-            </p>
-            <a href="https://github.com/voylin/cpp_game_engine" target="_blank">Link to repo</a>
-          </div>
-          <div class="project_box">
-            <h3>My games</h3>
-            <p>
-              I have some games I'm working on which aren't open source. These games are being developed with Godot. The games I am mainly working on at the moment are Meikyuu Kazan, Kanji Farming and Tabi Japan.
-            </p>
-            <a href="https://www.voylin.com" target="_blank">Link to website</a>
-          </div>
-        </div>
-        <div class="split_container">
-          <div class="project_box">
-            <h3>Voylin's life website</h3>
-            <p>
-              The website Voylin's life is made by me and will be switched to my custom made site builder in the near future so I have better control of the pages and other things related to the content management of this blog.
-            </p>
-            <a href="https://www.voylinslife.com" target="_blank">Link to Voylin's Life</a>
-          </div>
-          <div class="project_box">
-            <h3>Voylin's Gamedev Journey website</h3>
-            <p>
-              This site is made by me together with my custom site generator which I build in python. It also contains blogs for each project. This website is mainly intended for people to easily see the progress I'm making on my game projects.
-            </p>
-            <a href="https://www.voylin.com" target="_blank">Link to Voylin's Gamedev Journey</a>
-          </div>
-        </div>
-      </section>
-    </div>
+        <p>
+          Programming is something I learned by
+          self-study. It has always fascinated me
+          to learn how things work and learning
+          how programs and pc's work is something
+          I find very interesting.
+        </p>
+        <p>
+          Programming is like solving a difficult
+          puzzle but with many pieces which
+          fit into the same spots.d
+        </p>
+      </div>
+    </main>
     <footer>
       <p>
-        Site made by Voylin from the YT channels:
-        <br>
-        <a href="https://youtube.com/voylin" target="_blank">Voylin's Life</a>&ensp;&&ensp;
-        <a href="https://youtube.com/@voylinsgamedevjourney" target="_blank">Voylin's Gamedev Journey</a>
+        &copy; 2023  <a href="https://youtube.com/@voylinsgamedevjourney" target="_blank">Voylin</a>
       </p>
     </footer>
   </body>
