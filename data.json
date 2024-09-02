@@ -1,0 +1,10 @@
+{
+	"author": "Voylin",
+	"site-name": "Voylin's Portfolio",
+	"site-description": "A site to show what I know and what little I have achieved in my life.",
+	"site-keywords": "portfolio, godot, video editor development, voylin, stay at home dad",
+	"site-url": "https://www.voylin.com",
+	"site-path-css": "assets/style.css",
+	"site-favicon-path": "assets/favicon.ico",
+	"twitter-handle": "@VoylinsLife"
+}
