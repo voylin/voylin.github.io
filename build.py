@@ -1,6 +1,7 @@
 import os
 import json
 import re
+import shutil
 
 
 PAGES_DIR = "pages"
@@ -70,3 +71,6 @@ for root, dirs, files in os.walk(PAGES_DIR):
                 print(f"Generated: {output_path}")
             else:
                 print(f"Error: Template for type '{metadata['type']}' not found in {template_path}")
+
+# Copy assets
+shutil.copytree(src="assets/", dst="docs/assets", dirs_exist_ok=True)
