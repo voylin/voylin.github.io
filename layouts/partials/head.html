@@ -1,0 +1,26 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<title>
+    {{ if .IsHome }}{{ site.Title }}
+    {{ else }}{{ printf "%s | %s" .Title site.Title }}
+    {{ end }}
+</title>
+
+<meta property="og:title" content="{{ .Title }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:site_name" content="{{ site.Title }}">
+<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
+<meta property="og:image" content="{{ with .Params.image }}{{ . | absURL }}{{ else }}{{ site.Params.defaultImage | absURL }}{{ end }}">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ .Title }}">
+<meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
+<meta name="twitter:image" content="{{ with .Params.image }}{{ . | absURL }}{{ else }}{{ site.Params.defaultImage | absURL }}{{ end }}">
+<meta name="twitter:site" content="@VoylinsLife">
+
+<link rel="icon" href="{{ "favicon.ico" | absURL }}">
+{{ partialCached "head/css.html" . }}
+{{ partialCached "head/js.html" . }}
+
