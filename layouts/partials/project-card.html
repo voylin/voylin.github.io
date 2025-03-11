@@ -1,0 +1,8 @@
+<div class="project-card" onclick="window.open('{{ .url }}', '_blank')">
+    <img src="{{ .thumb }}" alt="{{ .name }}" class="project-image">
+    <div class="project-content">
+        <h3 class="project-title">{{ .name }}</h3>
+        <p class="project-description">{{ .description }}</p>
+        <a href="{{ .url }}" target="_blank" class="project-button">Read More</a>
+    </div>
+</div>

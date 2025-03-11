@@ -7,5 +7,7 @@ hero_links = ['software', 'games']
 
 ## Software {#software}
 
+{{< project-software-cards >}}
+
 ## Games {#games}
 

@@ -28,4 +28,28 @@ enableRobotsTXT = true
 		url = '/posts'
 		weight = 3
 
-
+[projects]
+	[[projects.software]]
+		name = 'GoZen'
+		description = 'GoZen is an open-source video editor with content creators and beginners in mind.'
+		thumb = 'gozen.jpg'
+		url = 'https://github.com/VoylinsGamedevJourney/gozen'
+		weight = 1
+	[[projects.software]]
+		name = 'GDE GoZen'
+		description = 'GDE GoZen provides video playback for the Godot game engine by using FFmpeg.'
+		thumb = 'gde_gozen.jpg'
+		url = 'https://github.com/VoylinsGamedevJourney/gde_gozen'
+		weight = 2
+	[[projects.software]]
+		name = 'Teledot'
+		description = 'A teleprompter application for your phone and your pc becomes the controller.'
+		thumb = 'teledot.jpg'
+		url = 'https://github.com/VoylinsGamedevJourney/teledot'
+		weight = 3
+	[[projects.software]]
+		name = 'GD Audio Recorder'
+		description = 'An audio recorder made with Godot for a tutorial series on my channel.'
+		thumb = 'gd_audio_recorder.jpg'
+		url = 'https://github.com/voylin/gd_audio_recorder'
+		weight = 4
