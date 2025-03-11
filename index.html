@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Voylin's Portfolio</title>
+		<meta name="author" content="Voylin"/>
+		<meta name="description" content="My portfolio."/>
+		<link rel="stylesheet" href="/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+		<script src="/script.js" defer></script>
+		<link rel="icon" type="image/x-icon" href="/favicon.ico">
+	</head>
+	<body>
+		<header>
+			<div class="logo"><span>&lt;</span>Voylin's portfolio<span>/&gt;</span></div>
+			<button class="mobile-menu-btn">☰</button>
+			<nav>
+				<ul>
+					<li><a href="#about">About</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#youtube">YouTube</a></li>
+					<li><a href="#certificates">Certificates</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div class="social-icons">
+			<a href="https://www.youtube.com/@voylinsgamedevjourney" target="_blank"><i class="fab fa-youtube"></i></a>
+			<a href="https://github.com/voylinsgamedevjourney/" target="_blank"><i class="fab fa-github"></i></a>
+			<a href="https://discord.gg/BdbUf7VKYC" target="_blank"><i class="fab fa-discord"></i></a>
+			<a href="https://ko-fi.com/voylin" target="_blank"><i class="fas fa-mug-hot"></i></a>
+		</div>
+
+		<main>
+			<section id="about">
+				<h2>About Me</h2>
+				<div class="terminal-text">
+					I'm <span class="highlight">Voylin</span>, a Belgian guy who moved to Japan in 2020 and became a solo developer in April 2023 from which I started mainly working on my open-source video editor. I have also released some other software already, but my video editor is still my priority. I'm also a full time stay-at-home dad and as a way to get some amount of income I'm doing YouTube on my 3 channels.
+				</div>
+				<div class="grid">
+					<div class="card">
+						<div class="card-img-cover">
+						    <img src="/images/my_face.webp" alt="My face"/>
+						</div>
+						<div class="card-content">
+							<div class="card-title">Location</div>
+							<p>Japan (Originally from Belgium)</p>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-content">
+							<div class="card-title">What I Do</div>
+							<ul class="list">
+								<li>Solo Game Developer</li>
+								<li>Video Editor Developer</li>
+								<li>Godot Educator</li>
+								<li>Stay-at-home Dad</li>
+							</ul>
+						</div>
+						<div class="card-content">
+							<div class="card-title">Bio</div>
+							<p>Passionate about open-source development, creating games, and sharing knowledge through tutorials. Building tools to empower other creators.</p>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-img-cover">
+						    <img src="/images/my_tools.webp" alt="My tools of choice"/>
+						</div>
+						<div class="card-content">
+							<div class="card-title">My tools of choice</div>
+							<ul class="list">
+								<li>OS/Distro: Arch Linux</li>
+								<li>Text/Code editor: NeoVim</li>
+								<li>Game engine: Godot</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="projects">
+				<h2>Projects</h2>
+				<div class="terminal-text">
+					Here are some of the projects I've been working on. My main focus is GoZen, an open-source video editor built with Godot. But occasionally I find the time to work on other projects as well.
+				</div>
+				<div class="grid">
+					<div class="card">
+						<div class="card-img">
+						    <img src="/images/gozen.webp" alt="GoZen logo"/>
+						</div>
+						<div class="card-content">
+							<div class="card-title">GoZen Video Editor</div>
+							<p>Open-source video editor built with Godot. In active development for 2 years, recently entered alpha stage.</p>
+							<p>Features selected by community via YouTube series.</p>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-img">
+						    <img src="/images/gde_gozen.webp" alt="GDE GoZen logo"/>
+						</div>
+						<div class="card-content">
+							<div class="card-title">GDE GoZen</div>
+							<p>An open-source GDExtension to provide video playback in Godot by using FFmpeg.</p>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-img">
+						    <img src="/images/teledot.webp" alt="Teledot logo"/>
+						</div>
+						<div class="card-content">
+							<div class="card-title">Teledot</div>
+							<p>An open-source teleprompter for your phone which you control through your computer.</p>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-img">
+						    <img src="/images/gd_audio_recorder.webp" alt="GD Audio Recorder logo"/>
+						</div>
+						<div class="card-content">
+							<div class="card-title">GD Audio Recorder</div>
+							<p>An open-source audio recorder which was made in Godot as part of my tutorial series 'From zero to publishing'.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="youtube">
+				<h2>YouTube Channels</h2>
+				<div class="terminal-text">
+					I run three YouTube channels covering different aspects of my life and interests.
+				</div>
+				<div class="youtube-channels">
+					<div class="grid">
+						<div class="card">
+							<div class="card-img-cover">
+								<img src="/images/vgj.webp" alt="Voylin's Gamedev Journey"/>
+							</div>
+							<div class="card-content">
+								<div class="card-title">Voylin's Gamedev Journey</div>
+								<p>My main channel focused on Godot game development tutorials:</p>
+								<ul class="list">
+									<li>Full tutorials from zero to publishing</li>
+									<li>Short easy Godot tutorials</li>
+									<li>Advanced Godot tutorials</li>
+								</ul>
+								<a href="https://www.youtube.com/@voylinsgamedevjourney" target="_blank" class="cta-button">Visit Channel</a>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-img-cover">
+								<img src="/images/vl.webp" alt="Voylin's Life"/>
+							</div>
+							<div class="card-content">
+								<div class="card-title">Voylin's Life</div>
+								<p>My main channel focused on Godot game development tutorials:</p>
+								<p>Personal channel about my life experiences.</p>
+								<a href="https://www.youtube.com/voylin" target="_blank" class="cta-button">Visit Channel</a>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-img-cover">
+								<img src="/images/vs.webp" alt="Voylin Sensei"/>
+							</div>
+							<div class="card-content">
+								<div class="card-title">Voylin Sensei</div>
+								<p>My channel for helping people learn Japanese.</p>
+								<a href="https://www.youtube.com/@voylinsensei" target="_blank" class="cta-button">Visit Channel</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="certificates">
+				<h2>Certificates</h2>
+				<div class="terminal-text">
+					Certifications and achievements I've earned throughout my journey.
+				</div>
+				<div class="certificate">
+					<div class="certificate-icon">
+						<i class="fas fa-award"></i>
+					</div>
+					<div class="certificate-info">
+						<h3>JLPT N3</h3>
+						<p>Japanese Language Proficiency test</p>
+						<p>Achieved in December 2022</p>
+					</div>
+				</div>
+				<div class="certificate">
+					<div class="certificate-icon">
+						<i class="fas fa-certificate"></i>
+					</div>
+					<div class="certificate-info">
+						<h3>CS50's Technology</h3>
+						<p>CS50 Harvard</p>
+						<p>Completed in December 2020</p>
+					</div>
+				</div>
+				<div class="certificate">
+					<div class="certificate-icon">
+						<i class="fas fa-certificate"></i>
+					</div>
+					<div class="certificate-info">
+						<h3>Kotlin</h3>
+						<p>Solo learn course</p>
+						<p>Completed in June 2021</p>
+					</div>
+				</div>
+			</section>
+
+			<section id="contact">
+				<h2>Contact & Support</h2>
+				<div class="terminal-text">
+					If you'd like to get in touch or support my work, here are the best ways to do so.
+				</div>
+				<div class="contact-info">
+					<div class="contact-method">
+						<i class="fab fa-discord"></i>
+						<p>Join my Discord server: <a href="https://discord.gg/BdbUf7VKYC" target="_blank">Voylin's Community</a></p>
+					</div>
+				</div>
+				<div class="cta-container">
+					<h3>Support My Work:</h3>
+					<a href="https://ko-fi.com/voylin" target="_blank" class="cta-button">Support on Ko-fi</a>
+					<a href="https://www.youtube.com/@voylinsgamedevjourney" target="_blank" class="cta-button">Subscribe on YouTube</a>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<p>&copy; 2025 Voylin's Gamedev Journey. All rights reserved.</p>
+			<div class="social-icons" style="position: static; flex-direction: row; justify-content: center; margin-top: 1rem;">
+				<a href="https://www.youtube.com/@voylinsgamedevjourney" target="_blank"><i class="fab fa-youtube"></i></a>
+				<a href="https://github.com/voylinsgamedevjourney/" target="_blank"><i class="fab fa-github"></i></a>
+				<a href="https://discord.gg/BdbUf7VKYC" target="_blank"><i class="fab fa-discord"></i></a>
+				<a href="https://ko-fi.com/voylin" target="_blank"><i class="fas fa-mug-hot"></i></a>
+			</div>
+		</footer>
+	</body>
+</html>
