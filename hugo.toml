@@ -1,0 +1,31 @@
+#baseURL = 'https://voylin.com/'
+baseURL = 'https://localhost:1313/'
+languageCode = 'en-us'
+title = "Voylin's Gamedev Journey"
+
+enableEmoji = true
+enableRobotsTXT = true
+
+[pagination]
+	pagerSize = 10
+
+[params]
+  author = 'Voylin'
+  description = "I'm Voylin, a solo (open-source) developer and content creator."
+  defaultImage = "/images/default-thumbnail.jpg"
+
+[menu]
+	[[menu.main]]
+		name = 'About'
+		url = '/'
+		weight = 1
+	[[menu.main]]
+		name = 'Projects'
+		url = '/projects'
+		weight = 2
+	[[menu.main]]
+		name = 'Blog'
+		url = '/posts'
+		weight = 3
+
+
