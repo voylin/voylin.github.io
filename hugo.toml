@@ -1,0 +1,3 @@
+baseURL = 'https://voylin.com/'
+languageCode = 'en-us'
+title = "Voylin's site"

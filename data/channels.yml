@@ -1,0 +1,20 @@
+- title: Voylin's Gamedev Journey
+  image: /images/vgj.webp
+  description: |
+    <p>My main channel focused on Godot game development tutorials:</p>
+    <ul class="list">
+        <li>Full tutorials from zero to publishing</li>
+        <li>Short easy Godot tutorials</li>
+        <li>Advanced Godot tutorials</li>
+    </ul>
+  link: https://www.youtube.com/@voylinsgamedevjourney
+- title: Voylin's Life
+  image: /images/vl.webp
+  description: |
+    <p>Personal channel about my life experiences of being a stay-at-home dad in Japan.</p>
+  link: https://www.youtube.com/voylin
+- title: Voylin Sensei
+  image: /images/vs.webp
+  description: |
+    <p>My channel for helping people learn Japanese.</p>
+  link: https://www.youtube.com/@voylinsensei

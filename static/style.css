@@ -28,6 +28,10 @@
     font-family: 'Courier New', monospace;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--bg-color);
     color: var(--text-color);

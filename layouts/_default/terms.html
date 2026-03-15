@@ -1,0 +1,12 @@
+{{ define "main" }}
+<section id="terms-page">
+	<h2>All {{ .Title }}</h2>
+	<div class="skills-container">
+		{{ range .Data.Terms.Alphabetical }}
+		<a href="{{ .Page.Permalink }}" class="skill-tag" style="text-decoration: none;">
+			{{ .Page.Title }} ({{ .Count }})
+		</a>
+		{{ end }}
+	</div>
+</section>
+{{ end }}

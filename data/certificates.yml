@@ -1,0 +1,15 @@
+- title: JLPT N3
+  description: |
+    <p>Japanese Language Proficiency test</p>
+    <p>Achieved in December 2022</p>
+  icon: fas fa-award
+- title: CS50's Technology
+  description: |
+    <p>CS50 Harvard</p>
+    <p>Completed in December 2020</p>
+  icon: fas fa-certificate
+- title: Kotlin
+  description: |
+    <p>Solo learn course</p>
+    <p>Completed in June 2021</p>
+  icon: fas fa-certificate

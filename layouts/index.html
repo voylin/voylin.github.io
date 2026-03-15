@@ -1,0 +1,134 @@
+{{ define "main" }}
+<section id="about">
+	<h2>About Me</h2>
+	<div class="terminal-text">
+		I'm <span class="highlight">Voylin</span>, a Belgian guy who moved to Japan in 2020 and became a solo developer
+		in April 2023 from which I started mainly working on my open-source video editor. I have also released some
+		other software already, but my video editor is my priority. I'm also a full time stay-at-home dad and as a
+		way to get some amount of income I'm doing YouTube on my 3 channels.
+	</div>
+	<div class="grid">
+		<div class="card">
+			<div class="card-img-cover">
+				<img src="/images/my_face.webp" alt="My face" />
+			</div>
+			<div class="card-content">
+				<div class="card-title">Location</div>
+				<p>Japan (Originally from Belgium)</p>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-content">
+				<div class="card-title">What I Do</div>
+				<ul class="list">
+					<li>Solo Game Developer</li>
+					<li>Video Editor Developer</li>
+					<li>Godot Educator</li>
+					<li>Stay-at-home Dad</li>
+				</ul>
+			</div>
+			<div class="card-content">
+				<div class="card-title">Bio</div>
+				<p>Passionate about open-source development, creating games, and sharing knowledge through tutorials.
+					Building tools to empower other creators.</p>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-img-cover">
+				<img src="/images/my_tools.webp" alt="My tools of choice" />
+			</div>
+			<div class="card-content">
+				<div class="card-title">My tools of choice</div>
+				<ul class="list">
+					<li>OS/Distro: Arch Linux</li>
+					<li>Text/Code editor: NeoVim</li>
+					<li>Game engine: Godot</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="projects">
+	<h2>Projects</h2>
+	<div class="terminal-text">
+		Here are some of the projects I've been working on. My main focus is GoZen, an open-source video editor built
+		with Godot. But occasionally I find the time to work on other projects as well.
+	</div>
+	<div class="grid">
+		{{ range .Site.Data.projects }}
+		<div class="card">
+			<div class="card-img"><a href="{{ .link }}" target="_blank"><img src="{{ .image }}"
+						alt="{{ .title }} logo" /></a></div>
+			<div class="card-content">
+				<div class="card-title">{{ .title }}</div>
+				<p>{{ .description | safeHTML }}</p>
+				<a href="{{ .link }}" target="_blank">Project link ...</a>
+			</div>
+		</div>
+		{{ end }}
+	</div>
+</section>
+
+<section id="youtube">
+	<h2>YouTube Channels</h2>
+	<div class="terminal-text">
+		I run three YouTube channels covering different aspects of my life and interests.
+	</div>
+	<div class="youtube-channels">
+		<div class="grid">
+			{{ range .Site.Data.channels }}
+			<div class="card">
+				<div class="card-img-cover">
+					<img src="{{ .image }}" alt="{{ .title }}" />
+				</div>
+				<div class="card-content">
+					<div class="card-title">{{ .title }}</div>
+					{{ .description | safeHTML }}
+					<a href="{{ .link }}" target="_blank" class="cta-button">Visit Channel ...</a>
+				</div>
+			</div>
+			{{ end }}
+		</div>
+	</div>
+</section>
+
+<section id="certificates">
+	<h2>Certificates</h2>
+	<div class="terminal-text">
+		Certifications and achievements I've earned throughout my journey.
+	</div>
+	{{ range .Site.Data.certificates }}
+	<div class="certificate">
+		<div class="certificate-icon">
+			<i class="{{ .icon }}"></i>
+		</div>
+		<div class="certificate-info">
+			<h3>{{ .title }}</h3>
+			{{ .description | safeHTML }}
+		</div>
+	</div>
+	{{ end }}
+</section>
+
+<section id="contact">
+	<h2>Contact & Support</h2>
+	<div class="terminal-text">
+		If you'd like to get in touch or support my work, here are the best ways to do so.
+	</div>
+	<div class="contact-info">
+		<div class="contact-method">
+			<i class="fab fa-discord"></i>
+			<p>Join the Discord server: <a href="https://discord.gg/BdbUf7VKYC" target="_blank">Voylin's Community</a>
+			</p>
+		</div>
+	</div>
+	<div class="cta-container">
+		<h3>Support My Work:</h3>
+		<a href="https://ko-fi.com/voylin" target="_blank" class="cta-button">Support on Ko-fi</a>
+		<a href="https://patreon.com/voylin" target="_blank" class="cta-button">Support on patreon</a>
+		<a href="https://www.youtube.com/@voylinsgamedevjourney" target="_blank" class="cta-button">Subscribe on
+			YouTube</a>
+	</div>
+</section>
+{{ end }}

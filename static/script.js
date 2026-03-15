@@ -1,7 +1,14 @@
 document.querySelectorAll('nav a').forEach(anchor => {
 	anchor.addEventListener('click', function(e) {
+		const hash = this.hash;
+
+		if (!hash) return;
+
+		const target = document.querySelector(hash);
+		if (!target) return;
+
 		e.preventDefault();
-		const target = document.querySelector(this.getAttribute('href'));
+
 		window.scrollTo({
 			top: target.offsetTop - 80,
 			behavior: 'smooth'

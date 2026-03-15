@@ -1,0 +1,16 @@
+- title: GoZen Video Editor
+  image: /images/gozen.webp
+  description: Open-source video editor built with Godot.
+  link: https://github.com/VoylinsGamedevJourney/GoZen
+- title: GDE GoZen
+  image: /images/gde_gozen.webp
+  description: Open-source video playback GDExtension.
+  link: https://github.com/VoylinsGamedevJourney/gde_gozen
+- title: Teledot
+  image: /images/teledot.webp
+  description: An open-source teleprompter.
+  link: https://github.com/voylinsgamedevjourney/teledot
+- title: Audio recorder
+  image: /images/gd_audio_recorder.webp
+  description: An open-source audio recorder made with Godot.
+  link: https://github.com/voylin/gd_audio_recorder

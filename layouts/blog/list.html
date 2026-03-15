@@ -1,0 +1,21 @@
+{{ define "main" }}
+<section id="blog-list">
+	<h2>My Blog</h2>
+	<div class="terminal-text">Life in Japan as a stay-at-home dad working on software and games.</div>
+
+	<div class="grid">
+		{{ range .Pages }}
+		<div class="card">
+			<div class="card-content">
+				<h3 class="card-title"><a href="{{ .Permalink }}" style="color: inherit; text-decoration: none;">{{
+						.Title }}</a></h3>
+				<p style="font-size: 0.8rem; color: var(--accent-green);">{{ .Date.Format "2006-01-02" }}</p>
+				<p>{{ .Summary }}</p>
+				<a href="{{ .Permalink }}" class="cta-button" style="padding: 0.4rem 1rem; margin-left: 0;">Read
+					More</a>
+			</div>
+		</div>
+		{{ end }}
+	</div>
+</section>
+{{ end }}
