@@ -1,3 +1,13 @@
 baseURL = 'https://voylin.com/'
 languageCode = 'en-us'
 title = "Voylin's site"
+
+[params]
+  author = "Voylin"
+  twitter_handle = "@VoylinsLife"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true # Required to allow raw HTML inside Markdown content files
+

@@ -7,6 +7,8 @@
 	<meta name="author" content="Voylin" />
 	<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
 	<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}Voylin's site{{ end }}" />
+	{{ with .Params.tags }}
+	<meta name="keywords" content="{{ delimit . " , " }}">{{ end }}
 
 	<!-- Open Graph Metadata -->
 	<meta property="og:title"
@@ -18,6 +20,7 @@
 		content='{{ with .Params.image }}{{ . | absURL }}{{ else }}{{ "/images/default-thumbnail.webp" | absURL }}{{ end }}' />
 
 	<!-- Twitter Card Metadata -->
+	<meta name="twitter:creator" content="{{ .Site.Params.twitter_handle }}">
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:site" content="@VoylinsLife" />
 	<meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}" />
